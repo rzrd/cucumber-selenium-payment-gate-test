@@ -1,0 +1,38 @@
+[
+  {
+    "source": "^Navigate to Midtrans Demo homepage$",
+    "steps": [
+      {
+        "name": "Navigate to Midtrans Demo homepage",
+        "aggregatedDurations": {
+          "average": 2.080815544,
+          "median": 2.080815544
+        },
+        "durations": [
+          {
+            "duration": 2.080815544,
+            "location": "Negative.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Initiate browser",
+    "steps": [
+      {
+        "name": "Initiate browser",
+        "aggregatedDurations": {
+          "average": 1.483922642,
+          "median": 1.483922642
+        },
+        "durations": [
+          {
+            "duration": 1.483922642,
+            "location": "Negative.feature:6"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+@negativeTest
+Feature: Purchasing Pillow using credit card
+  User want purchasing pillow using credit card with SUCCESSFULL payment flow
+
+  @wrongEmail
+  Scenario Outline: Wrong Input Email        # Negative.feature:9
+    Given Navigate to Midtrans Demo homepage
+
+    #When User click Buy Now button
+    #And Shopping Cart page should be appear
+    #And User fill Price Amount with <amount>
+    #And User fill Name with <name>
+    #But User try to fill Email with invalid format <email>
+    #And Click Checkout button
+    #Then Error Alert should be appear
+    Examples: 
+
+  Background:              # Negative.feature:5
+    Given Initiate browser # PositiveDef.initiate_browser()
+
+  @negativeTest @wrongEmail
+  Scenario Outline: Wrong Input Email        # Negative.feature:21
+    Given Navigate to Midtrans Demo homepage # PositiveDef.navigate_to_Midtrans_Demo_homepage()

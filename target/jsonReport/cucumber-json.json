@@ -1,0 +1,102 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1483922642,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Initiate browser",
+            "match": {
+              "location": "PositiveDef.initiate_browser()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3506698,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenarioStart()"
+            }
+          },
+          {
+            "result": {
+              "duration": 230005,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Wrong Input Email",
+        "description": "",
+        "id": "purchasing-pillow-using-credit-card;wrong-input-email;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 60091870,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2080815544,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Navigate to Midtrans Demo homepage",
+            "match": {
+              "location": "PositiveDef.navigate_to_Midtrans_Demo_homepage()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@negativeTest"
+          },
+          {
+            "line": 8,
+            "name": "@wrongEmail"
+          }
+        ]
+      }
+    ],
+    "name": "Purchasing Pillow using credit card",
+    "description": "User want purchasing pillow using credit card with SUCCESSFULL payment flow",
+    "id": "purchasing-pillow-using-credit-card",
+    "keyword": "Feature",
+    "uri": "Negative.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@negativeTest"
+      }
+    ]
+  }
+]

@@ -19,6 +19,7 @@ public class Homepage extends Base {
 	By submitButton = By.xpath("//button[@id='submitbtn']");
 	
 	public void goToHomepage() throws InterruptedException {
+		reportLog("URL set:" + data.getUrl());
 		String url = data.getUrl();
 		driver.get(url);
 		waitPageLoadUrl(url);

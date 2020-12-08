@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="3.628567">
+    <testcase classname="Purchasing Pillow using credit card" name="Wrong Input Email" time="3.628567">
+        <system-out>
+            <![CDATA[Given Initiate browser......................................................passed
+Given Navigate to Midtrans Demo homepage....................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

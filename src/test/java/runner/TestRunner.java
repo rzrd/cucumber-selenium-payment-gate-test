@@ -15,7 +15,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions (
 	features 	= "src/test/java/features/",
 	glue 		= {"stepDefinitions"},
-	tags 		= {"@NRITest"},
+	tags 		= {"@wrongEmail"},
 	plugin 		= {
 		"com.cucumber.listener.ExtentCucumberFormatter:",
 		"json:target/jsonReport/cucumber-json.json",
