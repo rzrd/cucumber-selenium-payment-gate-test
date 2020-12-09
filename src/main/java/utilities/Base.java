@@ -116,7 +116,6 @@ public class Base {
 				}
 			} catch (Exception e) {
 				System.out.println("Wrong input, try to re-input.");
-				findElement.sendKeys(Keys.chord(Keys.CONTROL, "a", Keys.DELETE));
 			}
 			attempts++;
 		}
@@ -155,12 +154,6 @@ public class Base {
 	}
 
 	public String readText(By elementLocation) {
-		waitVisibility(elementLocation);
-		return driver.findElement(elementLocation).getText();
-	}
-	
-	public String readIframeText(By elementLocation) {
-		driver.switchTo().frame(0);
 		waitVisibility(elementLocation);
 		return driver.findElement(elementLocation).getText();
 	}

@@ -38,7 +38,7 @@ public class ShoppingCartPage extends Base {
 		data.setPrice(amount);
 		String expectedAmount = data.getPrice();
 		inputAmount(amountField, expectedAmount);
-		String actualAmount = readText(amountTotal).replaceAll(",", "");
+		String actualAmount = readText(amountTotal).replaceAll("[^0-9]+", "");
 		Assert.assertEquals(actualAmount, expectedAmount);
 	}
 

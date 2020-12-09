@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="8.715734">
-    <testcase classname="Purchasing Pillow using credit card" name="Successfull payment flow" time="8.715734">
-        <system-out>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="13.613976">
+    <testcase classname="Purchasing Pillow using credit card" name="Successfull payment flow" time="13.613976">
+        <failure message="java.lang.AssertionError: The following asserts failed:&#10;&#9;amount promo not same expected [29990] but found [30000],&#10;&#9;amount promo not same expected [29990] but found [30000]&#10;&#9;at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)&#10;&#9;at pageObject.CreditCardPage.checkPromoAmount(CreditCardPage.java:102)&#10;&#9;at pageObject.CreditCardPage.selectPromo(CreditCardPage.java:78)&#10;&#9;at stepDefinitions.PositiveDef.user_select_one_of_Promos_availables(PositiveDef.java:148)&#10;&#9;at ✽.And User select one of Promos availables(Positive.feature:31)&#10;">
             <![CDATA[Given Initiate browser......................................................passed
 Given Navigate to Midtrans Demo homepage....................................passed
 When User click Buy Now button..............................................passed
-And Shopping Cart page should be appear.....................................passed
+And Shopping Cart page is appear............................................passed
 And User fill Price Amount with "30000".....................................passed
 And User fill Name with "rozi"..............................................passed
 And User fill Email with "rozi@email.com"...................................passed
@@ -14,24 +14,36 @@ And user fill City with "jakarta"...........................................pass
 And User fill Address with "jl. sukses".....................................passed
 And User fill Postal Code with "12620"......................................passed
 And User click Checkout button..............................................passed
-And Order Summary page should be appear.....................................passed
+And Order Summary page is appear............................................passed
 And Order Summary Amount must be same as Shopping Cart Amount...............passed
 And Shipping Details must be same as Customer Details.......................passed
 And User click Continue button..............................................passed
+And Payment Method List page is appear......................................passed
 And User choose Credit/Debit Card payment method............................passed
-And User fill Card Number with "4811111111111113"...........................passed
+And Credit Card Detail page is appear.......................................passed
+And User fill Card Number with "4811111111111114"...........................passed
 And User fill Card Expiry Date with "12/20".................................passed
 And User fill Card CVV with "123"...........................................passed
-And User select one of Promos availables....................................passed
-And Amount must be reduced after promo applied..............................passed
-And Check Customers Detail..................................................passed
-When User click Pay Now button..............................................passed
-And Check if time still left................................................passed
-And User fill Password with "112233"........................................passed
-And User click Ok button....................................................passed
-Then Transaction is finished................................................passed
-And User will be Navigate to Homepage again.................................passed
+And User select one of Promos availables....................................failed
+And Check Customers Detail..................................................skipped
+When User click Pay Now button..............................................skipped
+And Transaction Verification page is appear.................................skipped
+And Check if time still left................................................skipped
+And User fill Password with "112233"........................................skipped
+And User click Ok button....................................................skipped
+Then Transaction should be finished.........................................skipped
+And User will be Navigate to Homepage again.................................skipped
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	amount promo not same expected [29990] but found [30000],
+	amount promo not same expected [29990] but found [30000]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at pageObject.CreditCardPage.checkPromoAmount(CreditCardPage.java:102)
+	at pageObject.CreditCardPage.selectPromo(CreditCardPage.java:78)
+	at stepDefinitions.PositiveDef.user_select_one_of_Promos_availables(PositiveDef.java:148)
+	at ✽.And User select one of Promos availables(Positive.feature:31)
 ]]>
-        </system-out>
+        </failure>
     </testcase>
 </testsuite>

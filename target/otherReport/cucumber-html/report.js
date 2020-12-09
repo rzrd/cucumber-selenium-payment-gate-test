@@ -38,7 +38,7 @@ formatter.step({
 });
 formatter.step({
   "line": 12,
-  "name": "Shopping Cart page should be appear",
+  "name": "Shopping Cart page is appear",
   "keyword": "And "
 });
 formatter.step({
@@ -83,7 +83,7 @@ formatter.step({
 });
 formatter.step({
   "line": 21,
-  "name": "Order Summary page should be appear",
+  "name": "Order Summary page is appear",
   "keyword": "And "
 });
 formatter.step({
@@ -103,71 +103,81 @@ formatter.step({
 });
 formatter.step({
   "line": 25,
-  "name": "User choose Credit/Debit Card payment method",
+  "name": "Payment Method List page is appear",
   "keyword": "And "
 });
 formatter.step({
   "line": 26,
-  "name": "User fill Card Number with \"\u003ccard\u003e\"",
+  "name": "User choose Credit/Debit Card payment method",
   "keyword": "And "
 });
 formatter.step({
   "line": 27,
-  "name": "User fill Card Expiry Date with \"\u003cdate\u003e\"",
+  "name": "Credit Card Detail page is appear",
   "keyword": "And "
 });
 formatter.step({
   "line": 28,
-  "name": "User fill Card CVV with \"\u003ccvv\u003e\"",
+  "name": "User fill Card Number with \"\u003ccard\u003e\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 29,
-  "name": "User select one of Promos availables",
+  "name": "User fill Card Expiry Date with \"\u003cdate\u003e\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 30,
-  "name": "Amount must be reduced after promo applied",
+  "name": "User fill Card CVV with \"\u003ccvv\u003e\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 31,
-  "name": "Check Customers Detail",
+  "name": "User select one of Promos availables",
   "keyword": "And "
 });
 formatter.step({
   "line": 32,
+  "name": "Check Customers Detail",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 33,
   "name": "User click Pay Now button",
   "keyword": "When "
 });
 formatter.step({
-  "line": 33,
-  "name": "Check if time still left",
-  "keyword": "And "
-});
-formatter.step({
   "line": 34,
-  "name": "User fill Password with \"\u003cpassword\u003e\"",
+  "name": "Transaction Verification page is appear",
   "keyword": "And "
 });
 formatter.step({
   "line": 35,
-  "name": "User click Ok button",
+  "name": "Check if time still left",
   "keyword": "And "
 });
 formatter.step({
   "line": 36,
-  "name": "Transaction is finished",
-  "keyword": "Then "
+  "name": "User fill Password with \"\u003cpassword\u003e\"",
+  "keyword": "And "
 });
 formatter.step({
   "line": 37,
+  "name": "User click Ok button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 38,
+  "name": "Transaction should be finished",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 39,
   "name": "User will be Navigate to Homepage again",
   "keyword": "And "
 });
 formatter.examples({
-  "line": 40,
+  "line": 42,
   "name": "",
   "description": "",
   "id": "purchasing-pillow-using-credit-card;successfull-payment-flow;",
@@ -186,7 +196,7 @@ formatter.examples({
         "cvv",
         "password"
       ],
-      "line": 41,
+      "line": 43,
       "id": "purchasing-pillow-using-credit-card;successfull-payment-flow;;1"
     },
     {
@@ -198,23 +208,23 @@ formatter.examples({
         "jakarta",
         "jl. sukses",
         "12620",
-        "4811111111111113",
+        "4811111111111114",
         "12/20",
         "123",
         "112233"
       ],
-      "line": 42,
+      "line": 44,
       "id": "purchasing-pillow-using-credit-card;successfull-payment-flow;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 3961595,
+  "duration": 3699618,
   "status": "passed"
 });
 formatter.before({
-  "duration": 206091,
+  "duration": 299234,
   "status": "passed"
 });
 formatter.background({
@@ -233,11 +243,11 @@ formatter.match({
   "location": "PositiveDef.initiate_browser()"
 });
 formatter.result({
-  "duration": 1429645012,
+  "duration": 1408973020,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 42,
+  "line": 44,
   "name": "Successfull payment flow",
   "description": "",
   "id": "purchasing-pillow-using-credit-card;successfull-payment-flow;;2",
@@ -266,7 +276,7 @@ formatter.step({
 });
 formatter.step({
   "line": 12,
-  "name": "Shopping Cart page should be appear",
+  "name": "Shopping Cart page is appear",
   "keyword": "And "
 });
 formatter.step({
@@ -332,7 +342,7 @@ formatter.step({
 });
 formatter.step({
   "line": 21,
-  "name": "Order Summary page should be appear",
+  "name": "Order Summary page is appear",
   "keyword": "And "
 });
 formatter.step({
@@ -352,19 +362,29 @@ formatter.step({
 });
 formatter.step({
   "line": 25,
-  "name": "User choose Credit/Debit Card payment method",
+  "name": "Payment Method List page is appear",
   "keyword": "And "
 });
 formatter.step({
   "line": 26,
-  "name": "User fill Card Number with \"4811111111111113\"",
+  "name": "User choose Credit/Debit Card payment method",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 27,
+  "name": "Credit Card Detail page is appear",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 28,
+  "name": "User fill Card Number with \"4811111111111114\"",
   "matchedColumns": [
     7
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 27,
+  "line": 29,
   "name": "User fill Card Expiry Date with \"12/20\"",
   "matchedColumns": [
     8
@@ -372,7 +392,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 28,
+  "line": 30,
   "name": "User fill Card CVV with \"123\"",
   "matchedColumns": [
     9
@@ -380,32 +400,32 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 29,
+  "line": 31,
   "name": "User select one of Promos availables",
   "keyword": "And "
 });
 formatter.step({
-  "line": 30,
-  "name": "Amount must be reduced after promo applied",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 31,
+  "line": 32,
   "name": "Check Customers Detail",
   "keyword": "And "
 });
 formatter.step({
-  "line": 32,
+  "line": 33,
   "name": "User click Pay Now button",
   "keyword": "When "
 });
 formatter.step({
-  "line": 33,
+  "line": 34,
+  "name": "Transaction Verification page is appear",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 35,
   "name": "Check if time still left",
   "keyword": "And "
 });
 formatter.step({
-  "line": 34,
+  "line": 36,
   "name": "User fill Password with \"112233\"",
   "matchedColumns": [
     10
@@ -413,17 +433,17 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 35,
+  "line": 37,
   "name": "User click Ok button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 36,
-  "name": "Transaction is finished",
+  "line": 38,
+  "name": "Transaction should be finished",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 37,
+  "line": 39,
   "name": "User will be Navigate to Homepage again",
   "keyword": "And "
 });
@@ -431,21 +451,21 @@ formatter.match({
   "location": "PositiveDef.navigate_to_Midtrans_Demo_homepage()"
 });
 formatter.result({
-  "duration": 2275669580,
+  "duration": 2703442945,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_click_Buy_Now_button()"
 });
 formatter.result({
-  "duration": 234794263,
+  "duration": 157789674,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.shopping_Cart_page_should_be_appear()"
 });
 formatter.result({
-  "duration": 125305797,
+  "duration": 139027730,
   "status": "passed"
 });
 formatter.match({
@@ -458,7 +478,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Price_Amount_with(String)"
 });
 formatter.result({
-  "duration": 501144067,
+  "duration": 441313070,
   "status": "passed"
 });
 formatter.match({
@@ -471,7 +491,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Name_with(String)"
 });
 formatter.result({
-  "duration": 255993897,
+  "duration": 320273195,
   "status": "passed"
 });
 formatter.match({
@@ -484,7 +504,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Email_with(String)"
 });
 formatter.result({
-  "duration": 438825245,
+  "duration": 260286320,
   "status": "passed"
 });
 formatter.match({
@@ -497,7 +517,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Phone_Number_with(String)"
 });
 formatter.result({
-  "duration": 245302236,
+  "duration": 215939243,
   "status": "passed"
 });
 formatter.match({
@@ -510,7 +530,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_City_with(String)"
 });
 formatter.result({
-  "duration": 193862498,
+  "duration": 234012868,
   "status": "passed"
 });
 formatter.match({
@@ -523,7 +543,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Address_with(String)"
 });
 formatter.result({
-  "duration": 272429251,
+  "duration": 203864545,
   "status": "passed"
 });
 formatter.match({
@@ -536,62 +556,76 @@ formatter.match({
   "location": "PositiveDef.user_fill_Postal_Code_with(String)"
 });
 formatter.result({
-  "duration": 240331202,
+  "duration": 241253194,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_click_Checkout_button()"
 });
 formatter.result({
-  "duration": 111800042,
+  "duration": 109795033,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.order_Summary_page_should_be_appear()"
 });
 formatter.result({
-  "duration": 1233926605,
+  "duration": 4102349096,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.order_Summary_Amount_must_be_same_as_Shopping_Cart_Amount()"
 });
 formatter.result({
-  "duration": 240001769,
+  "duration": 174642676,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.shipping_Details_must_be_same_as_Customer_Details()"
 });
 formatter.result({
-  "duration": 716547239,
+  "duration": 474019657,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_click_Continue_button()"
 });
 formatter.result({
-  "duration": 194862248,
+  "duration": 193523948,
+  "status": "passed"
+});
+formatter.match({
+  "location": "PositiveDef.payment_method_list_page_should_be_appear()"
+});
+formatter.result({
+  "duration": 22871194,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_choose_Credit_Debit_Card_payment_method()"
 });
 formatter.result({
-  "duration": 31097,
+  "duration": 260875844,
+  "status": "passed"
+});
+formatter.match({
+  "location": "PositiveDef.credit_card_detail_page_should_be_appear()"
+});
+formatter.result({
+  "duration": 17118997,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "4811111111111113",
+      "val": "4811111111111114",
       "offset": 28
     }
   ],
   "location": "PositiveDef.user_fill_Card_Number_with(String)"
 });
 formatter.result({
-  "duration": 103543,
+  "duration": 262002892,
   "status": "passed"
 });
 formatter.match({
@@ -604,7 +638,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Card_Expiry_Date_with(String)"
 });
 formatter.result({
-  "duration": 107137,
+  "duration": 97466498,
   "status": "passed"
 });
 formatter.match({
@@ -617,43 +651,40 @@ formatter.match({
   "location": "PositiveDef.user_fill_Card_CVV_with(String)"
 });
 formatter.result({
-  "duration": 105426,
+  "duration": 213615925,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_select_one_of_Promos_availables()"
 });
 formatter.result({
-  "duration": 58235,
-  "status": "passed"
-});
-formatter.match({
-  "location": "PositiveDef.amount_must_be_reduced_after_promo_applied()"
-});
-formatter.result({
-  "duration": 38916,
-  "status": "passed"
+  "duration": 1113628410,
+  "error_message": "java.lang.AssertionError: The following asserts failed:\n\tamount promo not same expected [29990] but found [30000],\n\tamount promo not same expected [29990] but found [30000]\n\tat org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)\n\tat pageObject.CreditCardPage.checkPromoAmount(CreditCardPage.java:102)\n\tat pageObject.CreditCardPage.selectPromo(CreditCardPage.java:78)\n\tat stepDefinitions.PositiveDef.user_select_one_of_Promos_availables(PositiveDef.java:148)\n\tat ✽.And User select one of Promos availables(Positive.feature:31)\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "PositiveDef.check_Customers_Detail()"
 });
 formatter.result({
-  "duration": 49024,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "PositiveDef.user_click_Pay_Now_button()"
 });
 formatter.result({
-  "duration": 40775,
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.match({
+  "location": "PositiveDef.transaction_verification_page_is_appear()"
+});
+formatter.result({
+  "status": "skipped"
 });
 formatter.match({
   "location": "PositiveDef.check_if_time_still_left()"
 });
 formatter.result({
-  "duration": 42981,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -665,32 +696,28 @@ formatter.match({
   "location": "PositiveDef.user_fill_Password_with(String)"
 });
 formatter.result({
-  "duration": 122751,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "PositiveDef.user_click_Ok_button()"
 });
 formatter.result({
-  "duration": 36872,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "PositiveDef.transaction_is_finished()"
 });
 formatter.result({
-  "duration": 52826,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "PositiveDef.user_will_be_Navigate_to_Homepage_again()"
 });
 formatter.result({
-  "duration": 47116,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.after({
-  "duration": 288361,
+  "duration": 241890985,
   "status": "passed"
 });
 });

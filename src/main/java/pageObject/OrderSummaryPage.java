@@ -1,14 +1,10 @@
 package pageObject;
 
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
 
 import utilities.Base;
@@ -34,15 +30,13 @@ public class OrderSummaryPage extends Base {
 	By continueButton = By.xpath("//a[@class='button-main-content'][contains(.,'Continue')]");
 
 	public void checkPage() throws InterruptedException {
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 		
 		SoftAssert softAssert = new SoftAssert();
 		boolean isIframeAppear = driver.findElements(By.tagName("iframe")).size() != 0;
 		softAssert.assertTrue(isIframeAppear, "iFrame not appear");
-		
-		WebElement iframeElement = driver.findElement(By.tagName("iframe"));
 
-		driver.switchTo().frame(iframeElement);		
+		driver.switchTo().frame("snap-midtrans");		
 		
 		boolean isSummaryPageAppear = driver.findElements(titleOrderSummaryPage).size() != 0;
 		softAssert.assertTrue(isSummaryPageAppear, "summary page not loaded");

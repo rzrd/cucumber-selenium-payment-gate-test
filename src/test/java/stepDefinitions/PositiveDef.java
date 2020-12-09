@@ -6,8 +6,10 @@ import org.openqa.selenium.WebDriver;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import pageObject.CreditCardPage;
 import pageObject.Homepage;
 import pageObject.OrderSummaryPage;
+import pageObject.SelectPaymentPage;
 import pageObject.ShoppingCartPage;
 import utilities.Base;
 import utilities.ClassHelp;
@@ -20,7 +22,8 @@ public class PositiveDef {
 	Homepage homepage = new Homepage(driver);
 	ShoppingCartPage cart = new ShoppingCartPage(driver);
 	OrderSummaryPage summary = new OrderSummaryPage(driver);
-
+	SelectPaymentPage payment = new SelectPaymentPage(driver);
+	CreditCardPage cardDetail = new CreditCardPage(driver);
 
 	@Given("Initiate browser")
 	public void initiate_browser() throws Throwable {
@@ -45,7 +48,7 @@ public class PositiveDef {
 		homepage.clickBuyNowButton();
 	}
 
-	@When("^Shopping Cart page should be appear$")
+	@When("^Shopping Cart page is appear$")
 	public void shopping_Cart_page_should_be_appear() throws Throwable {
 		cart.checkPage();
 	}
@@ -90,7 +93,7 @@ public class PositiveDef {
 		cart.clickCheckout();
 	}
 
-	@When("^Order Summary page should be appear$")
+	@When("^Order Summary page is appear$")
 	public void order_Summary_page_should_be_appear() throws Throwable {
 		summary.checkPage();
 	}
@@ -109,37 +112,54 @@ public class PositiveDef {
 	public void user_click_Continue_button() throws Throwable {
 		summary.clickContinue();
 	}
+	
+	@When("^Payment Method List page is appear$")
+	public void payment_method_list_page_should_be_appear() throws Throwable {
+		payment.checkPage();
+	}
 
 	@When("^User choose Credit/Debit Card payment method$")
 	public void user_choose_Credit_Debit_Card_payment_method() throws Throwable {
+		payment.selectCreditCardPayment();
+	}
+	
+	@Given("^Credit Card Detail page is appear$")
+	public void credit_card_detail_page_should_be_appear() throws Throwable {
+		cardDetail.checkPage();
 	}
 
 	@Given("^User fill Card Number with \"([^\"]*)\"$")
-	public void user_fill_Card_Number_with(String arg1) throws Throwable {
+	public void user_fill_Card_Number_with(String cardNumber) throws Throwable {
+		cardDetail.fillCardNumber(cardNumber);
 	}
 
 	@Given("^User fill Card Expiry Date with \"([^\"]*)\"$")
-	public void user_fill_Card_Expiry_Date_with(String arg1) throws Throwable {
+	public void user_fill_Card_Expiry_Date_with(String expiryDate) throws Throwable {
+		cardDetail.fillCardExpiry(expiryDate);
 	}
 
 	@Given("^User fill Card CVV with \"([^\"]*)\"$")
-	public void user_fill_Card_CVV_with(String arg1) throws Throwable {
+	public void user_fill_Card_CVV_with(String cvv) throws Throwable {
+		cardDetail.fillCardCVV(cvv);
 	}
 
 	@When("^User select one of Promos availables$")
 	public void user_select_one_of_Promos_availables() throws Throwable {
-	}
-
-	@When("^Amount must be reduced after promo applied$")
-	public void amount_must_be_reduced_after_promo_applied() throws Throwable {
+		cardDetail.selectPromo();
 	}
 
 	@When("^Check Customers Detail$")
 	public void check_Customers_Detail() throws Throwable {
+		cardDetail.checkCustomerDetail();
 	}
 
 	@When("^User click Pay Now button$")
 	public void user_click_Pay_Now_button() throws Throwable {
+		cardDetail.clickPayNow();
+	}
+	
+	@When("^Transaction Verification page is appear$")
+	public void transaction_verification_page_is_appear() throws Throwable {
 	}
 
 	@When("^Check if time still left$")
@@ -158,7 +178,7 @@ public class PositiveDef {
 	public void user_click_Ok_button() throws Throwable {
 	}
 
-	@Then("^Transaction is finished$")
+	@Then("^Transaction should be finished$")
 	public void transaction_is_finished() throws Throwable {
 	}
 

@@ -1,16 +1,52 @@
 [
   {
+    "source": "^Payment Method List page is appear$",
+    "steps": [
+      {
+        "name": "Payment Method List page is appear",
+        "aggregatedDurations": {
+          "average": 0.022871194,
+          "median": 0.022871194
+        },
+        "durations": [
+          {
+            "duration": 0.022871194,
+            "location": "Positive.feature:25"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User fill Card Expiry Date with \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "User fill Card Expiry Date with \"12/20\"",
+        "aggregatedDurations": {
+          "average": 0.097466498,
+          "median": 0.097466498
+        },
+        "durations": [
+          {
+            "duration": 0.097466498,
+            "location": "Positive.feature:29"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "source": "^User click Continue button$",
     "steps": [
       {
         "name": "User click Continue button",
         "aggregatedDurations": {
-          "average": 0.194862248,
-          "median": 0.194862248
+          "average": 0.193523948,
+          "median": 0.193523948
         },
         "durations": [
           {
-            "duration": 0.194862248,
+            "duration": 0.193523948,
             "location": "Positive.feature:24"
           }
         ]
@@ -23,283 +59,13 @@
       {
         "name": "User choose Credit/Debit Card payment method",
         "aggregatedDurations": {
-          "average": 0.000031097,
-          "median": 0.000031097
+          "average": 0.260875844,
+          "median": 0.260875844
         },
         "durations": [
           {
-            "duration": 0.000031097,
-            "location": "Positive.feature:25"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^User fill Address with \"([^\"]*)\"$",
-    "steps": [
-      {
-        "name": "User fill Address with \"jl. sukses\"",
-        "aggregatedDurations": {
-          "average": 0.272429251,
-          "median": 0.272429251
-        },
-        "durations": [
-          {
-            "duration": 0.272429251,
-            "location": "Positive.feature:18"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^Shipping Details must be same as Customer Details$",
-    "steps": [
-      {
-        "name": "Shipping Details must be same as Customer Details",
-        "aggregatedDurations": {
-          "average": 0.716547239,
-          "median": 0.716547239
-        },
-        "durations": [
-          {
-            "duration": 0.716547239,
-            "location": "Positive.feature:23"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^Navigate to Midtrans Demo homepage$",
-    "steps": [
-      {
-        "name": "Navigate to Midtrans Demo homepage",
-        "aggregatedDurations": {
-          "average": 2.27566958,
-          "median": 2.27566958
-        },
-        "durations": [
-          {
-            "duration": 2.27566958,
-            "location": "Positive.feature:10"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^User fill Postal Code with \"([^\"]*)\"$",
-    "steps": [
-      {
-        "name": "User fill Postal Code with \"12620\"",
-        "aggregatedDurations": {
-          "average": 0.240331202,
-          "median": 0.240331202
-        },
-        "durations": [
-          {
-            "duration": 0.240331202,
-            "location": "Positive.feature:19"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^Check Customers Detail$",
-    "steps": [
-      {
-        "name": "Check Customers Detail",
-        "aggregatedDurations": {
-          "average": 0.000049024,
-          "median": 0.000049024
-        },
-        "durations": [
-          {
-            "duration": 0.000049024,
-            "location": "Positive.feature:31"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^User click Pay Now button$",
-    "steps": [
-      {
-        "name": "User click Pay Now button",
-        "aggregatedDurations": {
-          "average": 0.000040775,
-          "median": 0.000040775
-        },
-        "durations": [
-          {
-            "duration": 0.000040775,
-            "location": "Positive.feature:32"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^Shopping Cart page should be appear$",
-    "steps": [
-      {
-        "name": "Shopping Cart page should be appear",
-        "aggregatedDurations": {
-          "average": 0.125305797,
-          "median": 0.125305797
-        },
-        "durations": [
-          {
-            "duration": 0.125305797,
-            "location": "Positive.feature:12"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^Order Summary page should be appear$",
-    "steps": [
-      {
-        "name": "Order Summary page should be appear",
-        "aggregatedDurations": {
-          "average": 1.233926605,
-          "median": 1.233926605
-        },
-        "durations": [
-          {
-            "duration": 1.233926605,
-            "location": "Positive.feature:21"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^User fill Price Amount with \"([^\"]*)\"$",
-    "steps": [
-      {
-        "name": "User fill Price Amount with \"30000\"",
-        "aggregatedDurations": {
-          "average": 0.501144067,
-          "median": 0.501144067
-        },
-        "durations": [
-          {
-            "duration": 0.501144067,
-            "location": "Positive.feature:13"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^User fill Card CVV with \"([^\"]*)\"$",
-    "steps": [
-      {
-        "name": "User fill Card CVV with \"123\"",
-        "aggregatedDurations": {
-          "average": 0.000105426,
-          "median": 0.000105426
-        },
-        "durations": [
-          {
-            "duration": 0.000105426,
-            "location": "Positive.feature:28"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^User fill Password with \"([^\"]*)\"$",
-    "steps": [
-      {
-        "name": "User fill Password with \"112233\"",
-        "aggregatedDurations": {
-          "average": 0.000122751,
-          "median": 0.000122751
-        },
-        "durations": [
-          {
-            "duration": 0.000122751,
-            "location": "Positive.feature:34"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^Check if time still left$",
-    "steps": [
-      {
-        "name": "Check if time still left",
-        "aggregatedDurations": {
-          "average": 0.000042981,
-          "median": 0.000042981
-        },
-        "durations": [
-          {
-            "duration": 0.000042981,
-            "location": "Positive.feature:33"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^User click Ok button$",
-    "steps": [
-      {
-        "name": "User click Ok button",
-        "aggregatedDurations": {
-          "average": 0.000036872,
-          "median": 0.000036872
-        },
-        "durations": [
-          {
-            "duration": 0.000036872,
-            "location": "Positive.feature:35"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^User will be Navigate to Homepage again$",
-    "steps": [
-      {
-        "name": "User will be Navigate to Homepage again",
-        "aggregatedDurations": {
-          "average": 0.000047116,
-          "median": 0.000047116
-        },
-        "durations": [
-          {
-            "duration": 0.000047116,
-            "location": "Positive.feature:37"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^User fill Card Expiry Date with \"([^\"]*)\"$",
-    "steps": [
-      {
-        "name": "User fill Card Expiry Date with \"12/20\"",
-        "aggregatedDurations": {
-          "average": 0.000107137,
-          "median": 0.000107137
-        },
-        "durations": [
-          {
-            "duration": 0.000107137,
-            "location": "Positive.feature:27"
+            "duration": 0.260875844,
+            "location": "Positive.feature:26"
           }
         ]
       }
@@ -311,12 +77,12 @@
       {
         "name": "User fill Name with \"rozi\"",
         "aggregatedDurations": {
-          "average": 0.255993897,
-          "median": 0.255993897
+          "average": 0.320273195,
+          "median": 0.320273195
         },
         "durations": [
           {
-            "duration": 0.255993897,
+            "duration": 0.320273195,
             "location": "Positive.feature:14"
           }
         ]
@@ -329,13 +95,67 @@
       {
         "name": "Initiate browser",
         "aggregatedDurations": {
-          "average": 1.429645012,
-          "median": 1.429645012
+          "average": 1.40897302,
+          "median": 1.40897302
         },
         "durations": [
           {
-            "duration": 1.429645012,
+            "duration": 1.40897302,
             "location": "Positive.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Shopping Cart page is appear$",
+    "steps": [
+      {
+        "name": "Shopping Cart page is appear",
+        "aggregatedDurations": {
+          "average": 0.13902773,
+          "median": 0.13902773
+        },
+        "durations": [
+          {
+            "duration": 0.13902773,
+            "location": "Positive.feature:12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Order Summary page is appear$",
+    "steps": [
+      {
+        "name": "Order Summary page is appear",
+        "aggregatedDurations": {
+          "average": 4.102349096,
+          "median": 4.102349096
+        },
+        "durations": [
+          {
+            "duration": 4.102349096,
+            "location": "Positive.feature:21"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User fill Address with \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "User fill Address with \"jl. sukses\"",
+        "aggregatedDurations": {
+          "average": 0.203864545,
+          "median": 0.203864545
+        },
+        "durations": [
+          {
+            "duration": 0.203864545,
+            "location": "Positive.feature:18"
           }
         ]
       }
@@ -347,12 +167,12 @@
       {
         "name": "User click Buy Now button",
         "aggregatedDurations": {
-          "average": 0.234794263,
-          "median": 0.234794263
+          "average": 0.157789674,
+          "median": 0.157789674
         },
         "durations": [
           {
-            "duration": 0.234794263,
+            "duration": 0.157789674,
             "location": "Positive.feature:11"
           }
         ]
@@ -365,12 +185,12 @@
       {
         "name": "Order Summary Amount must be same as Shopping Cart Amount",
         "aggregatedDurations": {
-          "average": 0.240001769,
-          "median": 0.240001769
+          "average": 0.174642676,
+          "median": 0.174642676
         },
         "durations": [
           {
-            "duration": 0.240001769,
+            "duration": 0.174642676,
             "location": "Positive.feature:22"
           }
         ]
@@ -378,18 +198,54 @@
     ]
   },
   {
-    "source": "^Amount must be reduced after promo applied$",
+    "source": "^Shipping Details must be same as Customer Details$",
     "steps": [
       {
-        "name": "Amount must be reduced after promo applied",
+        "name": "Shipping Details must be same as Customer Details",
         "aggregatedDurations": {
-          "average": 0.000038916,
-          "median": 0.000038916
+          "average": 0.474019657,
+          "median": 0.474019657
         },
         "durations": [
           {
-            "duration": 0.000038916,
-            "location": "Positive.feature:30"
+            "duration": 0.474019657,
+            "location": "Positive.feature:23"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Navigate to Midtrans Demo homepage$",
+    "steps": [
+      {
+        "name": "Navigate to Midtrans Demo homepage",
+        "aggregatedDurations": {
+          "average": 2.703442945,
+          "median": 2.703442945
+        },
+        "durations": [
+          {
+            "duration": 2.703442945,
+            "location": "Positive.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User fill Postal Code with \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "User fill Postal Code with \"12620\"",
+        "aggregatedDurations": {
+          "average": 0.241253194,
+          "median": 0.241253194
+        },
+        "durations": [
+          {
+            "duration": 0.241253194,
+            "location": "Positive.feature:19"
           }
         ]
       }
@@ -401,12 +257,12 @@
       {
         "name": "User fill Email with \"rozi@email.com\"",
         "aggregatedDurations": {
-          "average": 0.438825245,
-          "median": 0.438825245
+          "average": 0.26028632,
+          "median": 0.26028632
         },
         "durations": [
           {
-            "duration": 0.438825245,
+            "duration": 0.26028632,
             "location": "Positive.feature:15"
           }
         ]
@@ -417,33 +273,51 @@
     "source": "^User fill Card Number with \"([^\"]*)\"$",
     "steps": [
       {
-        "name": "User fill Card Number with \"4811111111111113\"",
+        "name": "User fill Card Number with \"4811111111111114\"",
         "aggregatedDurations": {
-          "average": 0.000103543,
-          "median": 0.000103543
+          "average": 0.262002892,
+          "median": 0.262002892
         },
         "durations": [
           {
-            "duration": 0.000103543,
-            "location": "Positive.feature:26"
+            "duration": 0.262002892,
+            "location": "Positive.feature:28"
           }
         ]
       }
     ]
   },
   {
-    "source": "^Transaction is finished$",
+    "source": "^Credit Card Detail page is appear$",
     "steps": [
       {
-        "name": "Transaction is finished",
+        "name": "Credit Card Detail page is appear",
         "aggregatedDurations": {
-          "average": 0.000052826,
-          "median": 0.000052826
+          "average": 0.017118997,
+          "median": 0.017118997
         },
         "durations": [
           {
-            "duration": 0.000052826,
-            "location": "Positive.feature:36"
+            "duration": 0.017118997,
+            "location": "Positive.feature:27"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User fill Price Amount with \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "User fill Price Amount with \"30000\"",
+        "aggregatedDurations": {
+          "average": 0.44131307,
+          "median": 0.44131307
+        },
+        "durations": [
+          {
+            "duration": 0.44131307,
+            "location": "Positive.feature:13"
           }
         ]
       }
@@ -455,12 +329,12 @@
       {
         "name": "user fill City with \"jakarta\"",
         "aggregatedDurations": {
-          "average": 0.193862498,
-          "median": 0.193862498
+          "average": 0.234012868,
+          "median": 0.234012868
         },
         "durations": [
           {
-            "duration": 0.193862498,
+            "duration": 0.234012868,
             "location": "Positive.feature:17"
           }
         ]
@@ -473,12 +347,12 @@
       {
         "name": "User fill Phone Number with \"28123456\"",
         "aggregatedDurations": {
-          "average": 0.245302236,
-          "median": 0.245302236
+          "average": 0.215939243,
+          "median": 0.215939243
         },
         "durations": [
           {
-            "duration": 0.245302236,
+            "duration": 0.215939243,
             "location": "Positive.feature:16"
           }
         ]
@@ -486,18 +360,18 @@
     ]
   },
   {
-    "source": "^User select one of Promos availables$",
+    "source": "^User fill Card CVV with \"([^\"]*)\"$",
     "steps": [
       {
-        "name": "User select one of Promos availables",
+        "name": "User fill Card CVV with \"123\"",
         "aggregatedDurations": {
-          "average": 0.000058235,
-          "median": 0.000058235
+          "average": 0.213615925,
+          "median": 0.213615925
         },
         "durations": [
           {
-            "duration": 0.000058235,
-            "location": "Positive.feature:29"
+            "duration": 0.213615925,
+            "location": "Positive.feature:30"
           }
         ]
       }
@@ -509,12 +383,12 @@
       {
         "name": "User click Checkout button",
         "aggregatedDurations": {
-          "average": 0.111800042,
-          "median": 0.111800042
+          "average": 0.109795033,
+          "median": 0.109795033
         },
         "durations": [
           {
-            "duration": 0.111800042,
+            "duration": 0.109795033,
             "location": "Positive.feature:20"
           }
         ]
