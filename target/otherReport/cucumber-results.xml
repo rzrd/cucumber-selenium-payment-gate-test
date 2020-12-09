@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="11.112005">
-    <testcase classname="Purchasing Pillow using credit card" name="Successfull payment flow" time="11.112005">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="8.715734">
+    <testcase classname="Purchasing Pillow using credit card" name="Successfull payment flow" time="8.715734">
         <system-out>
             <![CDATA[Given Initiate browser......................................................passed
 Given Navigate to Midtrans Demo homepage....................................passed
@@ -9,7 +9,7 @@ And Shopping Cart page should be appear.....................................pass
 And User fill Price Amount with "30000".....................................passed
 And User fill Name with "rozi"..............................................passed
 And User fill Email with "rozi@email.com"...................................passed
-And User fill Phone Number with "08123456"..................................passed
+And User fill Phone Number with "28123456"..................................passed
 And user fill City with "jakarta"...........................................passed
 And User fill Address with "jl. sukses".....................................passed
 And User fill Postal Code with "12620"......................................passed

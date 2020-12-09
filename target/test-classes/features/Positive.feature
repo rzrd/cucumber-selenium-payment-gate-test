@@ -39,6 +39,6 @@ Feature: Purchasing Pillow using credit card
     
     Examples: 
       | amount	| name	| email						| phone			| city		| address			| code	| card							| date	| cvv	| password	|
-      | 30000		| rozi	| rozi@email.com	|	08123456	| jakarta	| jl. sukses	| 12620	| 4811111111111113	| 12/20	| 123	|	112233		|
+      | 30000		| rozi	| rozi@email.com	|	28123456	| jakarta	| jl. sukses	| 12620	| 4811111111111113	| 12/20	| 123	|	112233		|
       
     

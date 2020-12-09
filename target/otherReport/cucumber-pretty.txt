@@ -46,7 +46,7 @@ Feature: Purchasing Pillow using credit card
     And User fill Price Amount with "30000"                       # PositiveDef.user_fill_Price_Amount_with(String)
     And User fill Name with "rozi"                                # PositiveDef.user_fill_Name_with(String)
     And User fill Email with "rozi@email.com"                     # PositiveDef.user_fill_Email_with(String)
-    And User fill Phone Number with "08123456"                    # PositiveDef.user_fill_Phone_Number_with(String)
+    And User fill Phone Number with "28123456"                    # PositiveDef.user_fill_Phone_Number_with(String)
     And user fill City with "jakarta"                             # PositiveDef.user_fill_City_with(String)
     And User fill Address with "jl. sukses"                       # PositiveDef.user_fill_Address_with(String)
     And User fill Postal Code with "12620"                        # PositiveDef.user_fill_Postal_Code_with(String)

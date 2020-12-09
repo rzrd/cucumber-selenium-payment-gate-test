@@ -5,12 +5,12 @@
       {
         "name": "User click Continue button",
         "aggregatedDurations": {
-          "average": 0.000040084,
-          "median": 0.000040084
+          "average": 0.194862248,
+          "median": 0.194862248
         },
         "durations": [
           {
-            "duration": 0.000040084,
+            "duration": 0.194862248,
             "location": "Positive.feature:24"
           }
         ]
@@ -23,12 +23,12 @@
       {
         "name": "User choose Credit/Debit Card payment method",
         "aggregatedDurations": {
-          "average": 0.00004185,
-          "median": 0.00004185
+          "average": 0.000031097,
+          "median": 0.000031097
         },
         "durations": [
           {
-            "duration": 0.00004185,
+            "duration": 0.000031097,
             "location": "Positive.feature:25"
           }
         ]
@@ -41,12 +41,12 @@
       {
         "name": "User fill Address with \"jl. sukses\"",
         "aggregatedDurations": {
-          "average": 0.227892594,
-          "median": 0.227892594
+          "average": 0.272429251,
+          "median": 0.272429251
         },
         "durations": [
           {
-            "duration": 0.227892594,
+            "duration": 0.272429251,
             "location": "Positive.feature:18"
           }
         ]
@@ -59,12 +59,12 @@
       {
         "name": "Shipping Details must be same as Customer Details",
         "aggregatedDurations": {
-          "average": 0.000044224,
-          "median": 0.000044224
+          "average": 0.716547239,
+          "median": 0.716547239
         },
         "durations": [
           {
-            "duration": 0.000044224,
+            "duration": 0.716547239,
             "location": "Positive.feature:23"
           }
         ]
@@ -77,12 +77,12 @@
       {
         "name": "Navigate to Midtrans Demo homepage",
         "aggregatedDurations": {
-          "average": 7.180552484,
-          "median": 7.180552484
+          "average": 2.27566958,
+          "median": 2.27566958
         },
         "durations": [
           {
-            "duration": 7.180552484,
+            "duration": 2.27566958,
             "location": "Positive.feature:10"
           }
         ]
@@ -95,12 +95,12 @@
       {
         "name": "User fill Postal Code with \"12620\"",
         "aggregatedDurations": {
-          "average": 0.194506886,
-          "median": 0.194506886
+          "average": 0.240331202,
+          "median": 0.240331202
         },
         "durations": [
           {
-            "duration": 0.194506886,
+            "duration": 0.240331202,
             "location": "Positive.feature:19"
           }
         ]
@@ -113,12 +113,12 @@
       {
         "name": "Check Customers Detail",
         "aggregatedDurations": {
-          "average": 0.000033588,
-          "median": 0.000033588
+          "average": 0.000049024,
+          "median": 0.000049024
         },
         "durations": [
           {
-            "duration": 0.000033588,
+            "duration": 0.000049024,
             "location": "Positive.feature:31"
           }
         ]
@@ -131,12 +131,12 @@
       {
         "name": "User click Pay Now button",
         "aggregatedDurations": {
-          "average": 0.000032026,
-          "median": 0.000032026
+          "average": 0.000040775,
+          "median": 0.000040775
         },
         "durations": [
           {
-            "duration": 0.000032026,
+            "duration": 0.000040775,
             "location": "Positive.feature:32"
           }
         ]
@@ -149,12 +149,12 @@
       {
         "name": "Shopping Cart page should be appear",
         "aggregatedDurations": {
-          "average": 0.02776727,
-          "median": 0.02776727
+          "average": 0.125305797,
+          "median": 0.125305797
         },
         "durations": [
           {
-            "duration": 0.02776727,
+            "duration": 0.125305797,
             "location": "Positive.feature:12"
           }
         ]
@@ -167,12 +167,12 @@
       {
         "name": "Order Summary page should be appear",
         "aggregatedDurations": {
-          "average": 0.000031537,
-          "median": 0.000031537
+          "average": 1.233926605,
+          "median": 1.233926605
         },
         "durations": [
           {
-            "duration": 0.000031537,
+            "duration": 1.233926605,
             "location": "Positive.feature:21"
           }
         ]
@@ -185,12 +185,12 @@
       {
         "name": "User fill Price Amount with \"30000\"",
         "aggregatedDurations": {
-          "average": 0.563920034,
-          "median": 0.563920034
+          "average": 0.501144067,
+          "median": 0.501144067
         },
         "durations": [
           {
-            "duration": 0.563920034,
+            "duration": 0.501144067,
             "location": "Positive.feature:13"
           }
         ]
@@ -203,12 +203,12 @@
       {
         "name": "User fill Card CVV with \"123\"",
         "aggregatedDurations": {
-          "average": 0.000075851,
-          "median": 0.000075851
+          "average": 0.000105426,
+          "median": 0.000105426
         },
         "durations": [
           {
-            "duration": 0.000075851,
+            "duration": 0.000105426,
             "location": "Positive.feature:28"
           }
         ]
@@ -221,12 +221,12 @@
       {
         "name": "User fill Password with \"112233\"",
         "aggregatedDurations": {
-          "average": 0.000099118,
-          "median": 0.000099118
+          "average": 0.000122751,
+          "median": 0.000122751
         },
         "durations": [
           {
-            "duration": 0.000099118,
+            "duration": 0.000122751,
             "location": "Positive.feature:34"
           }
         ]
@@ -239,12 +239,12 @@
       {
         "name": "Check if time still left",
         "aggregatedDurations": {
-          "average": 0.000032824,
-          "median": 0.000032824
+          "average": 0.000042981,
+          "median": 0.000042981
         },
         "durations": [
           {
-            "duration": 0.000032824,
+            "duration": 0.000042981,
             "location": "Positive.feature:33"
           }
         ]
@@ -257,12 +257,12 @@
       {
         "name": "User click Ok button",
         "aggregatedDurations": {
-          "average": 0.000033784,
-          "median": 0.000033784
+          "average": 0.000036872,
+          "median": 0.000036872
         },
         "durations": [
           {
-            "duration": 0.000033784,
+            "duration": 0.000036872,
             "location": "Positive.feature:35"
           }
         ]
@@ -275,12 +275,12 @@
       {
         "name": "User will be Navigate to Homepage again",
         "aggregatedDurations": {
-          "average": 0.000031312,
-          "median": 0.000031312
+          "average": 0.000047116,
+          "median": 0.000047116
         },
         "durations": [
           {
-            "duration": 0.000031312,
+            "duration": 0.000047116,
             "location": "Positive.feature:37"
           }
         ]
@@ -293,12 +293,12 @@
       {
         "name": "User fill Card Expiry Date with \"12/20\"",
         "aggregatedDurations": {
-          "average": 0.000102786,
-          "median": 0.000102786
+          "average": 0.000107137,
+          "median": 0.000107137
         },
         "durations": [
           {
-            "duration": 0.000102786,
+            "duration": 0.000107137,
             "location": "Positive.feature:27"
           }
         ]
@@ -311,12 +311,12 @@
       {
         "name": "User fill Name with \"rozi\"",
         "aggregatedDurations": {
-          "average": 0.217163324,
-          "median": 0.217163324
+          "average": 0.255993897,
+          "median": 0.255993897
         },
         "durations": [
           {
-            "duration": 0.217163324,
+            "duration": 0.255993897,
             "location": "Positive.feature:14"
           }
         ]
@@ -329,12 +329,12 @@
       {
         "name": "Initiate browser",
         "aggregatedDurations": {
-          "average": 1.532302424,
-          "median": 1.532302424
+          "average": 1.429645012,
+          "median": 1.429645012
         },
         "durations": [
           {
-            "duration": 1.532302424,
+            "duration": 1.429645012,
             "location": "Positive.feature:6"
           }
         ]
@@ -347,12 +347,12 @@
       {
         "name": "User click Buy Now button",
         "aggregatedDurations": {
-          "average": 0.208153776,
-          "median": 0.208153776
+          "average": 0.234794263,
+          "median": 0.234794263
         },
         "durations": [
           {
-            "duration": 0.208153776,
+            "duration": 0.234794263,
             "location": "Positive.feature:11"
           }
         ]
@@ -365,12 +365,12 @@
       {
         "name": "Order Summary Amount must be same as Shopping Cart Amount",
         "aggregatedDurations": {
-          "average": 0.000027984,
-          "median": 0.000027984
+          "average": 0.240001769,
+          "median": 0.240001769
         },
         "durations": [
           {
-            "duration": 0.000027984,
+            "duration": 0.240001769,
             "location": "Positive.feature:22"
           }
         ]
@@ -383,12 +383,12 @@
       {
         "name": "Amount must be reduced after promo applied",
         "aggregatedDurations": {
-          "average": 0.000030529,
-          "median": 0.000030529
+          "average": 0.000038916,
+          "median": 0.000038916
         },
         "durations": [
           {
-            "duration": 0.000030529,
+            "duration": 0.000038916,
             "location": "Positive.feature:30"
           }
         ]
@@ -401,12 +401,12 @@
       {
         "name": "User fill Email with \"rozi@email.com\"",
         "aggregatedDurations": {
-          "average": 0.313303467,
-          "median": 0.313303467
+          "average": 0.438825245,
+          "median": 0.438825245
         },
         "durations": [
           {
-            "duration": 0.313303467,
+            "duration": 0.438825245,
             "location": "Positive.feature:15"
           }
         ]
@@ -419,12 +419,12 @@
       {
         "name": "User fill Card Number with \"4811111111111113\"",
         "aggregatedDurations": {
-          "average": 0.000103535,
-          "median": 0.000103535
+          "average": 0.000103543,
+          "median": 0.000103543
         },
         "durations": [
           {
-            "duration": 0.000103535,
+            "duration": 0.000103543,
             "location": "Positive.feature:26"
           }
         ]
@@ -437,12 +437,12 @@
       {
         "name": "Transaction is finished",
         "aggregatedDurations": {
-          "average": 0.000027195,
-          "median": 0.000027195
+          "average": 0.000052826,
+          "median": 0.000052826
         },
         "durations": [
           {
-            "duration": 0.000027195,
+            "duration": 0.000052826,
             "location": "Positive.feature:36"
           }
         ]
@@ -455,12 +455,12 @@
       {
         "name": "user fill City with \"jakarta\"",
         "aggregatedDurations": {
-          "average": 0.228703026,
-          "median": 0.228703026
+          "average": 0.193862498,
+          "median": 0.193862498
         },
         "durations": [
           {
-            "duration": 0.228703026,
+            "duration": 0.193862498,
             "location": "Positive.feature:17"
           }
         ]
@@ -471,14 +471,14 @@
     "source": "^User fill Phone Number with \"([^\"]*)\"$",
     "steps": [
       {
-        "name": "User fill Phone Number with \"08123456\"",
+        "name": "User fill Phone Number with \"28123456\"",
         "aggregatedDurations": {
-          "average": 0.237836945,
-          "median": 0.237836945
+          "average": 0.245302236,
+          "median": 0.245302236
         },
         "durations": [
           {
-            "duration": 0.237836945,
+            "duration": 0.245302236,
             "location": "Positive.feature:16"
           }
         ]
@@ -491,12 +491,12 @@
       {
         "name": "User select one of Promos availables",
         "aggregatedDurations": {
-          "average": 0.000034501,
-          "median": 0.000034501
+          "average": 0.000058235,
+          "median": 0.000058235
         },
         "durations": [
           {
-            "duration": 0.000034501,
+            "duration": 0.000058235,
             "location": "Positive.feature:29"
           }
         ]
@@ -509,12 +509,12 @@
       {
         "name": "User click Checkout button",
         "aggregatedDurations": {
-          "average": 0.175306259,
-          "median": 0.175306259
+          "average": 0.111800042,
+          "median": 0.111800042
         },
         "durations": [
           {
-            "duration": 0.175306259,
+            "duration": 0.111800042,
             "location": "Positive.feature:20"
           }
         ]

@@ -194,7 +194,7 @@ formatter.examples({
         "30000",
         "rozi",
         "rozi@email.com",
-        "08123456",
+        "28123456",
         "jakarta",
         "jl. sukses",
         "12620",
@@ -210,11 +210,11 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 3328057,
+  "duration": 3961595,
   "status": "passed"
 });
 formatter.before({
-  "duration": 192812,
+  "duration": 206091,
   "status": "passed"
 });
 formatter.background({
@@ -233,7 +233,7 @@ formatter.match({
   "location": "PositiveDef.initiate_browser()"
 });
 formatter.result({
-  "duration": 1532302424,
+  "duration": 1429645012,
   "status": "passed"
 });
 formatter.scenario({
@@ -295,7 +295,7 @@ formatter.step({
 });
 formatter.step({
   "line": 16,
-  "name": "User fill Phone Number with \"08123456\"",
+  "name": "User fill Phone Number with \"28123456\"",
   "matchedColumns": [
     3
   ],
@@ -431,21 +431,21 @@ formatter.match({
   "location": "PositiveDef.navigate_to_Midtrans_Demo_homepage()"
 });
 formatter.result({
-  "duration": 7180552484,
+  "duration": 2275669580,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_click_Buy_Now_button()"
 });
 formatter.result({
-  "duration": 208153776,
+  "duration": 234794263,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.shopping_Cart_page_should_be_appear()"
 });
 formatter.result({
-  "duration": 27767270,
+  "duration": 125305797,
   "status": "passed"
 });
 formatter.match({
@@ -458,7 +458,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Price_Amount_with(String)"
 });
 formatter.result({
-  "duration": 563920034,
+  "duration": 501144067,
   "status": "passed"
 });
 formatter.match({
@@ -471,7 +471,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Name_with(String)"
 });
 formatter.result({
-  "duration": 217163324,
+  "duration": 255993897,
   "status": "passed"
 });
 formatter.match({
@@ -484,20 +484,20 @@ formatter.match({
   "location": "PositiveDef.user_fill_Email_with(String)"
 });
 formatter.result({
-  "duration": 313303467,
+  "duration": 438825245,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "08123456",
+      "val": "28123456",
       "offset": 29
     }
   ],
   "location": "PositiveDef.user_fill_Phone_Number_with(String)"
 });
 formatter.result({
-  "duration": 237836945,
+  "duration": 245302236,
   "status": "passed"
 });
 formatter.match({
@@ -510,7 +510,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_City_with(String)"
 });
 formatter.result({
-  "duration": 228703026,
+  "duration": 193862498,
   "status": "passed"
 });
 formatter.match({
@@ -523,7 +523,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Address_with(String)"
 });
 formatter.result({
-  "duration": 227892594,
+  "duration": 272429251,
   "status": "passed"
 });
 formatter.match({
@@ -536,49 +536,49 @@ formatter.match({
   "location": "PositiveDef.user_fill_Postal_Code_with(String)"
 });
 formatter.result({
-  "duration": 194506886,
+  "duration": 240331202,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_click_Checkout_button()"
 });
 formatter.result({
-  "duration": 175306259,
+  "duration": 111800042,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.order_Summary_page_should_be_appear()"
 });
 formatter.result({
-  "duration": 31537,
+  "duration": 1233926605,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.order_Summary_Amount_must_be_same_as_Shopping_Cart_Amount()"
 });
 formatter.result({
-  "duration": 27984,
+  "duration": 240001769,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.shipping_Details_must_be_same_as_Customer_Details()"
 });
 formatter.result({
-  "duration": 44224,
+  "duration": 716547239,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_click_Continue_button()"
 });
 formatter.result({
-  "duration": 40084,
+  "duration": 194862248,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_choose_Credit_Debit_Card_payment_method()"
 });
 formatter.result({
-  "duration": 41850,
+  "duration": 31097,
   "status": "passed"
 });
 formatter.match({
@@ -591,7 +591,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Card_Number_with(String)"
 });
 formatter.result({
-  "duration": 103535,
+  "duration": 103543,
   "status": "passed"
 });
 formatter.match({
@@ -604,7 +604,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Card_Expiry_Date_with(String)"
 });
 formatter.result({
-  "duration": 102786,
+  "duration": 107137,
   "status": "passed"
 });
 formatter.match({
@@ -617,42 +617,42 @@ formatter.match({
   "location": "PositiveDef.user_fill_Card_CVV_with(String)"
 });
 formatter.result({
-  "duration": 75851,
+  "duration": 105426,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_select_one_of_Promos_availables()"
 });
 formatter.result({
-  "duration": 34501,
+  "duration": 58235,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.amount_must_be_reduced_after_promo_applied()"
 });
 formatter.result({
-  "duration": 30529,
+  "duration": 38916,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.check_Customers_Detail()"
 });
 formatter.result({
-  "duration": 33588,
+  "duration": 49024,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_click_Pay_Now_button()"
 });
 formatter.result({
-  "duration": 32026,
+  "duration": 40775,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.check_if_time_still_left()"
 });
 formatter.result({
-  "duration": 32824,
+  "duration": 42981,
   "status": "passed"
 });
 formatter.match({
@@ -665,32 +665,32 @@ formatter.match({
   "location": "PositiveDef.user_fill_Password_with(String)"
 });
 formatter.result({
-  "duration": 99118,
+  "duration": 122751,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_click_Ok_button()"
 });
 formatter.result({
-  "duration": 33784,
+  "duration": 36872,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.transaction_is_finished()"
 });
 formatter.result({
-  "duration": 27195,
+  "duration": 52826,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_will_be_Navigate_to_Homepage_again()"
 });
 formatter.result({
-  "duration": 31312,
+  "duration": 47116,
   "status": "passed"
 });
 formatter.after({
-  "duration": 252851,
+  "duration": 288361,
   "status": "passed"
 });
 });

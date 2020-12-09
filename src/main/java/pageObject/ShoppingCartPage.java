@@ -29,6 +29,7 @@ public class ShoppingCartPage extends Base {
 	By cancelButton = By.xpath("//div[@class='cancel-btn'][contains(.,'cancel')]");
 
 	public void checkPage() throws InterruptedException {
+		waitVisibility(titleShoppingCartPage);
 		boolean isCartPageAppear = driver.findElements(titleShoppingCartPage).size() != 0;
 		Assert.assertEquals(isCartPageAppear, true);
 	}
@@ -42,27 +43,39 @@ public class ShoppingCartPage extends Base {
 	}
 
 	public void fillName(String name) throws InterruptedException {
-		inputField(nameField, name);
+		data.setName(name);
+		String strName = data.getName();
+		inputField(nameField, strName);
 	}
 
 	public void fillEmail(String email) throws InterruptedException {
-		inputField(emailField, email);
+		data.setEmail(email);
+		String strEmail = data.getEmail();
+		inputField(emailField, strEmail);
 	}
 
-	public void fillPhone(String phone) throws InterruptedException {
-		inputField(phoneField, phone);
+	public void fillPhone(String phone) throws InterruptedException {		
+		data.setPhone(phone);
+		String strPhone = data.getPhone();
+		inputField(phoneField, strPhone);
 	}
 
 	public void fillCity(String city) throws InterruptedException {
-		inputField(cityField, city);
+		data.setCity(city);
+		String strCity = data.getCity();
+		inputField(cityField, strCity);
 	}
 
 	public void fillAddress(String address) throws InterruptedException {
-		inputField(addressField, address);
+		data.setAddress(address);
+		String strAddress = data.getAddress();
+		inputField(addressField, strAddress);
 	}
 
 	public void fillPostalCode(String code) throws InterruptedException {
-		inputField(postalCodeField, code);
+		data.setCode(code);
+		String strCode = data.getCode();
+		inputField(postalCodeField, strCode);
 	}
 
 	public void clickCheckout() throws InterruptedException {

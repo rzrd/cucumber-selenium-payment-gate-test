@@ -7,6 +7,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import pageObject.Homepage;
+import pageObject.OrderSummaryPage;
 import pageObject.ShoppingCartPage;
 import utilities.Base;
 import utilities.ClassHelp;
@@ -18,6 +19,7 @@ public class PositiveDef {
 	Data data = new Data();
 	Homepage homepage = new Homepage(driver);
 	ShoppingCartPage cart = new ShoppingCartPage(driver);
+	OrderSummaryPage summary = new OrderSummaryPage(driver);
 
 
 	@Given("Initiate browser")
@@ -90,18 +92,22 @@ public class PositiveDef {
 
 	@When("^Order Summary page should be appear$")
 	public void order_Summary_page_should_be_appear() throws Throwable {
+		summary.checkPage();
 	}
 
 	@When("^Order Summary Amount must be same as Shopping Cart Amount$")
 	public void order_Summary_Amount_must_be_same_as_Shopping_Cart_Amount() throws Throwable {
+		summary.checkAmount();
 	}
 
 	@When("^Shipping Details must be same as Customer Details$")
 	public void shipping_Details_must_be_same_as_Customer_Details() throws Throwable {
+		summary.checkShippingDetails();
 	}
 
 	@When("^User click Continue button$")
 	public void user_click_Continue_button() throws Throwable {
+		summary.clickContinue();
 	}
 
 	@When("^User choose Credit/Debit Card payment method$")

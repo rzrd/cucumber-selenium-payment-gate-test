@@ -9,6 +9,39 @@ public class Data {
 	public static String takeScreenshot;
 	public static String email;
 	public static String price;
+	public static String name;
+	public static String phone;
+	public static String address;
+	public static String city;
+	public static String code;
+
+	public String getCity() {
+		return city;
+	}
+
+	public String getCode() {
+		return code;
+	}
+
+	public void setCity(String city) {
+		Data.city = city;
+	}
+
+	public void setCode(String code) {
+		Data.code = code;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public String getAddress() {
+		return address;
+	}
 
 	public String getPrice() {
 		return price;
@@ -41,7 +74,28 @@ public class Data {
 	public String getEmail() {
 		return email;
 	}
-	
+
+	public void setName(String name) {
+		Data.name = name;
+	}
+
+	public void setPhone(String phone) {		
+		String strPhone = phone.substring(0, 1);
+		String newPhone = strPhone.replace("0", "+62") + phone.substring(1);
+		if(strPhone.equals("0")) {
+			Data.phone = newPhone;
+			System.out.println(newPhone);
+		}
+		
+		if(!strPhone.equals("0")) {
+			Data.phone = phone;
+		}
+	}
+
+	public void setAddress(String address) {
+		Data.address = address;
+	}
+
 	public void setPrice(String price) {
 		Data.price = price;
 	}

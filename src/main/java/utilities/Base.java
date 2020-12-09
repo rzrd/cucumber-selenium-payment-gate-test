@@ -65,7 +65,7 @@ public class Base {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(by));
 	}
 
-	public void waitInisibility(By by) {
+	public void waitInvisibility(By by) {
 		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(60))
 				.pollingEvery(Duration.ofMillis(500));
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(by));
@@ -99,11 +99,13 @@ public class Base {
 	}
 
 	public void inputField(By element, String val) throws InterruptedException {
+		waitVisibility(element);
 		WebElement findElement = driver.findElement(element);
 		String actualText = "";
 		int attempts = 0;
 		while (attempts < 2) {
 			try {
+				findElement.sendKeys(Keys.chord(Keys.CONTROL, "a", Keys.DELETE));
 				findElement.sendKeys(val);
 				actualText = findElement.getAttribute("value");
 				if (actualText.contentEquals(val)) {
@@ -123,6 +125,7 @@ public class Base {
 	}
 	
 	public void inputAmount(By element, String val) throws InterruptedException {
+		waitVisibility(element);
 		WebElement findElement = driver.findElement(element);
 		String actualText = "";
 		int attempts = 0;
@@ -152,6 +155,12 @@ public class Base {
 	}
 
 	public String readText(By elementLocation) {
+		waitVisibility(elementLocation);
+		return driver.findElement(elementLocation).getText();
+	}
+	
+	public String readIframeText(By elementLocation) {
+		driver.switchTo().frame(0);
 		waitVisibility(elementLocation);
 		return driver.findElement(elementLocation).getText();
 	}

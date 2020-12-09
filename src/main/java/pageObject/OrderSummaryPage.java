@@ -1,8 +1,15 @@
 package pageObject;
 
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.asserts.SoftAssert;
 
 import utilities.Base;
 import utilities.Data;
@@ -16,7 +23,8 @@ public class OrderSummaryPage extends Base {
 	Data data = new Data();
 	
 	By titleOrderSummaryPage = By.xpath("//p[@class='text-page-title-content'][contains(.,'Order Summary')]");
-	By summaryAmountField = By.xpath("//span[@class='text-amount-amount']");
+	By closeFrame = By.xpath("//a[@class='header-back']");
+	By summaryAmountField = By.xpath("//span[contains(@class,'text-amount-amount')]");
 	By summaryAmountField2 = By.xpath("//td[@class='table-amount text-body']");
 	By shippingDetailTab = By.xpath("//span[contains(.,'shipping details')]");
 	By shippingNameField = By.xpath("(//div[@class='text-body'])[1]");
@@ -25,4 +33,61 @@ public class OrderSummaryPage extends Base {
 	By shippingAddressField = By.xpath("(//div[@class='text-body'])[4]");
 	By continueButton = By.xpath("//a[@class='button-main-content'][contains(.,'Continue')]");
 
+	public void checkPage() throws InterruptedException {
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
+		SoftAssert softAssert = new SoftAssert();
+		boolean isIframeAppear = driver.findElements(By.tagName("iframe")).size() != 0;
+		softAssert.assertTrue(isIframeAppear, "iFrame not appear");
+		
+		WebElement iframeElement = driver.findElement(By.tagName("iframe"));
+
+		driver.switchTo().frame(iframeElement);		
+		
+		boolean isSummaryPageAppear = driver.findElements(titleOrderSummaryPage).size() != 0;
+		softAssert.assertTrue(isSummaryPageAppear, "summary page not loaded");
+		
+		softAssert.assertAll();
+	}
+	
+	public void checkAmount() throws InterruptedException {
+		SoftAssert softAssert = new SoftAssert();
+		
+		String expectedAmount = data.getPrice();
+		String actualAmount = readText(summaryAmountField).replaceAll(",", "");
+		softAssert.assertEquals(actualAmount, expectedAmount, "Price not same");
+
+		String actualAmount2 = readText(summaryAmountField2).replaceAll(",", "");
+		softAssert.assertEquals(actualAmount2, expectedAmount, "Price not same");
+		
+		softAssert.assertAll();
+	}
+	
+	public void checkShippingDetails() throws InterruptedException {
+		click(shippingDetailTab);
+		
+		SoftAssert softAssert = new SoftAssert();
+		
+		String expectedName = data.getName();
+		String actualName = readText(shippingNameField);
+		softAssert.assertEquals(actualName, expectedName, "Name not same");
+		
+		String expectedPhone = data.getPhone();
+		String actualPhone = readText(shippingPhoneField);
+		softAssert.assertEquals(actualPhone, expectedPhone, "Phone not same");
+		
+		String expectedEmail = data.getEmail();
+		String actualEmail = readText(shippingEmailField);
+		softAssert.assertEquals(actualEmail, expectedEmail, "Email not same");
+		
+		String expectedAddress = data.getAddress() + " " + data.getCity() + " " + data.getCode();
+		String actualAddress = readText(shippingAddressField);
+		softAssert.assertEquals(actualAddress, expectedAddress, "Address not same");
+
+		softAssert.assertAll();
+	}
+	
+	public void clickContinue() throws InterruptedException {
+		click(continueButton);
+	}
 }
