@@ -19,6 +19,7 @@ public class Homepage extends Base {
 	By buyNowButton = By.xpath("//a[@class='btn buy'][contains(.,'BUY NOW')]");
 	By errorAlert = By.xpath("//div[@data-reactid='.0.0.0.2.0.1.0']");
 	By closeAlertButton = By.xpath("//div[@class='close']");
+	By homepageSuccessAlert = By.xpath("//div[@class='trans-status trans-success']");
 	
 	public void goToHomepage() throws InterruptedException {
 		reportLog("URL set:" + data.getUrl());
@@ -31,5 +32,11 @@ public class Homepage extends Base {
 	
 	public void clickBuyNowButton() throws InterruptedException {
 		click(buyNowButton);
+	}
+	
+	public void checkPurchaseSuccess() throws InterruptedException {
+		driver.switchTo().defaultContent();
+		boolean isTrxSuccessAlertAppear = driver.findElements(homepageSuccessAlert).size() != 0;
+		Assert.assertFalse(isTrxSuccessAlertAppear, "Verification & Transaction fail Alert appear");
 	}
 }

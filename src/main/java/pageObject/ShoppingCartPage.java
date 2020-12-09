@@ -1,5 +1,7 @@
 package pageObject;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -29,7 +31,7 @@ public class ShoppingCartPage extends Base {
 	By cancelButton = By.xpath("//div[@class='cancel-btn'][contains(.,'cancel')]");
 
 	public void checkPage() throws InterruptedException {
-		waitVisibility(titleShoppingCartPage);
+		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		boolean isCartPageAppear = driver.findElements(titleShoppingCartPage).size() != 0;
 		Assert.assertEquals(isCartPageAppear, true);
 	}
@@ -81,9 +83,5 @@ public class ShoppingCartPage extends Base {
 	public void clickCheckout() throws InterruptedException {
 		click(checkoutButton);
 	}
-
-//	public void fill() throws InterruptedException {
-//
-//	}
 
 }

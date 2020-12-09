@@ -30,7 +30,7 @@ public class OrderSummaryPage extends Base {
 	By continueButton = By.xpath("//a[@class='button-main-content'][contains(.,'Continue')]");
 
 	public void checkPage() throws InterruptedException {
-		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 		
 		SoftAssert softAssert = new SoftAssert();
 		boolean isIframeAppear = driver.findElements(By.tagName("iframe")).size() != 0;
@@ -42,6 +42,8 @@ public class OrderSummaryPage extends Base {
 		softAssert.assertTrue(isSummaryPageAppear, "summary page not loaded");
 		
 		softAssert.assertAll();
+		
+		//cd_frame_id 6dfdc1c4c2fd719b0a1c9f0082271458
 	}
 	
 	public void checkAmount() throws InterruptedException {

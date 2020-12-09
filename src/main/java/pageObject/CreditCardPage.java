@@ -1,9 +1,9 @@
 package pageObject;
 
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -34,9 +34,7 @@ public class CreditCardPage extends Base {
 	By cardCVVField = By.xpath("//input[@inputmode='numeric']");
 	By cardCVVError = By.xpath("//div[@class='input-group col-xs-5 error']");
 
-	By promoElement = By.xpath("//div[@class='input-group col-xs-12']");
-	By promoCheckBox = By.xpath("//input[@type='checkbox']");
-	By promoReduce = By.xpath("//span[@class='pull-right text-gray']");
+	By promoElement = By.xpath("//*[@id=\"application\"]/div[3]//form/div[4]/div[2]/div");
 
 	By creditCardEmailField = By.xpath("//input[@type='email']");
 	By creditCardPhoneField = By.xpath("//input[@maxlength='20']");
@@ -44,12 +42,13 @@ public class CreditCardPage extends Base {
 	By paynowButton = By.xpath("//a[@class='button-main-content'][contains(.,'Pay Now')]");
 
 	public void checkPage() throws InterruptedException {
+		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 		boolean isPaymentPageAppear = driver.findElements(titleCreditCardPage).size() != 0;
-		Assert.assertTrue(isPaymentPageAppear, "creadit card page not loaded");
+		Assert.assertTrue(isPaymentPageAppear, "credit card page not loaded");
 	}
 	
 	public void fillCardNumber(String cardNumber) throws InterruptedException {
-		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 		
 		WebElement cardNumberElement = driver.findElement(cardNumberField);
 		cardNumberElement.sendKeys(cardNumber);
@@ -74,20 +73,27 @@ public class CreditCardPage extends Base {
 
 	public void selectPromo() throws InterruptedException {
 		boolean isAnyPromo = driver.findElements(promoElement).size() != 0;
+		int sizePromo = driver.findElements(promoElement).size();
+
 		if (isAnyPromo) {
-			checkPromoAmount();
+			checkPromoAmount(sizePromo);
 		}
+		
+		String actualAmount = readText(amountField).replaceAll("[^0-9]+", "");
+		data.setPrice(actualAmount);
 	}
 	
-	public void checkPromoAmount() throws InterruptedException {
-		SoftAssert softAssert = new SoftAssert();
-		
-		List <WebElement> promoElements = driver.findElements(promoElement);
-		for(WebElement e : promoElements ) {
-			e.findElement(promoCheckBox).click();
+	public void checkPromoAmount(int sizePromo) throws InterruptedException {
+		for (int i = 0; i < sizePromo; i++) {
+			By promoCheckBox = By.xpath("(//input[@type='checkbox'])["+(1+i)+"]");
+			By promoReduce = By.xpath("(//span[@class='pull-right text-gray'])["+(1+i)+"]");
 			
-			String promo = e.findElement(promoReduce).getText().replaceAll("[^0-9]+", "");
-			System.out.println(promo);
+			JavascriptExecutor jse = (JavascriptExecutor)driver;
+			jse.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(promoReduce));
+			
+			driver.findElement(promoCheckBox).click();
+			
+			String promo = driver.findElement(promoReduce).getText().replaceAll("[^0-9]+", "");
 			int intPromo = Integer.parseInt(promo);
 			
 			String amount = data.getPrice();
@@ -97,23 +103,21 @@ public class CreditCardPage extends Base {
 			
 			String expectedAmount = Integer.toString(amountAfterPromoApplied);
 			String actualAmount = readText(amountField).replaceAll("[^0-9]+", "");
-			softAssert.assertEquals(actualAmount, expectedAmount, "amount promo not same");
+			Assert.assertEquals(actualAmount, expectedAmount, "amount promo not same");
 		}
-		softAssert.assertAll();
 	}
 
 	public void checkCustomerDetail() throws InterruptedException {
 		SoftAssert softAssert = new SoftAssert();
-		String actualEmail = driver.findElement(creditCardEmailField).getAttribute("placeholder");
+		String actualEmail = driver.findElement(creditCardEmailField).getAttribute("value");
 		String expectedEmail = data.getEmail();
 		softAssert.assertEquals(actualEmail, expectedEmail);
 		
-		String actualPhone = driver.findElement(creditCardPhoneField).getAttribute("placeholder");
+		String actualPhone = driver.findElement(creditCardPhoneField).getAttribute("value");
 		String expectedPhone = data.getPhone();
 		softAssert.assertEquals(actualPhone, expectedPhone);
 			
 		softAssert.assertAll();
-
 	}
 
 	public void clickPayNow() throws InterruptedException {
@@ -132,7 +136,6 @@ public class CreditCardPage extends Base {
 		softAssert.assertFalse(isCVVError, "wrong CVV code");
 		softAssert.assertFalse(isCardInvalid,"card is invalid");
 		softAssert.assertAll();
-		
 	}
 
 }

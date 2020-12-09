@@ -1,5 +1,7 @@
 package pageObject;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -20,6 +22,7 @@ public class SelectPaymentPage extends Base {
 	By creditCardButton = By.xpath("//a[@href='#/credit-card']");
 	
 	public void checkPage() throws InterruptedException {
+		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 		boolean isPaymentPageAppear = driver.findElements(titlePaymentPage).size() != 0;
 		Assert.assertTrue(isPaymentPageAppear, "payment page not loaded");
 	}

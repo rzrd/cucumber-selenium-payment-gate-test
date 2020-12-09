@@ -32,8 +32,7 @@ Feature: Purchasing Pillow using credit card
     And Check Customers Detail
     When User click Pay Now button
     And Transaction Verification page is appear
-    And Check if time still left
-    And User fill Password with "<password>"
+		And User fill Password with "<password>"
     And User click Ok button
     Then Transaction should be finished
     And User will be Navigate to Homepage again

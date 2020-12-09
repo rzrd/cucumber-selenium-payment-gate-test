@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="13.613976">
-    <testcase classname="Purchasing Pillow using credit card" name="Successfull payment flow" time="13.613976">
-        <failure message="java.lang.AssertionError: The following asserts failed:&#10;&#9;amount promo not same expected [29990] but found [30000],&#10;&#9;amount promo not same expected [29990] but found [30000]&#10;&#9;at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)&#10;&#9;at pageObject.CreditCardPage.checkPromoAmount(CreditCardPage.java:102)&#10;&#9;at pageObject.CreditCardPage.selectPromo(CreditCardPage.java:78)&#10;&#9;at stepDefinitions.PositiveDef.user_select_one_of_Promos_availables(PositiveDef.java:148)&#10;&#9;at ✽.And User select one of Promos availables(Positive.feature:31)&#10;">
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="15.368748">
+    <testcase classname="Purchasing Pillow using credit card" name="Successfull payment flow" time="15.368748">
+        <failure message="org.openqa.selenium.NoSuchWindowException: no such window&#10;  (Session info: chrome=87.0.4280.88)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'kominfobinar-PORTEGE-Z930', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-126-generic', java.version: '11.0.9.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /tmp/.com.google.Chrome.O36Ulp}, goog:chromeOptions: {debuggerAddress: localhost:46477}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: bbc73c9405afefdcd41c8a001416d527&#10;*** Element info: {Using=xpath, value=//input[@type='password']}&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#10;&#9;at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)&#10;&#9;at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)&#10;&#9;at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)&#10;&#9;at utilities.Base.waitVisibility(Base.java:65)&#10;&#9;at utilities.Base.inputField(Base.java:102)&#10;&#9;at pageObject.VerificationPage.fillPassword(VerificationPage.java:57)&#10;&#9;at stepDefinitions.PositiveDef.user_fill_Password_with(PositiveDef.java:170)&#10;&#9;at ✽.And User fill Password with &quot;112233&quot;(Positive.feature:35)&#10;">
             <![CDATA[Given Initiate browser......................................................passed
 Given Navigate to Midtrans Demo homepage....................................passed
 When User click Buy Now button..............................................passed
@@ -24,25 +24,46 @@ And Credit Card Detail page is appear.......................................pass
 And User fill Card Number with "4811111111111114"...........................passed
 And User fill Card Expiry Date with "12/20".................................passed
 And User fill Card CVV with "123"...........................................passed
-And User select one of Promos availables....................................failed
-And Check Customers Detail..................................................skipped
-When User click Pay Now button..............................................skipped
-And Transaction Verification page is appear.................................skipped
-And Check if time still left................................................skipped
-And User fill Password with "112233"........................................skipped
+And User select one of Promos availables....................................passed
+And Check Customers Detail..................................................passed
+When User click Pay Now button..............................................passed
+And Transaction Verification page is appear.................................passed
+And User fill Password with "112233"........................................failed
 And User click Ok button....................................................skipped
 Then Transaction should be finished.........................................skipped
 And User will be Navigate to Homepage again.................................skipped
 
 StackTrace:
-java.lang.AssertionError: The following asserts failed:
-	amount promo not same expected [29990] but found [30000],
-	amount promo not same expected [29990] but found [30000]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at pageObject.CreditCardPage.checkPromoAmount(CreditCardPage.java:102)
-	at pageObject.CreditCardPage.selectPromo(CreditCardPage.java:78)
-	at stepDefinitions.PositiveDef.user_select_one_of_Promos_availables(PositiveDef.java:148)
-	at ✽.And User select one of Promos availables(Positive.feature:31)
+org.openqa.selenium.NoSuchWindowException: no such window
+  (Session info: chrome=87.0.4280.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'kominfobinar-PORTEGE-Z930', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-126-generic', java.version: '11.0.9.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /tmp/.com.google.Chrome.O36Ulp}, goog:chromeOptions: {debuggerAddress: localhost:46477}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: bbc73c9405afefdcd41c8a001416d527
+*** Element info: {Using=xpath, value=//input[@type='password']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at utilities.Base.waitVisibility(Base.java:65)
+	at utilities.Base.inputField(Base.java:102)
+	at pageObject.VerificationPage.fillPassword(VerificationPage.java:57)
+	at stepDefinitions.PositiveDef.user_fill_Password_with(PositiveDef.java:170)
+	at ✽.And User fill Password with "112233"(Positive.feature:35)
 ]]>
         </failure>
     </testcase>

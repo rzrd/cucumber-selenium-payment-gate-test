@@ -29,7 +29,6 @@ Feature: Purchasing Pillow using credit card
     And Check Customers Detail
     When User click Pay Now button
     And Transaction Verification page is appear
-    And Check if time still left
     And User fill Password with "<password>"
     And User click Ok button
     Then Transaction should be finished
@@ -41,7 +40,7 @@ Feature: Purchasing Pillow using credit card
     Given Initiate browser # PositiveDef.initiate_browser()
 
   @positiveTest @successfulFlow
-  Scenario Outline: Successfull payment flow                      # Positive.feature:44
+  Scenario Outline: Successfull payment flow                      # Positive.feature:43
     Given Navigate to Midtrans Demo homepage                      # PositiveDef.navigate_to_Midtrans_Demo_homepage()
     When User click Buy Now button                                # PositiveDef.user_click_Buy_Now_button()
     And Shopping Cart page is appear                              # PositiveDef.shopping_Cart_page_should_be_appear()
@@ -64,20 +63,41 @@ Feature: Purchasing Pillow using credit card
     And User fill Card Expiry Date with "12/20"                   # PositiveDef.user_fill_Card_Expiry_Date_with(String)
     And User fill Card CVV with "123"                             # PositiveDef.user_fill_Card_CVV_with(String)
     And User select one of Promos availables                      # PositiveDef.user_select_one_of_Promos_availables()
-      java.lang.AssertionError: The following asserts failed:
-      	amount promo not same expected [29990] but found [30000],
-      	amount promo not same expected [29990] but found [30000]
-      	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-      	at pageObject.CreditCardPage.checkPromoAmount(CreditCardPage.java:102)
-      	at pageObject.CreditCardPage.selectPromo(CreditCardPage.java:78)
-      	at stepDefinitions.PositiveDef.user_select_one_of_Promos_availables(PositiveDef.java:148)
-      	at ✽.And User select one of Promos availables(Positive.feature:31)
-
     And Check Customers Detail                                    # PositiveDef.check_Customers_Detail()
     When User click Pay Now button                                # PositiveDef.user_click_Pay_Now_button()
     And Transaction Verification page is appear                   # PositiveDef.transaction_verification_page_is_appear()
-    And Check if time still left                                  # PositiveDef.check_if_time_still_left()
     And User fill Password with "112233"                          # PositiveDef.user_fill_Password_with(String)
+      org.openqa.selenium.NoSuchWindowException: no such window
+        (Session info: chrome=87.0.4280.88)
+      Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+      System info: host: 'kominfobinar-PORTEGE-Z930', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-126-generic', java.version: '11.0.9.1'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /tmp/.com.google.Chrome.O36Ulp}, goog:chromeOptions: {debuggerAddress: localhost:46477}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+      Session ID: bbc73c9405afefdcd41c8a001416d527
+      *** Element info: {Using=xpath, value=//input[@type='password']}
+      	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+      	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+      	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+      	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+      	at utilities.Base.waitVisibility(Base.java:65)
+      	at utilities.Base.inputField(Base.java:102)
+      	at pageObject.VerificationPage.fillPassword(VerificationPage.java:57)
+      	at stepDefinitions.PositiveDef.user_fill_Password_with(PositiveDef.java:170)
+      	at ✽.And User fill Password with "112233"(Positive.feature:35)
+
     And User click Ok button                                      # PositiveDef.user_click_Ok_button()
     Then Transaction should be finished                           # PositiveDef.transaction_is_finished()
     And User will be Navigate to Homepage again                   # PositiveDef.user_will_be_Navigate_to_Homepage_again()

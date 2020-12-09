@@ -153,31 +153,26 @@ formatter.step({
 });
 formatter.step({
   "line": 35,
-  "name": "Check if time still left",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 36,
   "name": "User fill Password with \"\u003cpassword\u003e\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 37,
+  "line": 36,
   "name": "User click Ok button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 38,
+  "line": 37,
   "name": "Transaction should be finished",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 39,
+  "line": 38,
   "name": "User will be Navigate to Homepage again",
   "keyword": "And "
 });
 formatter.examples({
-  "line": 42,
+  "line": 41,
   "name": "",
   "description": "",
   "id": "purchasing-pillow-using-credit-card;successfull-payment-flow;",
@@ -196,7 +191,7 @@ formatter.examples({
         "cvv",
         "password"
       ],
-      "line": 43,
+      "line": 42,
       "id": "purchasing-pillow-using-credit-card;successfull-payment-flow;;1"
     },
     {
@@ -213,18 +208,18 @@ formatter.examples({
         "123",
         "112233"
       ],
-      "line": 44,
+      "line": 43,
       "id": "purchasing-pillow-using-credit-card;successfull-payment-flow;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 3699618,
+  "duration": 3149021,
   "status": "passed"
 });
 formatter.before({
-  "duration": 299234,
+  "duration": 160991,
   "status": "passed"
 });
 formatter.background({
@@ -243,11 +238,11 @@ formatter.match({
   "location": "PositiveDef.initiate_browser()"
 });
 formatter.result({
-  "duration": 1408973020,
+  "duration": 1497747104,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 44,
+  "line": 43,
   "name": "Successfull payment flow",
   "description": "",
   "id": "purchasing-pillow-using-credit-card;successfull-payment-flow;;2",
@@ -421,11 +416,6 @@ formatter.step({
 });
 formatter.step({
   "line": 35,
-  "name": "Check if time still left",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 36,
   "name": "User fill Password with \"112233\"",
   "matchedColumns": [
     10
@@ -433,17 +423,17 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 37,
+  "line": 36,
   "name": "User click Ok button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 38,
+  "line": 37,
   "name": "Transaction should be finished",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 39,
+  "line": 38,
   "name": "User will be Navigate to Homepage again",
   "keyword": "And "
 });
@@ -451,21 +441,21 @@ formatter.match({
   "location": "PositiveDef.navigate_to_Midtrans_Demo_homepage()"
 });
 formatter.result({
-  "duration": 2703442945,
+  "duration": 1797399555,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_click_Buy_Now_button()"
 });
 formatter.result({
-  "duration": 157789674,
+  "duration": 204915779,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.shopping_Cart_page_should_be_appear()"
 });
 formatter.result({
-  "duration": 139027730,
+  "duration": 29123487,
   "status": "passed"
 });
 formatter.match({
@@ -478,7 +468,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Price_Amount_with(String)"
 });
 formatter.result({
-  "duration": 441313070,
+  "duration": 616805575,
   "status": "passed"
 });
 formatter.match({
@@ -491,7 +481,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Name_with(String)"
 });
 formatter.result({
-  "duration": 320273195,
+  "duration": 253784405,
   "status": "passed"
 });
 formatter.match({
@@ -504,7 +494,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Email_with(String)"
 });
 formatter.result({
-  "duration": 260286320,
+  "duration": 214737810,
   "status": "passed"
 });
 formatter.match({
@@ -517,7 +507,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Phone_Number_with(String)"
 });
 formatter.result({
-  "duration": 215939243,
+  "duration": 226381761,
   "status": "passed"
 });
 formatter.match({
@@ -530,7 +520,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_City_with(String)"
 });
 formatter.result({
-  "duration": 234012868,
+  "duration": 173993851,
   "status": "passed"
 });
 formatter.match({
@@ -543,7 +533,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Address_with(String)"
 });
 formatter.result({
-  "duration": 203864545,
+  "duration": 197917275,
   "status": "passed"
 });
 formatter.match({
@@ -556,63 +546,63 @@ formatter.match({
   "location": "PositiveDef.user_fill_Postal_Code_with(String)"
 });
 formatter.result({
-  "duration": 241253194,
+  "duration": 191760113,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_click_Checkout_button()"
 });
 formatter.result({
-  "duration": 109795033,
+  "duration": 157885221,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.order_Summary_page_should_be_appear()"
 });
 formatter.result({
-  "duration": 4102349096,
+  "duration": 1118855628,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.order_Summary_Amount_must_be_same_as_Shopping_Cart_Amount()"
 });
 formatter.result({
-  "duration": 174642676,
+  "duration": 221341009,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.shipping_Details_must_be_same_as_Customer_Details()"
 });
 formatter.result({
-  "duration": 474019657,
+  "duration": 613331228,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_click_Continue_button()"
 });
 formatter.result({
-  "duration": 193523948,
+  "duration": 212938568,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.payment_method_list_page_should_be_appear()"
 });
 formatter.result({
-  "duration": 22871194,
+  "duration": 23641009,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_choose_Credit_Debit_Card_payment_method()"
 });
 formatter.result({
-  "duration": 260875844,
+  "duration": 281415572,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.credit_card_detail_page_should_be_appear()"
 });
 formatter.result({
-  "duration": 17118997,
+  "duration": 19334955,
   "status": "passed"
 });
 formatter.match({
@@ -625,7 +615,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Card_Number_with(String)"
 });
 formatter.result({
-  "duration": 262002892,
+  "duration": 245378803,
   "status": "passed"
 });
 formatter.match({
@@ -638,7 +628,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Card_Expiry_Date_with(String)"
 });
 formatter.result({
-  "duration": 97466498,
+  "duration": 118481044,
   "status": "passed"
 });
 formatter.match({
@@ -651,40 +641,36 @@ formatter.match({
   "location": "PositiveDef.user_fill_Card_CVV_with(String)"
 });
 formatter.result({
-  "duration": 213615925,
+  "duration": 225514393,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_select_one_of_Promos_availables()"
 });
 formatter.result({
-  "duration": 1113628410,
-  "error_message": "java.lang.AssertionError: The following asserts failed:\n\tamount promo not same expected [29990] but found [30000],\n\tamount promo not same expected [29990] but found [30000]\n\tat org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)\n\tat pageObject.CreditCardPage.checkPromoAmount(CreditCardPage.java:102)\n\tat pageObject.CreditCardPage.selectPromo(CreditCardPage.java:78)\n\tat stepDefinitions.PositiveDef.user_select_one_of_Promos_availables(PositiveDef.java:148)\n\tat ✽.And User select one of Promos availables(Positive.feature:31)\n",
-  "status": "failed"
+  "duration": 599305426,
+  "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.check_Customers_Detail()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 53089616,
+  "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_click_Pay_Now_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4248142486,
+  "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.transaction_verification_page_is_appear()"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "PositiveDef.check_if_time_still_left()"
-});
-formatter.result({
-  "status": "skipped"
+  "duration": 47272984,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -696,7 +682,9 @@ formatter.match({
   "location": "PositiveDef.user_fill_Password_with(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1467182194,
+  "error_message": "org.openqa.selenium.NoSuchWindowException: no such window\n  (Session info: chrome\u003d87.0.4280.88)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027kominfobinar-PORTEGE-Z930\u0027, ip: \u0027127.0.1.1\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00274.15.0-126-generic\u0027, java.version: \u002711.0.9.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /tmp/.com.google.Chrome.O36Ulp}, goog:chromeOptions: {debuggerAddress: localhost:46477}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: bbc73c9405afefdcd41c8a001416d527\n*** Element info: {Using\u003dxpath, value\u003d//input[@type\u003d\u0027password\u0027]}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\n\tat utilities.Base.waitVisibility(Base.java:65)\n\tat utilities.Base.inputField(Base.java:102)\n\tat pageObject.VerificationPage.fillPassword(VerificationPage.java:57)\n\tat stepDefinitions.PositiveDef.user_fill_Password_with(PositiveDef.java:170)\n\tat ✽.And User fill Password with \"112233\"(Positive.feature:35)\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "PositiveDef.user_click_Ok_button()"
@@ -717,7 +705,7 @@ formatter.result({
   "status": "skipped"
 });
 formatter.after({
-  "duration": 241890985,
+  "duration": 307761382,
   "status": "passed"
 });
 });

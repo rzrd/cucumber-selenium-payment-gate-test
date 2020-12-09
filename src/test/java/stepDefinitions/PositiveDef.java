@@ -11,6 +11,7 @@ import pageObject.Homepage;
 import pageObject.OrderSummaryPage;
 import pageObject.SelectPaymentPage;
 import pageObject.ShoppingCartPage;
+import pageObject.VerificationPage;
 import utilities.Base;
 import utilities.ClassHelp;
 import utilities.Data;
@@ -24,6 +25,7 @@ public class PositiveDef {
 	OrderSummaryPage summary = new OrderSummaryPage(driver);
 	SelectPaymentPage payment = new SelectPaymentPage(driver);
 	CreditCardPage cardDetail = new CreditCardPage(driver);
+	VerificationPage verification = new VerificationPage(driver);
 
 	@Given("Initiate browser")
 	public void initiate_browser() throws Throwable {
@@ -36,7 +38,7 @@ public class PositiveDef {
 		base.reportLog("Driver set: " + driver);
 		driver.manage().window().maximize();
 	}
-	
+
 	@Given("^Navigate to Midtrans Demo homepage$")
 	public void navigate_to_Midtrans_Demo_homepage() throws Throwable {
 		data.setUrl(ClassHelp.getEnv("url"));
@@ -86,7 +88,7 @@ public class PositiveDef {
 	@Given("^User fill Postal Code with \"([^\"]*)\"$")
 	public void user_fill_Postal_Code_with(String code) throws Throwable {
 		cart.fillPostalCode(code);
-	}	
+	}
 
 	@When("^User click Checkout button$")
 	public void user_click_Checkout_button() throws Throwable {
@@ -112,7 +114,7 @@ public class PositiveDef {
 	public void user_click_Continue_button() throws Throwable {
 		summary.clickContinue();
 	}
-	
+
 	@When("^Payment Method List page is appear$")
 	public void payment_method_list_page_should_be_appear() throws Throwable {
 		payment.checkPage();
@@ -122,7 +124,7 @@ public class PositiveDef {
 	public void user_choose_Credit_Debit_Card_payment_method() throws Throwable {
 		payment.selectCreditCardPayment();
 	}
-	
+
 	@Given("^Credit Card Detail page is appear$")
 	public void credit_card_detail_page_should_be_appear() throws Throwable {
 		cardDetail.checkPage();
@@ -157,33 +159,30 @@ public class PositiveDef {
 	public void user_click_Pay_Now_button() throws Throwable {
 		cardDetail.clickPayNow();
 	}
-	
+
 	@When("^Transaction Verification page is appear$")
 	public void transaction_verification_page_is_appear() throws Throwable {
+		verification.checkPage();
 	}
 
-	@When("^Check if time still left$")
-	public void check_if_time_still_left() throws Throwable {
-	}
-
-//	@When("^User fill Password with (\\d+)$")
-//	public void user_fill_Password_with(int arg1) throws Throwable {
-//	}
-	
 	@When("^User fill Password with \"([^\"]*)\"$")
-	public void user_fill_Password_with(String arg1) throws Throwable {
+	public void user_fill_Password_with(String password) throws Throwable {
+		verification.fillPassword(password);
 	}
 
 	@When("^User click Ok button$")
 	public void user_click_Ok_button() throws Throwable {
+		verification.clickOkButton();
 	}
 
 	@Then("^Transaction should be finished$")
 	public void transaction_is_finished() throws Throwable {
+		verification.checkTrxSuccess();
 	}
 
 	@Then("^User will be Navigate to Homepage again$")
 	public void user_will_be_Navigate_to_Homepage_again() throws Throwable {
+		homepage.checkPurchaseSuccess();
 	}
 
 }
