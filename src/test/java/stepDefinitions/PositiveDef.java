@@ -38,6 +38,7 @@ public class PositiveDef {
 
 	@When("^User click Buy Now button$")
 	public void user_click_Buy_Now_button() throws Throwable {
+		homepage.clickBuyNowButton();
 	}
 
 	@When("^Shopping Cart page should be appear$")
