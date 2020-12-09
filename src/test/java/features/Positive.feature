@@ -10,28 +10,28 @@ Feature: Purchasing Pillow using credit card
     Given Navigate to Midtrans Demo homepage
     When User click Buy Now button
     And Shopping Cart page should be appear
-    And User fill Price Amount with <amount>
-    And User fill Name with <name>
-    And User fill Email with <email>
-    And User fill Phone Number with <phone>
-    And user fill City with <city>
-    And User fill Address with <address>
-    And User fill Postal Code with <code>
+    And User fill Price Amount with "<amount>"
+    And User fill Name with "<name>"
+    And User fill Email with "<email>"
+    And User fill Phone Number with "<phone>"
+    And user fill City with "<city>"
+    And User fill Address with "<address>"
+    And User fill Postal Code with "<code>"
     And User click Checkout button
     And Order Summary page should be appear
     And Order Summary Amount must be same as Shopping Cart Amount
     And Shipping Details must be same as Customer Details
     And User click Continue button
     And User choose Credit/Debit Card payment method
-    And User fill Card Number with <card>
-    And User fill Card Expiry Date with <date>
-    And User fill Card CVV with <cvv>
+    And User fill Card Number with "<card>"
+    And User fill Card Expiry Date with "<date>"
+    And User fill Card CVV with "<cvv>"
     And User select one of Promos availables
     And Amount must be reduced after promo applied
     And Check Customers Detail
     When User click Pay Now button
     And Check if time still left
-    And User fill Password with <password>
+    And User fill Password with "<password>"
     And User click Ok button
     Then Transaction is finished
     And User will be Navigate to Homepage again

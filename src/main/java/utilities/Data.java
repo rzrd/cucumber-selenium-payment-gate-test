@@ -8,6 +8,11 @@ public class Data {
 	public static String closeBrowserEveryScenario;
 	public static String takeScreenshot;
 	public static String email;
+	public static String price;
+
+	public String getPrice() {
+		return price;
+	}
 
 	public String getUrl() {
 		return url;
@@ -35,6 +40,10 @@ public class Data {
 
 	public String getEmail() {
 		return email;
+	}
+	
+	public void setPrice(String price) {
+		Data.price = price;
 	}
 
 	public void setUrl(String url) {
@@ -67,4 +76,5 @@ public class Data {
 	public void setEmail(String email) {
 		Data.email = email;
 	}
+
 }

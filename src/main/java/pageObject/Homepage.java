@@ -16,7 +16,6 @@ public class Homepage extends Base {
 	
 	Data data = new Data();
 	
-	By submitButton = By.xpath("//button[@id='submitbtn']");
 	By buyNowButton = By.xpath("//a[@class='btn buy'][contains(.,'BUY NOW')]");
 	By errorAlert = By.xpath("//div[@data-reactid='.0.0.0.2.0.1.0']");
 	By closeAlertButton = By.xpath("//div[@class='close']");

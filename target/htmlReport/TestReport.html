@@ -51,7 +51,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Dec 8, 2020 09:04:07 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Dec 9, 2020 12:21:10 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -78,8 +78,8 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@negativeTest</a></li>
-					<li><a href='#'>@wrongEmail</a></li>
+					<li><a href='#'>@positiveTest</a></li>
+					<li><a href='#'>@successfulFlow</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -148,7 +148,7 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>29</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -172,7 +172,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Purchasing Pillow using credit card</span>
-						<span class='test-time'>Dec 8, 2020 09:04:08 PM</span>
+						<span class='test-time'>Dec 9, 2020 12:21:11 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -183,22 +183,130 @@
     <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
 <div class='scenariooutline node' test-id='2' status='pass'>
-    <span class='duration right label'>0h 0m 3s+572ms</span>
+    <span class='duration right label'>0h 0m 11s+195ms</span>
     <div class="bdd-test">
-        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> ScenarioOutline: Wrong Input Email</div>
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> ScenarioOutline: Successfull payment flow</div>
     </div>
     <ul class='steps'>
         <li test-id='3' class='node scenario pass' status='pass'>
-            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Wrong Input Email</div>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Successfull payment flow</div>
             <ul class='gc steps'>
                     <li test-id='4' class='gc given pass' status='pass'>
                         <h6 class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given Initiate browser</h6>
-                            <div class="node-step">Driver set: ChromeDriver: chrome on LINUX (a843e2ff03aa1a870c802efa7cecf5ac)</div>
+                            <div class="node-step">Driver set: ChromeDriver: chrome on LINUX (dd29c0d4bfef5825a74fe2042f49aa1b)</div>
                             <div class="node-step">passed</div>
                     </li>
                     <li test-id='5' class='gc given pass' status='pass'>
                         <h6 class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given Navigate to Midtrans Demo homepage</h6>
                             <div class="node-step">URL set:https://demo.midtrans.com/</div>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='6' class='gc when pass' status='pass'>
+                        <h6 class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When User click Buy Now button</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='7' class='gc and pass' status='pass'>
+                        <h6 class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Shopping Cart page should be appear</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='8' class='gc and pass' status='pass'>
+                        <h6 class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And User fill Price Amount with "30000"</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='9' class='gc and pass' status='pass'>
+                        <h6 class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And User fill Name with "rozi"</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='10' class='gc and pass' status='pass'>
+                        <h6 class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And User fill Email with "rozi@email.com"</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='11' class='gc and pass' status='pass'>
+                        <h6 class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And User fill Phone Number with "08123456"</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='12' class='gc and pass' status='pass'>
+                        <h6 class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And user fill City with "jakarta"</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='13' class='gc and pass' status='pass'>
+                        <h6 class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And User fill Address with "jl. sukses"</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='14' class='gc and pass' status='pass'>
+                        <h6 class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And User fill Postal Code with "12620"</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='15' class='gc and pass' status='pass'>
+                        <h6 class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And User click Checkout button</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='16' class='gc and pass' status='pass'>
+                        <h6 class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Order Summary page should be appear</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='17' class='gc and pass' status='pass'>
+                        <h6 class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Order Summary Amount must be same as Shopping Cart Amount</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='18' class='gc and pass' status='pass'>
+                        <h6 class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Shipping Details must be same as Customer Details</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='19' class='gc and pass' status='pass'>
+                        <h6 class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And User click Continue button</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='20' class='gc and pass' status='pass'>
+                        <h6 class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And User choose Credit/Debit Card payment method</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='21' class='gc and pass' status='pass'>
+                        <h6 class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And User fill Card Number with "4811111111111113"</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='22' class='gc and pass' status='pass'>
+                        <h6 class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And User fill Card Expiry Date with "12/20"</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='23' class='gc and pass' status='pass'>
+                        <h6 class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And User fill Card CVV with "123"</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='24' class='gc and pass' status='pass'>
+                        <h6 class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And User select one of Promos availables</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='25' class='gc and pass' status='pass'>
+                        <h6 class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Amount must be reduced after promo applied</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='26' class='gc and pass' status='pass'>
+                        <h6 class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Check Customers Detail</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='27' class='gc when pass' status='pass'>
+                        <h6 class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When User click Pay Now button</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='28' class='gc and pass' status='pass'>
+                        <h6 class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Check if time still left</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='29' class='gc and pass' status='pass'>
+                        <h6 class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And User fill Password with "112233"</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='30' class='gc and pass' status='pass'>
+                        <h6 class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And User click Ok button</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='31' class='gc then pass' status='pass'>
+                        <h6 class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Transaction is finished</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='32' class='gc and pass' status='pass'>
+                        <h6 class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And User will be Navigate to Homepage again</h6>
                             <div class="node-step">passed</div>
                     </li>
             </ul>
@@ -247,7 +355,7 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@negativeTest</span>
+						<span class='category-name'>@positiveTest</span>
 						<span class='category-status right'>
 						<span class='label pass'>2</span>
 						</span>
@@ -269,13 +377,13 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Dec 8, 2020 09:04:08 PM</td>
+										<td>Dec 9, 2020 12:21:11 PM</td>
 										<td class='linked' test-id='1'>Purchasing Pillow using credit card</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Dec 8, 2020 09:04:08 PM</td>
-										<td class='linked' test-id='3'>Purchasing Pillow using credit card.Wrong Input Email.Wrong Input Email</td>
+										<td>Dec 9, 2020 12:21:11 PM</td>
+										<td class='linked' test-id='3'>Purchasing Pillow using credit card.Successfull payment flow.Successfull payment flow</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -285,7 +393,7 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@wrongEmail</span>
+						<span class='category-name'>@successfulFlow</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
 						</span>
@@ -307,8 +415,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Dec 8, 2020 09:04:08 PM</td>
-										<td class='linked' test-id='3'>Purchasing Pillow using credit card.Wrong Input Email.Wrong Input Email</td>
+										<td>Dec 9, 2020 12:21:11 PM</td>
+										<td class='linked' test-id='3'>Purchasing Pillow using credit card.Successfull payment flow.Successfull payment flow</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -367,8 +475,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Dec 8, 2020 09:04:08 PM</td>
-										<td class='linked' test-id='3'>Purchasing Pillow using credit card.Wrong Input Email.Wrong Input Email</td>
+										<td>Dec 9, 2020 12:21:11 PM</td>
+										<td class='linked' test-id='3'>Purchasing Pillow using credit card.Successfull payment flow.Successfull payment flow</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -405,25 +513,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>2</div>
+					<div class='panel-lead'>29</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Dec 8, 2020 09:04:07 PM</div>
+					<div class='panel-lead'>Dec 9, 2020 12:21:10 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Dec 8, 2020 09:04:11 PM</div>
+			 		<div class='panel-lead'>Dec 9, 2020 12:21:22 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 4s+59ms</div>
+					<div class='panel-lead'>0h 0m 11s+617ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -467,7 +575,7 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@negativeTest</td>
+							<td>@positiveTest</td>
 							<td>2</td>
 							<td>0</td>
 							<td>0</td>
@@ -476,7 +584,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@wrongEmail</td>
+							<td>@successfulFlow</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -513,8 +621,8 @@
 				infoChild: 0,
 				debugChild: 0,
 				exceptionsChild: 0,
-				grandChildCount: 2,
-				passGrandChild: 2,
+				grandChildCount: 29,
+				passGrandChild: 29,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -527,7 +635,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "Purchasing Pillow using credit card":3.572
+			        "Purchasing Pillow using credit card":11.195
 			};
 		</script>
 		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/c23457b/v3html/js/extent.js' type='text/javascript'></script>

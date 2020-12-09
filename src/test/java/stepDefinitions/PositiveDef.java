@@ -7,6 +7,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import pageObject.Homepage;
+import pageObject.ShoppingCartPage;
 import utilities.Base;
 import utilities.ClassHelp;
 import utilities.Data;
@@ -16,6 +17,7 @@ public class PositiveDef {
 	Base base = new Base();
 	Data data = new Data();
 	Homepage homepage = new Homepage(driver);
+	ShoppingCartPage cart = new ShoppingCartPage(driver);
 
 
 	@Given("Initiate browser")
@@ -43,38 +45,47 @@ public class PositiveDef {
 
 	@When("^Shopping Cart page should be appear$")
 	public void shopping_Cart_page_should_be_appear() throws Throwable {
+		cart.checkPage();
 	}
 
-	@When("^User fill Price Amount with (\\d+)$")
-	public void user_fill_Price_Amount_with(int arg1) throws Throwable {
+	@Given("^User fill Price Amount with \"([^\"]*)\"$")
+	public void user_fill_Price_Amount_with(String amount) throws Throwable {
+		cart.fillAmount(amount);
 	}
 
-	@When("^User fill Name with rozi$")
-	public void user_fill_Name_with_rozi() throws Throwable {
+	@Given("^User fill Name with \"([^\"]*)\"$")
+	public void user_fill_Name_with(String name) throws Throwable {
+		cart.fillName(name);
 	}
 
-	@When("^User fill Email with rozi@email\\.com$")
-	public void user_fill_Email_with_rozi_email_com() throws Throwable {
+	@Given("^User fill Email with \"([^\"]*)\"$")
+	public void user_fill_Email_with(String email) throws Throwable {
+		cart.fillEmail(email);
 	}
 
-	@When("^User fill Phone Number with (\\d+)$")
-	public void user_fill_Phone_Number_with(int arg1) throws Throwable {
+	@Given("^User fill Phone Number with \"([^\"]*)\"$")
+	public void user_fill_Phone_Number_with(String phone) throws Throwable {
+		cart.fillPhone(phone);
 	}
 
-	@When("^user fill City with jakarta$")
-	public void user_fill_City_with_jakarta() throws Throwable {
+	@Given("^user fill City with \"([^\"]*)\"$")
+	public void user_fill_City_with(String city) throws Throwable {
+		cart.fillCity(city);
 	}
 
-	@When("^User fill Address with jl\\. sukses$")
-	public void user_fill_Address_with_jl_sukses() throws Throwable {
+	@Given("^User fill Address with \"([^\"]*)\"$")
+	public void user_fill_Address_with(String address) throws Throwable {
+		cart.fillAddress(address);
 	}
 
-	@When("^User fill Postal Code with (\\d+)$")
-	public void user_fill_Postal_Code_with(int arg1) throws Throwable {
-	}
+	@Given("^User fill Postal Code with \"([^\"]*)\"$")
+	public void user_fill_Postal_Code_with(String code) throws Throwable {
+		cart.fillPostalCode(code);
+	}	
 
 	@When("^User click Checkout button$")
 	public void user_click_Checkout_button() throws Throwable {
+		cart.clickCheckout();
 	}
 
 	@When("^Order Summary page should be appear$")
@@ -97,16 +108,16 @@ public class PositiveDef {
 	public void user_choose_Credit_Debit_Card_payment_method() throws Throwable {
 	}
 
-	@When("^User fill Card Number with (\\d+)$")
-	public void user_fill_Card_Number_with(int arg1) throws Throwable {
+	@Given("^User fill Card Number with \"([^\"]*)\"$")
+	public void user_fill_Card_Number_with(String arg1) throws Throwable {
 	}
 
-	@When("^User fill Card Expiry Date with (\\d+)/(\\d+)$")
-	public void user_fill_Card_Expiry_Date_with(int arg1, int arg2) throws Throwable {
+	@Given("^User fill Card Expiry Date with \"([^\"]*)\"$")
+	public void user_fill_Card_Expiry_Date_with(String arg1) throws Throwable {
 	}
 
-	@When("^User fill Card CVV with (\\d+)$")
-	public void user_fill_Card_CVV_with(int arg1) throws Throwable {
+	@Given("^User fill Card CVV with \"([^\"]*)\"$")
+	public void user_fill_Card_CVV_with(String arg1) throws Throwable {
 	}
 
 	@When("^User select one of Promos availables$")
@@ -129,8 +140,12 @@ public class PositiveDef {
 	public void check_if_time_still_left() throws Throwable {
 	}
 
-	@When("^User fill Password with (\\d+)$")
-	public void user_fill_Password_with(int arg1) throws Throwable {
+//	@When("^User fill Password with (\\d+)$")
+//	public void user_fill_Password_with(int arg1) throws Throwable {
+//	}
+	
+	@When("^User fill Password with \"([^\"]*)\"$")
+	public void user_fill_Password_with(String arg1) throws Throwable {
 	}
 
 	@When("^User click Ok button$")

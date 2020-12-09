@@ -114,7 +114,31 @@ public class Base {
 				}
 			} catch (Exception e) {
 				System.out.println("Wrong input, try to re-input.");
-				driver.findElement(element).sendKeys(Keys.chord(Keys.CONTROL, "a", Keys.DELETE));
+				findElement.sendKeys(Keys.chord(Keys.CONTROL, "a", Keys.DELETE));
+			}
+			attempts++;
+		}
+		actualText = findElement.getAttribute("value");
+		Assert.assertEquals(actualText, val, "wrong input");
+	}
+	
+	public void inputAmount(By element, String val) throws InterruptedException {
+		WebElement findElement = driver.findElement(element);
+		String actualText = "";
+		int attempts = 0;
+		while (attempts < 2) {
+			try {
+				findElement.sendKeys(Keys.chord(Keys.CONTROL, "a"));
+				findElement.sendKeys(val);
+				actualText = findElement.getAttribute("value");
+				if (actualText.contentEquals(val)) {
+					break;
+				}
+				if (!actualText.contentEquals(val)) {
+					throw new Exception();
+				}
+			} catch (Exception e) {
+				System.out.println("Wrong input, try to re-input.");
 			}
 			attempts++;
 		}

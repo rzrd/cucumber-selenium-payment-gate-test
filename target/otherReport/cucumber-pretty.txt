@@ -1,23 +1,70 @@
-@negativeTest
+@positiveTest
 Feature: Purchasing Pillow using credit card
   User want purchasing pillow using credit card with SUCCESSFULL payment flow
 
-  @wrongEmail
-  Scenario Outline: Wrong Input Email        # Negative.feature:9
+  @successfulFlow
+  Scenario Outline: Successfull payment flow                      # Positive.feature:9
     Given Navigate to Midtrans Demo homepage
+    When User click Buy Now button
+    And Shopping Cart page should be appear
+    And User fill Price Amount with "<amount>"
+    And User fill Name with "<name>"
+    And User fill Email with "<email>"
+    And User fill Phone Number with "<phone>"
+    And user fill City with "<city>"
+    And User fill Address with "<address>"
+    And User fill Postal Code with "<code>"
+    And User click Checkout button
+    And Order Summary page should be appear
+    And Order Summary Amount must be same as Shopping Cart Amount
+    And Shipping Details must be same as Customer Details
+    And User click Continue button
+    And User choose Credit/Debit Card payment method
+    And User fill Card Number with "<card>"
+    And User fill Card Expiry Date with "<date>"
+    And User fill Card CVV with "<cvv>"
+    And User select one of Promos availables
+    And Amount must be reduced after promo applied
+    And Check Customers Detail
+    When User click Pay Now button
+    And Check if time still left
+    And User fill Password with "<password>"
+    And User click Ok button
+    Then Transaction is finished
+    And User will be Navigate to Homepage again
 
-    #When User click Buy Now button
-    #And Shopping Cart page should be appear
-    #And User fill Price Amount with <amount>
-    #And User fill Name with <name>
-    #But User try to fill Email with invalid format <email>
-    #And Click Checkout button
-    #Then Error Alert should be appear
     Examples: 
 
-  Background:              # Negative.feature:5
+  Background:              # Positive.feature:5
     Given Initiate browser # PositiveDef.initiate_browser()
 
-  @negativeTest @wrongEmail
-  Scenario Outline: Wrong Input Email        # Negative.feature:21
-    Given Navigate to Midtrans Demo homepage # PositiveDef.navigate_to_Midtrans_Demo_homepage()
+  @positiveTest @successfulFlow
+  Scenario Outline: Successfull payment flow                      # Positive.feature:42
+    Given Navigate to Midtrans Demo homepage                      # PositiveDef.navigate_to_Midtrans_Demo_homepage()
+    When User click Buy Now button                                # PositiveDef.user_click_Buy_Now_button()
+    And Shopping Cart page should be appear                       # PositiveDef.shopping_Cart_page_should_be_appear()
+    And User fill Price Amount with "30000"                       # PositiveDef.user_fill_Price_Amount_with(String)
+    And User fill Name with "rozi"                                # PositiveDef.user_fill_Name_with(String)
+    And User fill Email with "rozi@email.com"                     # PositiveDef.user_fill_Email_with(String)
+    And User fill Phone Number with "08123456"                    # PositiveDef.user_fill_Phone_Number_with(String)
+    And user fill City with "jakarta"                             # PositiveDef.user_fill_City_with(String)
+    And User fill Address with "jl. sukses"                       # PositiveDef.user_fill_Address_with(String)
+    And User fill Postal Code with "12620"                        # PositiveDef.user_fill_Postal_Code_with(String)
+    And User click Checkout button                                # PositiveDef.user_click_Checkout_button()
+    And Order Summary page should be appear                       # PositiveDef.order_Summary_page_should_be_appear()
+    And Order Summary Amount must be same as Shopping Cart Amount # PositiveDef.order_Summary_Amount_must_be_same_as_Shopping_Cart_Amount()
+    And Shipping Details must be same as Customer Details         # PositiveDef.shipping_Details_must_be_same_as_Customer_Details()
+    And User click Continue button                                # PositiveDef.user_click_Continue_button()
+    And User choose Credit/Debit Card payment method              # PositiveDef.user_choose_Credit_Debit_Card_payment_method()
+    And User fill Card Number with "4811111111111113"             # PositiveDef.user_fill_Card_Number_with(String)
+    And User fill Card Expiry Date with "12/20"                   # PositiveDef.user_fill_Card_Expiry_Date_with(String)
+    And User fill Card CVV with "123"                             # PositiveDef.user_fill_Card_CVV_with(String)
+    And User select one of Promos availables                      # PositiveDef.user_select_one_of_Promos_availables()
+    And Amount must be reduced after promo applied                # PositiveDef.amount_must_be_reduced_after_promo_applied()
+    And Check Customers Detail                                    # PositiveDef.check_Customers_Detail()
+    When User click Pay Now button                                # PositiveDef.user_click_Pay_Now_button()
+    And Check if time still left                                  # PositiveDef.check_if_time_still_left()
+    And User fill Password with "112233"                          # PositiveDef.user_fill_Password_with(String)
+    And User click Ok button                                      # PositiveDef.user_click_Ok_button()
+    Then Transaction is finished                                  # PositiveDef.transaction_is_finished()
+    And User will be Navigate to Homepage again                   # PositiveDef.user_will_be_Navigate_to_Homepage_again()
