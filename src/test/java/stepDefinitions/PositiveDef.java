@@ -175,12 +175,7 @@ public class PositiveDef {
 		verification.clickOkButton();
 	}
 
-	@Then("^Transaction should be finished$")
-	public void transaction_is_finished() throws Throwable {
-		verification.checkTrxSuccess();
-	}
-
-	@Then("^User will be Navigate to Homepage again$")
+	@Then("^Transaction should be finished User will be Navigate to Homepage again$")
 	public void user_will_be_Navigate_to_Homepage_again() throws Throwable {
 		homepage.checkPurchaseSuccess();
 	}

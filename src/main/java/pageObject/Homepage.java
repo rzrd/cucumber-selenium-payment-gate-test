@@ -1,5 +1,7 @@
 package pageObject;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -41,6 +43,7 @@ public class Homepage extends Base {
 	}
 	
 	public void checkErrorAlert() throws InterruptedException {
+		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		boolean isErrorAlertAppear = driver.findElements(errorAlert).size() != 0;
 		Assert.assertTrue(isErrorAlertAppear, "No error alert appear");
 	}

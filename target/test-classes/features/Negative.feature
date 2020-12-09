@@ -37,7 +37,9 @@ Feature: Purchasing Pillow using credit card
     And Order Summary Amount must be same as Shopping Cart Amount
     And Shipping Details must be same as Customer Details
     And User click Continue button
+    And Payment Method List page is appear
     And User choose Credit/Debit Card payment method
+    And Credit Card Detail page is appear
     But User try to fill Credit Card number with wrong number "<card>"
     And User try to fill Credit Card Expiry Date with wrong date "<date>"
     And User try to fill Credit Card CVV with wrong cvv "<cvv>"
@@ -65,13 +67,16 @@ Feature: Purchasing Pillow using credit card
     And Order Summary Amount must be same as Shopping Cart Amount
     And Shipping Details must be same as Customer Details
     And User click Continue button
+    And Payment Method List page is appear
     And User choose Credit/Debit Card payment method
+    And Credit Card Detail page is appear
     And User fill Card Number with "<card>"
     And User fill Card Expiry Date with "<date>"
     And User fill Card CVV with "<cvv>"
     And User select one of Promos availables
     And Check Customers Detail
     And User click Pay Now button
+    And Transaction Verification page is appear
     But User try to fill Password with wrong password "<password>"
     And User click Ok button
     Then Transaction should be failed
@@ -97,13 +102,16 @@ Feature: Purchasing Pillow using credit card
     And Order Summary Amount must be same as Shopping Cart Amount
     And Shipping Details must be same as Customer Details
     And User click Continue button
+    And Payment Method List page is appear
     And User choose Credit/Debit Card payment method
+    And Credit Card Detail page is appear
     But User fill Card Number with "<declinedNum>"
     And User fill Card Expiry Date with "<date>"
     And User fill Card CVV with "<cvv>"
     And User select one of Promos availables
     And Check Customers Detail
     And User click Pay Now button
+    And Transaction Verification page is appear
     And User fill Password with "<password>"
     And User click Ok button
     Then Transaction should be failed

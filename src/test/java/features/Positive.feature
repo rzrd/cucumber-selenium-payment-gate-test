@@ -34,8 +34,7 @@ Feature: Purchasing Pillow using credit card
     And Transaction Verification page is appear
 		And User fill Password with "<password>"
     And User click Ok button
-    Then Transaction should be finished
-    And User will be Navigate to Homepage again
+    Then Transaction should be finished User will be Navigate to Homepage again
     
     
     Examples: 
