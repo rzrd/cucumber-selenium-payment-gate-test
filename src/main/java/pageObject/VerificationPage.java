@@ -69,7 +69,13 @@ public class VerificationPage extends Base {
 	public void checkTrxSuccess() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 		boolean isTrxSuccessAlertAppear = driver.findElements(trxSuccessAlert).size() != 0;
-		Assert.assertTrue(isTrxSuccessAlertAppear, "Verification & Transaction fail Alert appear");
+		Assert.assertTrue(isTrxSuccessAlertAppear, "Verification & Transaction success Alert not appear");
+	}
+	
+	public void checkTrxFailed() throws InterruptedException {
+		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+		boolean isTrxFailedAlertAppear = driver.findElements(trxFailedAlert).size() != 0;
+		Assert.assertTrue(isTrxFailedAlertAppear, "Verification & Transaction failed Alert not appear");
 	}
 
 }

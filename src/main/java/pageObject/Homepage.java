@@ -39,4 +39,9 @@ public class Homepage extends Base {
 		boolean isTrxSuccessAlertAppear = driver.findElements(homepageSuccessAlert).size() != 0;
 		Assert.assertFalse(isTrxSuccessAlertAppear, "Verification & Transaction fail Alert appear");
 	}
+	
+	public void checkErrorAlert() throws InterruptedException {
+		boolean isErrorAlertAppear = driver.findElements(errorAlert).size() != 0;
+		Assert.assertTrue(isErrorAlertAppear, "No error alert appear");
+	}
 }

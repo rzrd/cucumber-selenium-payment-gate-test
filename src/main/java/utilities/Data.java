@@ -84,7 +84,6 @@ public class Data {
 		String newPhone = strPhone.replace("0", "+62") + phone.substring(1);
 		if(strPhone.equals("0")) {
 			Data.phone = newPhone;
-			System.out.println(newPhone);
 		}
 		
 		if(!strPhone.equals("0")) {

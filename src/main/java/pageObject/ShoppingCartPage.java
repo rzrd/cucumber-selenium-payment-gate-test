@@ -83,5 +83,9 @@ public class ShoppingCartPage extends Base {
 	public void clickCheckout() throws InterruptedException {
 		click(checkoutButton);
 	}
+	
+	public void fillInvalidEmail(String invalidEmail) throws InterruptedException {
+		inputField(emailField, invalidEmail);
+	}
 
 }

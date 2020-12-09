@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="15.368748">
-    <testcase classname="Purchasing Pillow using credit card" name="Successfull payment flow" time="15.368748">
-        <failure message="org.openqa.selenium.NoSuchWindowException: no such window&#10;  (Session info: chrome=87.0.4280.88)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'kominfobinar-PORTEGE-Z930', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-126-generic', java.version: '11.0.9.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /tmp/.com.google.Chrome.O36Ulp}, goog:chromeOptions: {debuggerAddress: localhost:46477}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: bbc73c9405afefdcd41c8a001416d527&#10;*** Element info: {Using=xpath, value=//input[@type='password']}&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#10;&#9;at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)&#10;&#9;at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)&#10;&#9;at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)&#10;&#9;at utilities.Base.waitVisibility(Base.java:65)&#10;&#9;at utilities.Base.inputField(Base.java:102)&#10;&#9;at pageObject.VerificationPage.fillPassword(VerificationPage.java:57)&#10;&#9;at stepDefinitions.PositiveDef.user_fill_Password_with(PositiveDef.java:170)&#10;&#9;at ✽.And User fill Password with &quot;112233&quot;(Positive.feature:35)&#10;">
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="15.450491">
+    <testcase classname="Purchasing Pillow using credit card" name="Wrong Input Password" time="15.450491">
+        <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@type='password']&quot;}&#10;  (Session info: chrome=87.0.4280.88)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'kominfobinar-PORTEGE-Z930', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-126-generic', java.version: '11.0.9.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /tmp/.com.google.Chrome.UWb4mO}, goog:chromeOptions: {debuggerAddress: localhost:40117}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 8c0eeb55d5f0b19c7e5b831c006df76a&#10;*** Element info: {Using=xpath, value=//input[@type='password']}&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#10;&#9;at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)&#10;&#9;at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)&#10;&#9;at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)&#10;&#9;at utilities.Base.waitVisibility(Base.java:65)&#10;&#9;at utilities.Base.inputField(Base.java:102)&#10;&#9;at pageObject.VerificationPage.fillPassword(VerificationPage.java:57)&#10;&#9;at stepDefinitions.PositiveDef.user_fill_Password_with(PositiveDef.java:170)&#10;&#9;at ✽.And User fill Password with &quot;112233&quot;(Negative.feature:107)&#10;">
             <![CDATA[Given Initiate browser......................................................passed
 Given Navigate to Midtrans Demo homepage....................................passed
 When User click Buy Now button..............................................passed
 And Shopping Cart page is appear............................................passed
-And User fill Price Amount with "30000".....................................passed
+And User fill Price Amount with "10000".....................................passed
 And User fill Name with "rozi"..............................................passed
 And User fill Email with "rozi@email.com"...................................passed
-And User fill Phone Number with "28123456"..................................passed
+And User fill Phone Number with "08123456"..................................passed
 And user fill City with "jakarta"...........................................passed
 And User fill Address with "jl. sukses".....................................passed
 And User fill Postal Code with "12620"......................................passed
@@ -18,29 +18,26 @@ And Order Summary page is appear............................................pass
 And Order Summary Amount must be same as Shopping Cart Amount...............passed
 And Shipping Details must be same as Customer Details.......................passed
 And User click Continue button..............................................passed
-And Payment Method List page is appear......................................passed
 And User choose Credit/Debit Card payment method............................passed
-And Credit Card Detail page is appear.......................................passed
-And User fill Card Number with "4811111111111114"...........................passed
+But User fill Card Number with "4911111111111113"...........................passed
 And User fill Card Expiry Date with "12/20".................................passed
 And User fill Card CVV with "123"...........................................passed
 And User select one of Promos availables....................................passed
 And Check Customers Detail..................................................passed
-When User click Pay Now button..............................................passed
-And Transaction Verification page is appear.................................passed
+And User click Pay Now button...............................................passed
 And User fill Password with "112233"........................................failed
 And User click Ok button....................................................skipped
-Then Transaction should be finished.........................................skipped
-And User will be Navigate to Homepage again.................................skipped
+Then Transaction should be failed...........................................skipped
 
 StackTrace:
-org.openqa.selenium.NoSuchWindowException: no such window
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@type='password']"}
   (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'kominfobinar-PORTEGE-Z930', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-126-generic', java.version: '11.0.9.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /tmp/.com.google.Chrome.O36Ulp}, goog:chromeOptions: {debuggerAddress: localhost:46477}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: bbc73c9405afefdcd41c8a001416d527
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /tmp/.com.google.Chrome.UWb4mO}, goog:chromeOptions: {debuggerAddress: localhost:40117}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 8c0eeb55d5f0b19c7e5b831c006df76a
 *** Element info: {Using=xpath, value=//input[@type='password']}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -63,7 +60,7 @@ Session ID: bbc73c9405afefdcd41c8a001416d527
 	at utilities.Base.inputField(Base.java:102)
 	at pageObject.VerificationPage.fillPassword(VerificationPage.java:57)
 	at stepDefinitions.PositiveDef.user_fill_Password_with(PositiveDef.java:170)
-	at ✽.And User fill Password with "112233"(Positive.feature:35)
+	at ✽.And User fill Password with "112233"(Negative.feature:107)
 ]]>
         </failure>
     </testcase>

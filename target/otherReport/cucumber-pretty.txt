@@ -1,9 +1,9 @@
-@positiveTest
+@negativeTest
 Feature: Purchasing Pillow using credit card
   User want purchasing pillow using credit card with SUCCESSFULL payment flow
 
-  @successfulFlow
-  Scenario Outline: Successfull payment flow                      # Positive.feature:9
+  @declinedCard
+  Scenario Outline: Wrong Input Password                          # Negative.feature:84
     Given Navigate to Midtrans Demo homepage
     When User click Buy Now button
     And Shopping Cart page is appear
@@ -19,35 +19,31 @@ Feature: Purchasing Pillow using credit card
     And Order Summary Amount must be same as Shopping Cart Amount
     And Shipping Details must be same as Customer Details
     And User click Continue button
-    And Payment Method List page is appear
     And User choose Credit/Debit Card payment method
-    And Credit Card Detail page is appear
-    And User fill Card Number with "<card>"
+    But User fill Card Number with "<declinedNum>"
     And User fill Card Expiry Date with "<date>"
     And User fill Card CVV with "<cvv>"
     And User select one of Promos availables
     And Check Customers Detail
-    When User click Pay Now button
-    And Transaction Verification page is appear
+    And User click Pay Now button
     And User fill Password with "<password>"
     And User click Ok button
-    Then Transaction should be finished
-    And User will be Navigate to Homepage again
+    Then Transaction should be failed
 
     Examples: 
 
-  Background:              # Positive.feature:5
+  Background:              # Negative.feature:5
     Given Initiate browser # PositiveDef.initiate_browser()
 
-  @positiveTest @successfulFlow
-  Scenario Outline: Successfull payment flow                      # Positive.feature:43
+  @negativeTest @declinedCard
+  Scenario Outline: Wrong Input Password                          # Negative.feature:113
     Given Navigate to Midtrans Demo homepage                      # PositiveDef.navigate_to_Midtrans_Demo_homepage()
     When User click Buy Now button                                # PositiveDef.user_click_Buy_Now_button()
     And Shopping Cart page is appear                              # PositiveDef.shopping_Cart_page_should_be_appear()
-    And User fill Price Amount with "30000"                       # PositiveDef.user_fill_Price_Amount_with(String)
+    And User fill Price Amount with "10000"                       # PositiveDef.user_fill_Price_Amount_with(String)
     And User fill Name with "rozi"                                # PositiveDef.user_fill_Name_with(String)
     And User fill Email with "rozi@email.com"                     # PositiveDef.user_fill_Email_with(String)
-    And User fill Phone Number with "28123456"                    # PositiveDef.user_fill_Phone_Number_with(String)
+    And User fill Phone Number with "08123456"                    # PositiveDef.user_fill_Phone_Number_with(String)
     And user fill City with "jakarta"                             # PositiveDef.user_fill_City_with(String)
     And User fill Address with "jl. sukses"                       # PositiveDef.user_fill_Address_with(String)
     And User fill Postal Code with "12620"                        # PositiveDef.user_fill_Postal_Code_with(String)
@@ -56,24 +52,22 @@ Feature: Purchasing Pillow using credit card
     And Order Summary Amount must be same as Shopping Cart Amount # PositiveDef.order_Summary_Amount_must_be_same_as_Shopping_Cart_Amount()
     And Shipping Details must be same as Customer Details         # PositiveDef.shipping_Details_must_be_same_as_Customer_Details()
     And User click Continue button                                # PositiveDef.user_click_Continue_button()
-    And Payment Method List page is appear                        # PositiveDef.payment_method_list_page_should_be_appear()
     And User choose Credit/Debit Card payment method              # PositiveDef.user_choose_Credit_Debit_Card_payment_method()
-    And Credit Card Detail page is appear                         # PositiveDef.credit_card_detail_page_should_be_appear()
-    And User fill Card Number with "4811111111111114"             # PositiveDef.user_fill_Card_Number_with(String)
+    But User fill Card Number with "4911111111111113"             # PositiveDef.user_fill_Card_Number_with(String)
     And User fill Card Expiry Date with "12/20"                   # PositiveDef.user_fill_Card_Expiry_Date_with(String)
     And User fill Card CVV with "123"                             # PositiveDef.user_fill_Card_CVV_with(String)
     And User select one of Promos availables                      # PositiveDef.user_select_one_of_Promos_availables()
     And Check Customers Detail                                    # PositiveDef.check_Customers_Detail()
-    When User click Pay Now button                                # PositiveDef.user_click_Pay_Now_button()
-    And Transaction Verification page is appear                   # PositiveDef.transaction_verification_page_is_appear()
+    And User click Pay Now button                                 # PositiveDef.user_click_Pay_Now_button()
     And User fill Password with "112233"                          # PositiveDef.user_fill_Password_with(String)
-      org.openqa.selenium.NoSuchWindowException: no such window
+      org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@type='password']"}
         (Session info: chrome=87.0.4280.88)
+      For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
       Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
       System info: host: 'kominfobinar-PORTEGE-Z930', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-126-generic', java.version: '11.0.9.1'
       Driver info: org.openqa.selenium.chrome.ChromeDriver
-      Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /tmp/.com.google.Chrome.O36Ulp}, goog:chromeOptions: {debuggerAddress: localhost:46477}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-      Session ID: bbc73c9405afefdcd41c8a001416d527
+      Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /tmp/.com.google.Chrome.UWb4mO}, goog:chromeOptions: {debuggerAddress: localhost:40117}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+      Session ID: 8c0eeb55d5f0b19c7e5b831c006df76a
       *** Element info: {Using=xpath, value=//input[@type='password']}
       	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
       	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -96,8 +90,7 @@ Feature: Purchasing Pillow using credit card
       	at utilities.Base.inputField(Base.java:102)
       	at pageObject.VerificationPage.fillPassword(VerificationPage.java:57)
       	at stepDefinitions.PositiveDef.user_fill_Password_with(PositiveDef.java:170)
-      	at ✽.And User fill Password with "112233"(Positive.feature:35)
+      	at ✽.And User fill Password with "112233"(Negative.feature:107)
 
     And User click Ok button                                      # PositiveDef.user_click_Ok_button()
-    Then Transaction should be finished                           # PositiveDef.transaction_is_finished()
-    And User will be Navigate to Homepage again                   # PositiveDef.user_will_be_Navigate_to_Homepage_again()
+    Then Transaction should be failed                             # NegativeDef.transaction_should_be_failed()

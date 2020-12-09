@@ -42,8 +42,6 @@ public class OrderSummaryPage extends Base {
 		softAssert.assertTrue(isSummaryPageAppear, "summary page not loaded");
 		
 		softAssert.assertAll();
-		
-		//cd_frame_id 6dfdc1c4c2fd719b0a1c9f0082271458
 	}
 	
 	public void checkAmount() throws InterruptedException {

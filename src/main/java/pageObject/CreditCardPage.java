@@ -40,19 +40,21 @@ public class CreditCardPage extends Base {
 	By creditCardPhoneField = By.xpath("//input[@maxlength='20']");
 
 	By paynowButton = By.xpath("//a[@class='button-main-content'][contains(.,'Pay Now')]");
+	
+	By titlePaymentPage = By.xpath("//p[@class='text-page-title-content'][contains(.,'Select Payment')]");
 
 	public void checkPage() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 		boolean isPaymentPageAppear = driver.findElements(titleCreditCardPage).size() != 0;
 		Assert.assertTrue(isPaymentPageAppear, "credit card page not loaded");
 	}
-	
+
 	public void fillCardNumber(String cardNumber) throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
-		
+
 		WebElement cardNumberElement = driver.findElement(cardNumberField);
 		cardNumberElement.sendKeys(cardNumber);
-		
+
 		String actualInput = cardNumberElement.getAttribute("value").replaceAll("[^0-9]+", "");
 		String expectedInput = cardNumber;
 		Assert.assertEquals(actualInput, expectedInput, "wrong input card number");
@@ -61,7 +63,7 @@ public class CreditCardPage extends Base {
 	public void fillCardExpiry(String expiryDate) throws InterruptedException {
 		WebElement cardNumberElement = driver.findElement(cardExpiryField);
 		cardNumberElement.sendKeys(expiryDate);
-		
+
 		String actualInput = cardNumberElement.getAttribute("value").replaceAll(" ", "");
 		String expectedInput = expiryDate;
 		Assert.assertEquals(actualInput, expectedInput, "wrong input expiry date");
@@ -78,29 +80,29 @@ public class CreditCardPage extends Base {
 		if (isAnyPromo) {
 			checkPromoAmount(sizePromo);
 		}
-		
+
 		String actualAmount = readText(amountField).replaceAll("[^0-9]+", "");
 		data.setPrice(actualAmount);
 	}
-	
+
 	public void checkPromoAmount(int sizePromo) throws InterruptedException {
 		for (int i = 0; i < sizePromo; i++) {
-			By promoCheckBox = By.xpath("(//input[@type='checkbox'])["+(1+i)+"]");
-			By promoReduce = By.xpath("(//span[@class='pull-right text-gray'])["+(1+i)+"]");
-			
-			JavascriptExecutor jse = (JavascriptExecutor)driver;
+			By promoCheckBox = By.xpath("(//input[@type='checkbox'])[" + (1 + i) + "]");
+			By promoReduce = By.xpath("(//span[@class='pull-right text-gray'])[" + (1 + i) + "]");
+
+			JavascriptExecutor jse = (JavascriptExecutor) driver;
 			jse.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(promoReduce));
-			
+
 			driver.findElement(promoCheckBox).click();
-			
+
 			String promo = driver.findElement(promoReduce).getText().replaceAll("[^0-9]+", "");
 			int intPromo = Integer.parseInt(promo);
-			
+
 			String amount = data.getPrice();
 			int intAmount = Integer.parseInt(amount);
-			
+
 			int amountAfterPromoApplied = intAmount - intPromo;
-			
+
 			String expectedAmount = Integer.toString(amountAfterPromoApplied);
 			String actualAmount = readText(amountField).replaceAll("[^0-9]+", "");
 			Assert.assertEquals(actualAmount, expectedAmount, "amount promo not same");
@@ -112,11 +114,11 @@ public class CreditCardPage extends Base {
 		String actualEmail = driver.findElement(creditCardEmailField).getAttribute("value");
 		String expectedEmail = data.getEmail();
 		softAssert.assertEquals(actualEmail, expectedEmail);
-		
+
 		String actualPhone = driver.findElement(creditCardPhoneField).getAttribute("value");
 		String expectedPhone = data.getPhone();
 		softAssert.assertEquals(actualPhone, expectedPhone);
-			
+
 		softAssert.assertAll();
 	}
 
@@ -124,18 +126,36 @@ public class CreditCardPage extends Base {
 		boolean isCardInvalid = driver.findElements(invalidCardAlert).size() != 0;
 		boolean isCardNumberError = driver.findElements(cardNumberError).size() != 0;
 		boolean isExpiryDateError = driver.findElements(cardExpiryError).size() != 0;
-		boolean isCVVError = driver.findElements(cardCVVError).size() != 0;
-		
-		if (!isCardNumberError || !isExpiryDateError || !isCVVError || !isCardInvalid) {
+
+		if (!isCardNumberError || !isExpiryDateError || !isCardInvalid) {
 			click(paynowButton);
 		}
-		
+
 		SoftAssert softAssert = new SoftAssert();
 		softAssert.assertFalse(isCardNumberError, "card number not available");
 		softAssert.assertFalse(isExpiryDateError, "wrong expiry date");
-		softAssert.assertFalse(isCVVError, "wrong CVV code");
-		softAssert.assertFalse(isCardInvalid,"card is invalid");
+		softAssert.assertFalse(isCardInvalid, "card is invalid");
 		softAssert.assertAll();
+	}
+
+	public void checkErrorNotification() throws InterruptedException {
+		boolean isCardInvalid = driver.findElements(invalidCardAlert).size() != 0;
+		boolean isCardNumberError = driver.findElements(cardNumberError).size() != 0;
+		boolean isExpiryDateError = driver.findElements(cardExpiryError).size() != 0;
+		
+		SoftAssert softAssert = new SoftAssert();
+		softAssert.assertTrue(isCardNumberError, "card number should be error");
+		softAssert.assertTrue(isExpiryDateError, "expiry date should be error");
+		softAssert.assertTrue(isCardInvalid, "card should be invalid");
+		softAssert.assertAll();
+	}
+
+	public void tryClickPayNow() throws InterruptedException {
+		click(paynowButton);
+		
+		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+		boolean isPaymentPageAppear = driver.findElements(titlePaymentPage).size() != 0;
+		Assert.assertFalse(isPaymentPageAppear, "valiation failed, button has been clicked");
 	}
 
 }
