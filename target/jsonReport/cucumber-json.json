@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4096764200,
+              "duration": 3932158709,
               "status": "passed"
             },
             "line": 6,
@@ -27,7 +27,7 @@
         "before": [
           {
             "result": {
-              "duration": 4340681,
+              "duration": 3768216,
               "status": "passed"
             },
             "match": {
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 178161,
+              "duration": 202503,
               "status": "passed"
             },
             "match": {
@@ -47,11 +47,11 @@
         "line": 21,
         "name": "Wrong Input Email",
         "description": "",
-        "id": "purchasing-pillow-using-credit-card;wrong-input-email;;2",
+        "id": "purchasing-pillow-using-credit-card-with-failed-payment-flow;wrong-input-email;;2",
         "after": [
           {
             "result": {
-              "duration": 181525,
+              "duration": 185644,
               "status": "passed"
             },
             "match": {
@@ -64,7 +64,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4003656530,
+              "duration": 2134133971,
               "status": "passed"
             },
             "line": 10,
@@ -76,7 +76,7 @@
           },
           {
             "result": {
-              "duration": 394913433,
+              "duration": 352198413,
               "status": "passed"
             },
             "line": 11,
@@ -88,7 +88,7 @@
           },
           {
             "result": {
-              "duration": 24762135,
+              "duration": 21382457,
               "status": "passed"
             },
             "line": 12,
@@ -100,7 +100,7 @@
           },
           {
             "result": {
-              "duration": 351072589,
+              "duration": 470070120,
               "status": "passed"
             },
             "line": 13,
@@ -121,7 +121,7 @@
           },
           {
             "result": {
-              "duration": 267127282,
+              "duration": 149414704,
               "status": "passed"
             },
             "line": 14,
@@ -142,7 +142,7 @@
           },
           {
             "result": {
-              "duration": 204946853,
+              "duration": 187605186,
               "status": "passed"
             },
             "line": 15,
@@ -163,7 +163,7 @@
           },
           {
             "result": {
-              "duration": 343852831,
+              "duration": 296055581,
               "status": "passed"
             },
             "line": 16,
@@ -175,7 +175,7 @@
           },
           {
             "result": {
-              "duration": 47812230,
+              "duration": 84939066,
               "status": "passed"
             },
             "line": 17,
@@ -206,7 +206,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3332404122,
+              "duration": 3363395058,
               "status": "passed"
             },
             "line": 6,
@@ -222,7 +222,7 @@
         "before": [
           {
             "result": {
-              "duration": 120551,
+              "duration": 153481,
               "status": "passed"
             },
             "match": {
@@ -231,7 +231,7 @@
           },
           {
             "result": {
-              "duration": 162988,
+              "duration": 158965,
               "status": "passed"
             },
             "match": {
@@ -242,11 +242,11 @@
         "line": 51,
         "name": "Wrong Input Credit Card Details",
         "description": "",
-        "id": "purchasing-pillow-using-credit-card;wrong-input-credit-card-details;;2",
+        "id": "purchasing-pillow-using-credit-card-with-failed-payment-flow;wrong-input-credit-card-details;;2",
         "after": [
           {
             "result": {
-              "duration": 249723,
+              "duration": 182123,
               "status": "passed"
             },
             "match": {
@@ -259,7 +259,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2574943516,
+              "duration": 1982951382,
               "status": "passed"
             },
             "line": 25,
@@ -271,7 +271,7 @@
           },
           {
             "result": {
-              "duration": 321699438,
+              "duration": 386854595,
               "status": "passed"
             },
             "line": 26,
@@ -283,7 +283,7 @@
           },
           {
             "result": {
-              "duration": 62615033,
+              "duration": 27164330,
               "status": "passed"
             },
             "line": 27,
@@ -295,7 +295,7 @@
           },
           {
             "result": {
-              "duration": 464763576,
+              "duration": 448684494,
               "status": "passed"
             },
             "line": 28,
@@ -316,7 +316,7 @@
           },
           {
             "result": {
-              "duration": 126512842,
+              "duration": 180420733,
               "status": "passed"
             },
             "line": 29,
@@ -337,7 +337,7 @@
           },
           {
             "result": {
-              "duration": 230008898,
+              "duration": 229027114,
               "status": "passed"
             },
             "line": 30,
@@ -358,7 +358,7 @@
           },
           {
             "result": {
-              "duration": 157583229,
+              "duration": 160936746,
               "status": "passed"
             },
             "line": 31,
@@ -379,7 +379,7 @@
           },
           {
             "result": {
-              "duration": 143144904,
+              "duration": 134013365,
               "status": "passed"
             },
             "line": 32,
@@ -400,7 +400,7 @@
           },
           {
             "result": {
-              "duration": 206534854,
+              "duration": 233049868,
               "status": "passed"
             },
             "line": 33,
@@ -421,7 +421,7 @@
           },
           {
             "result": {
-              "duration": 113922066,
+              "duration": 137742462,
               "status": "passed"
             },
             "line": 34,
@@ -442,7 +442,7 @@
           },
           {
             "result": {
-              "duration": 294200056,
+              "duration": 291244565,
               "status": "passed"
             },
             "line": 35,
@@ -454,7 +454,7 @@
           },
           {
             "result": {
-              "duration": 1006238128,
+              "duration": 1084068252,
               "status": "passed"
             },
             "line": 36,
@@ -466,7 +466,7 @@
           },
           {
             "result": {
-              "duration": 109996233,
+              "duration": 164768536,
               "status": "passed"
             },
             "line": 37,
@@ -478,7 +478,7 @@
           },
           {
             "result": {
-              "duration": 593038039,
+              "duration": 665363987,
               "status": "passed"
             },
             "line": 38,
@@ -490,7 +490,7 @@
           },
           {
             "result": {
-              "duration": 56495191,
+              "duration": 59483304,
               "status": "passed"
             },
             "line": 39,
@@ -502,7 +502,7 @@
           },
           {
             "result": {
-              "duration": 67108817,
+              "duration": 76235355,
               "status": "passed"
             },
             "line": 40,
@@ -514,7 +514,7 @@
           },
           {
             "result": {
-              "duration": 117393023,
+              "duration": 116418978,
               "status": "passed"
             },
             "line": 41,
@@ -526,7 +526,7 @@
           },
           {
             "result": {
-              "duration": 128296875,
+              "duration": 107210882,
               "status": "passed"
             },
             "line": 42,
@@ -538,7 +538,7 @@
           },
           {
             "result": {
-              "duration": 204117585,
+              "duration": 206663389,
               "status": "passed"
             },
             "line": 43,
@@ -559,7 +559,7 @@
           },
           {
             "result": {
-              "duration": 77321269,
+              "duration": 68406028,
               "status": "passed"
             },
             "line": 44,
@@ -580,7 +580,7 @@
           },
           {
             "result": {
-              "duration": 220935499,
+              "duration": 176834939,
               "status": "passed"
             },
             "line": 45,
@@ -601,7 +601,7 @@
           },
           {
             "result": {
-              "duration": 20909028,
+              "duration": 41785664,
               "status": "passed"
             },
             "line": 46,
@@ -613,7 +613,7 @@
           },
           {
             "result": {
-              "duration": 1368021439,
+              "duration": 1375192716,
               "status": "passed"
             },
             "line": 47,
@@ -644,7 +644,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3221343648,
+              "duration": 3095562289,
               "status": "passed"
             },
             "line": 6,
@@ -660,7 +660,7 @@
         "before": [
           {
             "result": {
-              "duration": 129254,
+              "duration": 236779,
               "status": "passed"
             },
             "match": {
@@ -669,7 +669,7 @@
           },
           {
             "result": {
-              "duration": 150598,
+              "duration": 129535,
               "status": "passed"
             },
             "match": {
@@ -680,11 +680,11 @@
         "line": 86,
         "name": "Wrong Input Password",
         "description": "",
-        "id": "purchasing-pillow-using-credit-card;wrong-input-password;;2",
+        "id": "purchasing-pillow-using-credit-card-with-failed-payment-flow;wrong-input-password;;2",
         "after": [
           {
             "result": {
-              "duration": 134040,
+              "duration": 53362,
               "status": "passed"
             },
             "match": {
@@ -697,7 +697,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2080469613,
+              "duration": 2056810615,
               "status": "passed"
             },
             "line": 55,
@@ -709,7 +709,7 @@
           },
           {
             "result": {
-              "duration": 354005824,
+              "duration": 371765275,
               "status": "passed"
             },
             "line": 56,
@@ -721,7 +721,7 @@
           },
           {
             "result": {
-              "duration": 12581569,
+              "duration": 19654475,
               "status": "passed"
             },
             "line": 57,
@@ -733,7 +733,7 @@
           },
           {
             "result": {
-              "duration": 404247441,
+              "duration": 417639391,
               "status": "passed"
             },
             "line": 58,
@@ -754,7 +754,7 @@
           },
           {
             "result": {
-              "duration": 143365725,
+              "duration": 173007172,
               "status": "passed"
             },
             "line": 59,
@@ -775,7 +775,7 @@
           },
           {
             "result": {
-              "duration": 205512901,
+              "duration": 184806403,
               "status": "passed"
             },
             "line": 60,
@@ -796,7 +796,7 @@
           },
           {
             "result": {
-              "duration": 205813634,
+              "duration": 161262014,
               "status": "passed"
             },
             "line": 61,
@@ -817,7 +817,7 @@
           },
           {
             "result": {
-              "duration": 186984985,
+              "duration": 196818037,
               "status": "passed"
             },
             "line": 62,
@@ -838,7 +838,7 @@
           },
           {
             "result": {
-              "duration": 227538279,
+              "duration": 210301562,
               "status": "passed"
             },
             "line": 63,
@@ -859,7 +859,7 @@
           },
           {
             "result": {
-              "duration": 177823805,
+              "duration": 167759896,
               "status": "passed"
             },
             "line": 64,
@@ -880,7 +880,7 @@
           },
           {
             "result": {
-              "duration": 294803398,
+              "duration": 344993415,
               "status": "passed"
             },
             "line": 65,
@@ -892,7 +892,7 @@
           },
           {
             "result": {
-              "duration": 1051006586,
+              "duration": 831821857,
               "status": "passed"
             },
             "line": 66,
@@ -904,7 +904,7 @@
           },
           {
             "result": {
-              "duration": 145852009,
+              "duration": 149238097,
               "status": "passed"
             },
             "line": 67,
@@ -916,7 +916,7 @@
           },
           {
             "result": {
-              "duration": 540597823,
+              "duration": 641239411,
               "status": "passed"
             },
             "line": 68,
@@ -928,7 +928,7 @@
           },
           {
             "result": {
-              "duration": 61214677,
+              "duration": 57476095,
               "status": "passed"
             },
             "line": 69,
@@ -940,7 +940,7 @@
           },
           {
             "result": {
-              "duration": 70412451,
+              "duration": 59724454,
               "status": "passed"
             },
             "line": 70,
@@ -952,7 +952,7 @@
           },
           {
             "result": {
-              "duration": 646300606,
+              "duration": 617963324,
               "status": "passed"
             },
             "line": 71,
@@ -964,7 +964,7 @@
           },
           {
             "result": {
-              "duration": 116692874,
+              "duration": 118554568,
               "status": "passed"
             },
             "line": 72,
@@ -976,7 +976,7 @@
           },
           {
             "result": {
-              "duration": 204488751,
+              "duration": 206524500,
               "status": "passed"
             },
             "line": 73,
@@ -997,7 +997,7 @@
           },
           {
             "result": {
-              "duration": 77674348,
+              "duration": 66606868,
               "status": "passed"
             },
             "line": 74,
@@ -1018,7 +1018,7 @@
           },
           {
             "result": {
-              "duration": 148500224,
+              "duration": 130158637,
               "status": "passed"
             },
             "line": 75,
@@ -1039,7 +1039,7 @@
           },
           {
             "result": {
-              "duration": 790967859,
+              "duration": 959474540,
               "status": "passed"
             },
             "line": 76,
@@ -1051,7 +1051,7 @@
           },
           {
             "result": {
-              "duration": 41118837,
+              "duration": 37798137,
               "status": "passed"
             },
             "line": 77,
@@ -1063,7 +1063,7 @@
           },
           {
             "result": {
-              "duration": 3331764914,
+              "duration": 3349540698,
               "status": "passed"
             },
             "line": 78,
@@ -1075,7 +1075,7 @@
           },
           {
             "result": {
-              "duration": 1181869300,
+              "duration": 1334469729,
               "status": "passed"
             },
             "line": 79,
@@ -1087,7 +1087,7 @@
           },
           {
             "result": {
-              "duration": 161769367,
+              "duration": 182972162,
               "status": "passed"
             },
             "line": 80,
@@ -1108,7 +1108,7 @@
           },
           {
             "result": {
-              "duration": 560448516,
+              "duration": 581132320,
               "status": "passed"
             },
             "line": 81,
@@ -1120,7 +1120,7 @@
           },
           {
             "result": {
-              "duration": 88695736,
+              "duration": 77114903,
               "status": "passed"
             },
             "line": 82,
@@ -1151,7 +1151,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3291629446,
+              "duration": 3352148533,
               "status": "passed"
             },
             "line": 6,
@@ -1167,7 +1167,7 @@
         "before": [
           {
             "result": {
-              "duration": 98533,
+              "duration": 95941,
               "status": "passed"
             },
             "match": {
@@ -1176,7 +1176,7 @@
           },
           {
             "result": {
-              "duration": 125495,
+              "duration": 125357,
               "status": "passed"
             },
             "match": {
@@ -1185,13 +1185,13 @@
           }
         ],
         "line": 121,
-        "name": "Wrong Input Password",
+        "name": "Payment using declined credit card account",
         "description": "",
-        "id": "purchasing-pillow-using-credit-card;wrong-input-password;;2",
+        "id": "purchasing-pillow-using-credit-card-with-failed-payment-flow;payment-using-declined-credit-card-account;;2",
         "after": [
           {
             "result": {
-              "duration": 66996,
+              "duration": 71585,
               "status": "passed"
             },
             "match": {
@@ -1204,7 +1204,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2493621297,
+              "duration": 2299066520,
               "status": "passed"
             },
             "line": 90,
@@ -1216,7 +1216,7 @@
           },
           {
             "result": {
-              "duration": 318248979,
+              "duration": 331896820,
               "status": "passed"
             },
             "line": 91,
@@ -1228,7 +1228,7 @@
           },
           {
             "result": {
-              "duration": 13367379,
+              "duration": 21170807,
               "status": "passed"
             },
             "line": 92,
@@ -1240,7 +1240,7 @@
           },
           {
             "result": {
-              "duration": 437546214,
+              "duration": 446968546,
               "status": "passed"
             },
             "line": 93,
@@ -1261,7 +1261,7 @@
           },
           {
             "result": {
-              "duration": 140126020,
+              "duration": 148593904,
               "status": "passed"
             },
             "line": 94,
@@ -1282,7 +1282,7 @@
           },
           {
             "result": {
-              "duration": 258132921,
+              "duration": 175867138,
               "status": "passed"
             },
             "line": 95,
@@ -1303,7 +1303,7 @@
           },
           {
             "result": {
-              "duration": 217181523,
+              "duration": 154660699,
               "status": "passed"
             },
             "line": 96,
@@ -1324,7 +1324,7 @@
           },
           {
             "result": {
-              "duration": 132343870,
+              "duration": 241548405,
               "status": "passed"
             },
             "line": 97,
@@ -1345,7 +1345,7 @@
           },
           {
             "result": {
-              "duration": 205599741,
+              "duration": 231173579,
               "status": "passed"
             },
             "line": 98,
@@ -1366,7 +1366,7 @@
           },
           {
             "result": {
-              "duration": 177483142,
+              "duration": 131012755,
               "status": "passed"
             },
             "line": 99,
@@ -1387,7 +1387,7 @@
           },
           {
             "result": {
-              "duration": 338744433,
+              "duration": 309925558,
               "status": "passed"
             },
             "line": 100,
@@ -1399,7 +1399,7 @@
           },
           {
             "result": {
-              "duration": 965691276,
+              "duration": 954841265,
               "status": "passed"
             },
             "line": 101,
@@ -1411,7 +1411,7 @@
           },
           {
             "result": {
-              "duration": 125712348,
+              "duration": 157073472,
               "status": "passed"
             },
             "line": 102,
@@ -1423,7 +1423,7 @@
           },
           {
             "result": {
-              "duration": 568610648,
+              "duration": 657848194,
               "status": "passed"
             },
             "line": 103,
@@ -1435,7 +1435,7 @@
           },
           {
             "result": {
-              "duration": 110135500,
+              "duration": 64572198,
               "status": "passed"
             },
             "line": 104,
@@ -1447,7 +1447,7 @@
           },
           {
             "result": {
-              "duration": 69454203,
+              "duration": 69542971,
               "status": "passed"
             },
             "line": 105,
@@ -1459,7 +1459,7 @@
           },
           {
             "result": {
-              "duration": 672007966,
+              "duration": 625297052,
               "status": "passed"
             },
             "line": 106,
@@ -1471,7 +1471,7 @@
           },
           {
             "result": {
-              "duration": 105094731,
+              "duration": 108082004,
               "status": "passed"
             },
             "line": 107,
@@ -1483,7 +1483,7 @@
           },
           {
             "result": {
-              "duration": 227024917,
+              "duration": 201424946,
               "status": "passed"
             },
             "line": 108,
@@ -1504,7 +1504,7 @@
           },
           {
             "result": {
-              "duration": 72697881,
+              "duration": 51355185,
               "status": "passed"
             },
             "line": 109,
@@ -1525,7 +1525,7 @@
           },
           {
             "result": {
-              "duration": 333569218,
+              "duration": 162920394,
               "status": "passed"
             },
             "line": 110,
@@ -1546,7 +1546,7 @@
           },
           {
             "result": {
-              "duration": 768920170,
+              "duration": 763091791,
               "status": "passed"
             },
             "line": 111,
@@ -1558,7 +1558,7 @@
           },
           {
             "result": {
-              "duration": 45707989,
+              "duration": 32090059,
               "status": "passed"
             },
             "line": 112,
@@ -1570,7 +1570,7 @@
           },
           {
             "result": {
-              "duration": 3396372601,
+              "duration": 3366695727,
               "status": "passed"
             },
             "line": 113,
@@ -1582,7 +1582,7 @@
           },
           {
             "result": {
-              "duration": 1081727862,
+              "duration": 1059780332,
               "status": "passed"
             },
             "line": 114,
@@ -1594,7 +1594,7 @@
           },
           {
             "result": {
-              "duration": 177436666,
+              "duration": 133680122,
               "status": "passed"
             },
             "line": 115,
@@ -1615,7 +1615,7 @@
           },
           {
             "result": {
-              "duration": 682343160,
+              "duration": 854704786,
               "status": "passed"
             },
             "line": 116,
@@ -1627,7 +1627,7 @@
           },
           {
             "result": {
-              "duration": 76417876,
+              "duration": 76439414,
               "status": "passed"
             },
             "line": 117,
@@ -1650,9 +1650,9 @@
         ]
       }
     ],
-    "name": "Purchasing Pillow using credit card",
-    "description": "User want purchasing pillow using credit card with SUCCESSFULL payment flow",
-    "id": "purchasing-pillow-using-credit-card",
+    "name": "Purchasing Pillow using credit card with FAILED payment flow",
+    "description": "User want purchasing pillow using credit card with FAILED payment flow",
+    "id": "purchasing-pillow-using-credit-card-with-failed-payment-flow",
     "keyword": "Feature",
     "uri": "Negative.feature",
     "tags": [
@@ -1674,7 +1674,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3420577020,
+              "duration": 3545286617,
               "status": "passed"
             },
             "line": 6,
@@ -1690,7 +1690,7 @@
         "before": [
           {
             "result": {
-              "duration": 89163,
+              "duration": 83387,
               "status": "passed"
             },
             "match": {
@@ -1699,7 +1699,7 @@
           },
           {
             "result": {
-              "duration": 112843,
+              "duration": 113776,
               "status": "passed"
             },
             "match": {
@@ -1710,11 +1710,11 @@
         "line": 42,
         "name": "Successfull payment flow",
         "description": "",
-        "id": "purchasing-pillow-using-credit-card;successfull-payment-flow;;2",
+        "id": "purchasing-pillow-using-credit-card-with-successfull-payment-flow;successfull-payment-flow;;2",
         "after": [
           {
             "result": {
-              "duration": 87898,
+              "duration": 125424,
               "status": "passed"
             },
             "match": {
@@ -1727,7 +1727,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2274601897,
+              "duration": 2268820272,
               "status": "passed"
             },
             "line": 10,
@@ -1739,7 +1739,7 @@
           },
           {
             "result": {
-              "duration": 332141002,
+              "duration": 384548812,
               "status": "passed"
             },
             "line": 11,
@@ -1751,7 +1751,7 @@
           },
           {
             "result": {
-              "duration": 16808249,
+              "duration": 11530844,
               "status": "passed"
             },
             "line": 12,
@@ -1763,7 +1763,7 @@
           },
           {
             "result": {
-              "duration": 413520915,
+              "duration": 439065687,
               "status": "passed"
             },
             "line": 13,
@@ -1784,7 +1784,7 @@
           },
           {
             "result": {
-              "duration": 146603086,
+              "duration": 203400740,
               "status": "passed"
             },
             "line": 14,
@@ -1805,7 +1805,7 @@
           },
           {
             "result": {
-              "duration": 184035042,
+              "duration": 230985364,
               "status": "passed"
             },
             "line": 15,
@@ -1826,7 +1826,7 @@
           },
           {
             "result": {
-              "duration": 149562043,
+              "duration": 205038819,
               "status": "passed"
             },
             "line": 16,
@@ -1847,7 +1847,7 @@
           },
           {
             "result": {
-              "duration": 139581117,
+              "duration": 138534767,
               "status": "passed"
             },
             "line": 17,
@@ -1868,7 +1868,7 @@
           },
           {
             "result": {
-              "duration": 258690411,
+              "duration": 176565224,
               "status": "passed"
             },
             "line": 18,
@@ -1889,7 +1889,7 @@
           },
           {
             "result": {
-              "duration": 166386154,
+              "duration": 105827870,
               "status": "passed"
             },
             "line": 19,
@@ -1910,7 +1910,7 @@
           },
           {
             "result": {
-              "duration": 302352301,
+              "duration": 297823595,
               "status": "passed"
             },
             "line": 20,
@@ -1922,7 +1922,7 @@
           },
           {
             "result": {
-              "duration": 908563459,
+              "duration": 882006027,
               "status": "passed"
             },
             "line": 21,
@@ -1934,7 +1934,7 @@
           },
           {
             "result": {
-              "duration": 116081782,
+              "duration": 114699043,
               "status": "passed"
             },
             "line": 22,
@@ -1946,7 +1946,7 @@
           },
           {
             "result": {
-              "duration": 481488515,
+              "duration": 528819222,
               "status": "passed"
             },
             "line": 23,
@@ -1958,7 +1958,7 @@
           },
           {
             "result": {
-              "duration": 106917413,
+              "duration": 58699626,
               "status": "passed"
             },
             "line": 24,
@@ -1970,7 +1970,7 @@
           },
           {
             "result": {
-              "duration": 64313620,
+              "duration": 72622809,
               "status": "passed"
             },
             "line": 25,
@@ -1982,7 +1982,7 @@
           },
           {
             "result": {
-              "duration": 618126894,
+              "duration": 621349434,
               "status": "passed"
             },
             "line": 26,
@@ -1994,7 +1994,7 @@
           },
           {
             "result": {
-              "duration": 106128245,
+              "duration": 111079648,
               "status": "passed"
             },
             "line": 27,
@@ -2006,7 +2006,7 @@
           },
           {
             "result": {
-              "duration": 204732007,
+              "duration": 214373650,
               "status": "passed"
             },
             "line": 28,
@@ -2027,7 +2027,7 @@
           },
           {
             "result": {
-              "duration": 64574181,
+              "duration": 45266387,
               "status": "passed"
             },
             "line": 29,
@@ -2048,7 +2048,7 @@
           },
           {
             "result": {
-              "duration": 119332911,
+              "duration": 163108552,
               "status": "passed"
             },
             "line": 30,
@@ -2069,7 +2069,7 @@
           },
           {
             "result": {
-              "duration": 870552068,
+              "duration": 802976453,
               "status": "passed"
             },
             "line": 31,
@@ -2081,7 +2081,7 @@
           },
           {
             "result": {
-              "duration": 39549718,
+              "duration": 37586815,
               "status": "passed"
             },
             "line": 32,
@@ -2093,7 +2093,7 @@
           },
           {
             "result": {
-              "duration": 3396363632,
+              "duration": 3392288715,
               "status": "passed"
             },
             "line": 33,
@@ -2105,7 +2105,7 @@
           },
           {
             "result": {
-              "duration": 1094075874,
+              "duration": 1371282852,
               "status": "passed"
             },
             "line": 34,
@@ -2117,7 +2117,7 @@
           },
           {
             "result": {
-              "duration": 186985830,
+              "duration": 161695004,
               "status": "passed"
             },
             "line": 35,
@@ -2138,7 +2138,7 @@
           },
           {
             "result": {
-              "duration": 694624565,
+              "duration": 814608763,
               "status": "passed"
             },
             "line": 36,
@@ -2150,7 +2150,7 @@
           },
           {
             "result": {
-              "duration": 2096764018,
+              "duration": 2085379676,
               "status": "passed"
             },
             "line": 37,
@@ -2173,9 +2173,9 @@
         ]
       }
     ],
-    "name": "Purchasing Pillow using credit card",
+    "name": "Purchasing Pillow using credit card with SUCCESSFULL payment flow",
     "description": "User want purchasing pillow using credit card with SUCCESSFULL payment flow",
-    "id": "purchasing-pillow-using-credit-card",
+    "id": "purchasing-pillow-using-credit-card-with-successfull-payment-flow",
     "keyword": "Feature",
     "uri": "Positive.feature",
     "tags": [

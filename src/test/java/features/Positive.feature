@@ -1,5 +1,5 @@
 @positiveTest
-Feature: Purchasing Pillow using credit card
+Feature: Purchasing Pillow using credit card with SUCCESSFULL payment flow
   User want purchasing pillow using credit card with SUCCESSFULL payment flow
   
   Background:

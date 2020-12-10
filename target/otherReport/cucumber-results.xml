@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="74.95019">
-    <testcase classname="Purchasing Pillow using credit card" name="Wrong Input Email" time="9.739608">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="72.822497">
+    <testcase classname="Purchasing Pillow using credit card with FAILED payment flow" name="Wrong Input Email" time="7.632115">
         <system-out>
             <![CDATA[Given Initiate browser......................................................passed
 Given Navigate to Midtrans Demo homepage....................................passed
@@ -14,7 +14,7 @@ Then Error Alert should be appear...........................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Purchasing Pillow using credit card" name="Wrong Input Credit Card Details" time="11.998737">
+    <testcase classname="Purchasing Pillow using credit card with FAILED payment flow" name="Wrong Input Credit Card Details" time="11.718411">
         <system-out>
             <![CDATA[Given Initiate browser......................................................passed
 Given Navigate to Midtrans Demo homepage....................................passed
@@ -43,7 +43,7 @@ And User can not click Pay Now button.......................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Purchasing Pillow using credit card" name="Wrong Input Password" time="16.73428">
+    <testcase classname="Purchasing Pillow using credit card with FAILED payment flow" name="Wrong Input Password" time="16.802611">
         <system-out>
             <![CDATA[Given Initiate browser......................................................passed
 Given Navigate to Midtrans Demo homepage....................................passed
@@ -77,7 +77,7 @@ Then Transaction should be failed...........................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Purchasing Pillow using credit card" name="Wrong Input Password 2" time="17.503241">
+    <testcase classname="Purchasing Pillow using credit card with FAILED payment flow" name="Payment using declined credit card account" time="17.183766">
         <system-out>
             <![CDATA[Given Initiate browser......................................................passed
 Given Navigate to Midtrans Demo homepage....................................passed
@@ -111,7 +111,7 @@ Then Transaction should be failed...........................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Purchasing Pillow using credit card" name="Successfull payment flow" time="18.974324">
+    <testcase classname="Purchasing Pillow using credit card with SUCCESSFULL payment flow" name="Successfull payment flow" time="19.485594">
         <system-out>
             <![CDATA[Given Initiate browser......................................................passed
 Given Navigate to Midtrans Demo homepage....................................passed

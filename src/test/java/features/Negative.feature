@@ -1,6 +1,6 @@
 @negativeTest
-Feature: Purchasing Pillow using credit card
-  User want purchasing pillow using credit card with SUCCESSFULL payment flow
+Feature: Purchasing Pillow using credit card with FAILED payment flow
+  User want purchasing pillow using credit card with FAILED payment flow
   
   Background:
   	Given Initiate browser
@@ -86,7 +86,7 @@ Feature: Purchasing Pillow using credit card
     | 10000		| rozi	| rozi@email.com	|	08123456	| jakarta	| jl. sukses	| 12620	| 4811111111111114	| 12/20	| 123	|	873782		|
     
   @declinedCard
-  Scenario Outline: Wrong Input Password
+  Scenario Outline: Payment using declined credit card account
     Given Navigate to Midtrans Demo homepage
     When User click Buy Now button
     And Shopping Cart page is appear

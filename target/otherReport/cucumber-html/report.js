@@ -1,9 +1,9 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Negative.feature");
 formatter.feature({
   "line": 2,
-  "name": "Purchasing Pillow using credit card",
-  "description": "User want purchasing pillow using credit card with SUCCESSFULL payment flow",
-  "id": "purchasing-pillow-using-credit-card",
+  "name": "Purchasing Pillow using credit card with FAILED payment flow",
+  "description": "User want purchasing pillow using credit card with FAILED payment flow",
+  "id": "purchasing-pillow-using-credit-card-with-failed-payment-flow",
   "keyword": "Feature",
   "tags": [
     {
@@ -16,7 +16,7 @@ formatter.scenarioOutline({
   "line": 9,
   "name": "Wrong Input Email",
   "description": "",
-  "id": "purchasing-pillow-using-credit-card;wrong-input-email",
+  "id": "purchasing-pillow-using-credit-card-with-failed-payment-flow;wrong-input-email",
   "type": "scenario_outline",
   "keyword": "Scenario Outline",
   "tags": [
@@ -70,7 +70,7 @@ formatter.examples({
   "line": 19,
   "name": "",
   "description": "",
-  "id": "purchasing-pillow-using-credit-card;wrong-input-email;",
+  "id": "purchasing-pillow-using-credit-card-with-failed-payment-flow;wrong-input-email;",
   "rows": [
     {
       "cells": [
@@ -79,7 +79,7 @@ formatter.examples({
         "email"
       ],
       "line": 20,
-      "id": "purchasing-pillow-using-credit-card;wrong-input-email;;1"
+      "id": "purchasing-pillow-using-credit-card-with-failed-payment-flow;wrong-input-email;;1"
     },
     {
       "cells": [
@@ -88,17 +88,17 @@ formatter.examples({
         "wrongemail.com"
       ],
       "line": 21,
-      "id": "purchasing-pillow-using-credit-card;wrong-input-email;;2"
+      "id": "purchasing-pillow-using-credit-card-with-failed-payment-flow;wrong-input-email;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 4340681,
+  "duration": 3768216,
   "status": "passed"
 });
 formatter.before({
-  "duration": 178161,
+  "duration": 202503,
   "status": "passed"
 });
 formatter.background({
@@ -117,14 +117,14 @@ formatter.match({
   "location": "PositiveDef.initiate_browser()"
 });
 formatter.result({
-  "duration": 4096764200,
+  "duration": 3932158709,
   "status": "passed"
 });
 formatter.scenario({
   "line": 21,
   "name": "Wrong Input Email",
   "description": "",
-  "id": "purchasing-pillow-using-credit-card;wrong-input-email;;2",
+  "id": "purchasing-pillow-using-credit-card-with-failed-payment-flow;wrong-input-email;;2",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -191,21 +191,21 @@ formatter.match({
   "location": "PositiveDef.navigate_to_Midtrans_Demo_homepage()"
 });
 formatter.result({
-  "duration": 4003656530,
+  "duration": 2134133971,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_click_Buy_Now_button()"
 });
 formatter.result({
-  "duration": 394913433,
+  "duration": 352198413,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.shopping_Cart_page_should_be_appear()"
 });
 formatter.result({
-  "duration": 24762135,
+  "duration": 21382457,
   "status": "passed"
 });
 formatter.match({
@@ -218,7 +218,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Price_Amount_with(String)"
 });
 formatter.result({
-  "duration": 351072589,
+  "duration": 470070120,
   "status": "passed"
 });
 formatter.match({
@@ -231,7 +231,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Name_with(String)"
 });
 formatter.result({
-  "duration": 267127282,
+  "duration": 149414704,
   "status": "passed"
 });
 formatter.match({
@@ -244,32 +244,32 @@ formatter.match({
   "location": "NegativeDef.user_try_to_fill_Email_with_invalid_format(String)"
 });
 formatter.result({
-  "duration": 204946853,
+  "duration": 187605186,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_click_Checkout_button()"
 });
 formatter.result({
-  "duration": 343852831,
+  "duration": 296055581,
   "status": "passed"
 });
 formatter.match({
   "location": "NegativeDef.error_Alert_should_be_appear()"
 });
 formatter.result({
-  "duration": 47812230,
+  "duration": 84939066,
   "status": "passed"
 });
 formatter.after({
-  "duration": 181525,
+  "duration": 185644,
   "status": "passed"
 });
 formatter.scenarioOutline({
   "line": 24,
   "name": "Wrong Input Credit Card Details",
   "description": "",
-  "id": "purchasing-pillow-using-credit-card;wrong-input-credit-card-details",
+  "id": "purchasing-pillow-using-credit-card-with-failed-payment-flow;wrong-input-credit-card-details",
   "type": "scenario_outline",
   "keyword": "Scenario Outline",
   "tags": [
@@ -398,7 +398,7 @@ formatter.examples({
   "line": 49,
   "name": "",
   "description": "",
-  "id": "purchasing-pillow-using-credit-card;wrong-input-credit-card-details;",
+  "id": "purchasing-pillow-using-credit-card-with-failed-payment-flow;wrong-input-credit-card-details;",
   "rows": [
     {
       "cells": [
@@ -414,7 +414,7 @@ formatter.examples({
         "cvv"
       ],
       "line": 50,
-      "id": "purchasing-pillow-using-credit-card;wrong-input-credit-card-details;;1"
+      "id": "purchasing-pillow-using-credit-card-with-failed-payment-flow;wrong-input-credit-card-details;;1"
     },
     {
       "cells": [
@@ -430,17 +430,17 @@ formatter.examples({
         "12334"
       ],
       "line": 51,
-      "id": "purchasing-pillow-using-credit-card;wrong-input-credit-card-details;;2"
+      "id": "purchasing-pillow-using-credit-card-with-failed-payment-flow;wrong-input-credit-card-details;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 120551,
+  "duration": 153481,
   "status": "passed"
 });
 formatter.before({
-  "duration": 162988,
+  "duration": 158965,
   "status": "passed"
 });
 formatter.background({
@@ -459,14 +459,14 @@ formatter.match({
   "location": "PositiveDef.initiate_browser()"
 });
 formatter.result({
-  "duration": 3332404122,
+  "duration": 3363395058,
   "status": "passed"
 });
 formatter.scenario({
   "line": 51,
   "name": "Wrong Input Credit Card Details",
   "description": "",
-  "id": "purchasing-pillow-using-credit-card;wrong-input-credit-card-details;;2",
+  "id": "purchasing-pillow-using-credit-card-with-failed-payment-flow;wrong-input-credit-card-details;;2",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -629,21 +629,21 @@ formatter.match({
   "location": "PositiveDef.navigate_to_Midtrans_Demo_homepage()"
 });
 formatter.result({
-  "duration": 2574943516,
+  "duration": 1982951382,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_click_Buy_Now_button()"
 });
 formatter.result({
-  "duration": 321699438,
+  "duration": 386854595,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.shopping_Cart_page_should_be_appear()"
 });
 formatter.result({
-  "duration": 62615033,
+  "duration": 27164330,
   "status": "passed"
 });
 formatter.match({
@@ -656,7 +656,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Price_Amount_with(String)"
 });
 formatter.result({
-  "duration": 464763576,
+  "duration": 448684494,
   "status": "passed"
 });
 formatter.match({
@@ -669,7 +669,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Name_with(String)"
 });
 formatter.result({
-  "duration": 126512842,
+  "duration": 180420733,
   "status": "passed"
 });
 formatter.match({
@@ -682,7 +682,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Email_with(String)"
 });
 formatter.result({
-  "duration": 230008898,
+  "duration": 229027114,
   "status": "passed"
 });
 formatter.match({
@@ -695,7 +695,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Phone_Number_with(String)"
 });
 formatter.result({
-  "duration": 157583229,
+  "duration": 160936746,
   "status": "passed"
 });
 formatter.match({
@@ -708,7 +708,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_City_with(String)"
 });
 formatter.result({
-  "duration": 143144904,
+  "duration": 134013365,
   "status": "passed"
 });
 formatter.match({
@@ -721,7 +721,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Address_with(String)"
 });
 formatter.result({
-  "duration": 206534854,
+  "duration": 233049868,
   "status": "passed"
 });
 formatter.match({
@@ -734,63 +734,63 @@ formatter.match({
   "location": "PositiveDef.user_fill_Postal_Code_with(String)"
 });
 formatter.result({
-  "duration": 113922066,
+  "duration": 137742462,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_click_Checkout_button()"
 });
 formatter.result({
-  "duration": 294200056,
+  "duration": 291244565,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.order_Summary_page_should_be_appear()"
 });
 formatter.result({
-  "duration": 1006238128,
+  "duration": 1084068252,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.order_Summary_Amount_must_be_same_as_Shopping_Cart_Amount()"
 });
 formatter.result({
-  "duration": 109996233,
+  "duration": 164768536,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.shipping_Details_must_be_same_as_Customer_Details()"
 });
 formatter.result({
-  "duration": 593038039,
+  "duration": 665363987,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_click_Continue_button()"
 });
 formatter.result({
-  "duration": 56495191,
+  "duration": 59483304,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.payment_method_list_page_should_be_appear()"
 });
 formatter.result({
-  "duration": 67108817,
+  "duration": 76235355,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_choose_Credit_Debit_Card_payment_method()"
 });
 formatter.result({
-  "duration": 117393023,
+  "duration": 116418978,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.credit_card_detail_page_should_be_appear()"
 });
 formatter.result({
-  "duration": 128296875,
+  "duration": 107210882,
   "status": "passed"
 });
 formatter.match({
@@ -803,7 +803,7 @@ formatter.match({
   "location": "NegativeDef.user_try_to_fill_Credit_Card_number_with_wrong_number(String)"
 });
 formatter.result({
-  "duration": 204117585,
+  "duration": 206663389,
   "status": "passed"
 });
 formatter.match({
@@ -816,7 +816,7 @@ formatter.match({
   "location": "NegativeDef.user_try_to_fill_Credit_Card_Expiry_Date_with_wrong_date(String)"
 });
 formatter.result({
-  "duration": 77321269,
+  "duration": 68406028,
   "status": "passed"
 });
 formatter.match({
@@ -829,32 +829,32 @@ formatter.match({
   "location": "NegativeDef.user_try_to_fill_Credit_Card_CVV_with_wrong_cvv(String)"
 });
 formatter.result({
-  "duration": 220935499,
+  "duration": 176834939,
   "status": "passed"
 });
 formatter.match({
   "location": "NegativeDef.invalid_Card_Number_Details_Alert_should_be_appear()"
 });
 formatter.result({
-  "duration": 20909028,
+  "duration": 41785664,
   "status": "passed"
 });
 formatter.match({
   "location": "NegativeDef.user_can_not_click_Pay_Now_Button()"
 });
 formatter.result({
-  "duration": 1368021439,
+  "duration": 1375192716,
   "status": "passed"
 });
 formatter.after({
-  "duration": 249723,
+  "duration": 182123,
   "status": "passed"
 });
 formatter.scenarioOutline({
   "line": 54,
   "name": "Wrong Input Password",
   "description": "",
-  "id": "purchasing-pillow-using-credit-card;wrong-input-password",
+  "id": "purchasing-pillow-using-credit-card-with-failed-payment-flow;wrong-input-password",
   "type": "scenario_outline",
   "keyword": "Scenario Outline",
   "tags": [
@@ -1008,7 +1008,7 @@ formatter.examples({
   "line": 84,
   "name": "",
   "description": "",
-  "id": "purchasing-pillow-using-credit-card;wrong-input-password;",
+  "id": "purchasing-pillow-using-credit-card-with-failed-payment-flow;wrong-input-password;",
   "rows": [
     {
       "cells": [
@@ -1025,7 +1025,7 @@ formatter.examples({
         "password"
       ],
       "line": 85,
-      "id": "purchasing-pillow-using-credit-card;wrong-input-password;;1"
+      "id": "purchasing-pillow-using-credit-card-with-failed-payment-flow;wrong-input-password;;1"
     },
     {
       "cells": [
@@ -1042,17 +1042,17 @@ formatter.examples({
         "873782"
       ],
       "line": 86,
-      "id": "purchasing-pillow-using-credit-card;wrong-input-password;;2"
+      "id": "purchasing-pillow-using-credit-card-with-failed-payment-flow;wrong-input-password;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 129254,
+  "duration": 236779,
   "status": "passed"
 });
 formatter.before({
-  "duration": 150598,
+  "duration": 129535,
   "status": "passed"
 });
 formatter.background({
@@ -1071,14 +1071,14 @@ formatter.match({
   "location": "PositiveDef.initiate_browser()"
 });
 formatter.result({
-  "duration": 3221343648,
+  "duration": 3095562289,
   "status": "passed"
 });
 formatter.scenario({
   "line": 86,
   "name": "Wrong Input Password",
   "description": "",
-  "id": "purchasing-pillow-using-credit-card;wrong-input-password;;2",
+  "id": "purchasing-pillow-using-credit-card-with-failed-payment-flow;wrong-input-password;;2",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -1269,21 +1269,21 @@ formatter.match({
   "location": "PositiveDef.navigate_to_Midtrans_Demo_homepage()"
 });
 formatter.result({
-  "duration": 2080469613,
+  "duration": 2056810615,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_click_Buy_Now_button()"
 });
 formatter.result({
-  "duration": 354005824,
+  "duration": 371765275,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.shopping_Cart_page_should_be_appear()"
 });
 formatter.result({
-  "duration": 12581569,
+  "duration": 19654475,
   "status": "passed"
 });
 formatter.match({
@@ -1296,7 +1296,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Price_Amount_with(String)"
 });
 formatter.result({
-  "duration": 404247441,
+  "duration": 417639391,
   "status": "passed"
 });
 formatter.match({
@@ -1309,7 +1309,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Name_with(String)"
 });
 formatter.result({
-  "duration": 143365725,
+  "duration": 173007172,
   "status": "passed"
 });
 formatter.match({
@@ -1322,7 +1322,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Email_with(String)"
 });
 formatter.result({
-  "duration": 205512901,
+  "duration": 184806403,
   "status": "passed"
 });
 formatter.match({
@@ -1335,7 +1335,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Phone_Number_with(String)"
 });
 formatter.result({
-  "duration": 205813634,
+  "duration": 161262014,
   "status": "passed"
 });
 formatter.match({
@@ -1348,7 +1348,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_City_with(String)"
 });
 formatter.result({
-  "duration": 186984985,
+  "duration": 196818037,
   "status": "passed"
 });
 formatter.match({
@@ -1361,7 +1361,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Address_with(String)"
 });
 formatter.result({
-  "duration": 227538279,
+  "duration": 210301562,
   "status": "passed"
 });
 formatter.match({
@@ -1374,63 +1374,63 @@ formatter.match({
   "location": "PositiveDef.user_fill_Postal_Code_with(String)"
 });
 formatter.result({
-  "duration": 177823805,
+  "duration": 167759896,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_click_Checkout_button()"
 });
 formatter.result({
-  "duration": 294803398,
+  "duration": 344993415,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.order_Summary_page_should_be_appear()"
 });
 formatter.result({
-  "duration": 1051006586,
+  "duration": 831821857,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.order_Summary_Amount_must_be_same_as_Shopping_Cart_Amount()"
 });
 formatter.result({
-  "duration": 145852009,
+  "duration": 149238097,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.shipping_Details_must_be_same_as_Customer_Details()"
 });
 formatter.result({
-  "duration": 540597823,
+  "duration": 641239411,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_click_Continue_button()"
 });
 formatter.result({
-  "duration": 61214677,
+  "duration": 57476095,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.payment_method_list_page_should_be_appear()"
 });
 formatter.result({
-  "duration": 70412451,
+  "duration": 59724454,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_choose_Credit_Debit_Card_payment_method()"
 });
 formatter.result({
-  "duration": 646300606,
+  "duration": 617963324,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.credit_card_detail_page_should_be_appear()"
 });
 formatter.result({
-  "duration": 116692874,
+  "duration": 118554568,
   "status": "passed"
 });
 formatter.match({
@@ -1443,7 +1443,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Card_Number_with(String)"
 });
 formatter.result({
-  "duration": 204488751,
+  "duration": 206524500,
   "status": "passed"
 });
 formatter.match({
@@ -1456,7 +1456,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Card_Expiry_Date_with(String)"
 });
 formatter.result({
-  "duration": 77674348,
+  "duration": 66606868,
   "status": "passed"
 });
 formatter.match({
@@ -1469,35 +1469,35 @@ formatter.match({
   "location": "PositiveDef.user_fill_Card_CVV_with(String)"
 });
 formatter.result({
-  "duration": 148500224,
+  "duration": 130158637,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_select_one_of_Promos_availables()"
 });
 formatter.result({
-  "duration": 790967859,
+  "duration": 959474540,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.check_Customers_Detail()"
 });
 formatter.result({
-  "duration": 41118837,
+  "duration": 37798137,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_click_Pay_Now_button()"
 });
 formatter.result({
-  "duration": 3331764914,
+  "duration": 3349540698,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.transaction_verification_page_is_appear()"
 });
 formatter.result({
-  "duration": 1181869300,
+  "duration": 1334469729,
   "status": "passed"
 });
 formatter.match({
@@ -1510,32 +1510,32 @@ formatter.match({
   "location": "NegativeDef.user_try_to_fill_Password_with_wrong_password(String)"
 });
 formatter.result({
-  "duration": 161769367,
+  "duration": 182972162,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_click_Ok_button()"
 });
 formatter.result({
-  "duration": 560448516,
+  "duration": 581132320,
   "status": "passed"
 });
 formatter.match({
   "location": "NegativeDef.transaction_should_be_failed()"
 });
 formatter.result({
-  "duration": 88695736,
+  "duration": 77114903,
   "status": "passed"
 });
 formatter.after({
-  "duration": 134040,
+  "duration": 53362,
   "status": "passed"
 });
 formatter.scenarioOutline({
   "line": 89,
-  "name": "Wrong Input Password",
+  "name": "Payment using declined credit card account",
   "description": "",
-  "id": "purchasing-pillow-using-credit-card;wrong-input-password",
+  "id": "purchasing-pillow-using-credit-card-with-failed-payment-flow;payment-using-declined-credit-card-account",
   "type": "scenario_outline",
   "keyword": "Scenario Outline",
   "tags": [
@@ -1689,7 +1689,7 @@ formatter.examples({
   "line": 119,
   "name": "",
   "description": "",
-  "id": "purchasing-pillow-using-credit-card;wrong-input-password;",
+  "id": "purchasing-pillow-using-credit-card-with-failed-payment-flow;payment-using-declined-credit-card-account;",
   "rows": [
     {
       "cells": [
@@ -1706,7 +1706,7 @@ formatter.examples({
         "password"
       ],
       "line": 120,
-      "id": "purchasing-pillow-using-credit-card;wrong-input-password;;1"
+      "id": "purchasing-pillow-using-credit-card-with-failed-payment-flow;payment-using-declined-credit-card-account;;1"
     },
     {
       "cells": [
@@ -1723,17 +1723,17 @@ formatter.examples({
         "112233"
       ],
       "line": 121,
-      "id": "purchasing-pillow-using-credit-card;wrong-input-password;;2"
+      "id": "purchasing-pillow-using-credit-card-with-failed-payment-flow;payment-using-declined-credit-card-account;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 98533,
+  "duration": 95941,
   "status": "passed"
 });
 formatter.before({
-  "duration": 125495,
+  "duration": 125357,
   "status": "passed"
 });
 formatter.background({
@@ -1752,14 +1752,14 @@ formatter.match({
   "location": "PositiveDef.initiate_browser()"
 });
 formatter.result({
-  "duration": 3291629446,
+  "duration": 3352148533,
   "status": "passed"
 });
 formatter.scenario({
   "line": 121,
-  "name": "Wrong Input Password",
+  "name": "Payment using declined credit card account",
   "description": "",
-  "id": "purchasing-pillow-using-credit-card;wrong-input-password;;2",
+  "id": "purchasing-pillow-using-credit-card-with-failed-payment-flow;payment-using-declined-credit-card-account;;2",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -1950,21 +1950,21 @@ formatter.match({
   "location": "PositiveDef.navigate_to_Midtrans_Demo_homepage()"
 });
 formatter.result({
-  "duration": 2493621297,
+  "duration": 2299066520,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_click_Buy_Now_button()"
 });
 formatter.result({
-  "duration": 318248979,
+  "duration": 331896820,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.shopping_Cart_page_should_be_appear()"
 });
 formatter.result({
-  "duration": 13367379,
+  "duration": 21170807,
   "status": "passed"
 });
 formatter.match({
@@ -1977,7 +1977,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Price_Amount_with(String)"
 });
 formatter.result({
-  "duration": 437546214,
+  "duration": 446968546,
   "status": "passed"
 });
 formatter.match({
@@ -1990,7 +1990,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Name_with(String)"
 });
 formatter.result({
-  "duration": 140126020,
+  "duration": 148593904,
   "status": "passed"
 });
 formatter.match({
@@ -2003,7 +2003,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Email_with(String)"
 });
 formatter.result({
-  "duration": 258132921,
+  "duration": 175867138,
   "status": "passed"
 });
 formatter.match({
@@ -2016,7 +2016,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Phone_Number_with(String)"
 });
 formatter.result({
-  "duration": 217181523,
+  "duration": 154660699,
   "status": "passed"
 });
 formatter.match({
@@ -2029,7 +2029,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_City_with(String)"
 });
 formatter.result({
-  "duration": 132343870,
+  "duration": 241548405,
   "status": "passed"
 });
 formatter.match({
@@ -2042,7 +2042,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Address_with(String)"
 });
 formatter.result({
-  "duration": 205599741,
+  "duration": 231173579,
   "status": "passed"
 });
 formatter.match({
@@ -2055,63 +2055,63 @@ formatter.match({
   "location": "PositiveDef.user_fill_Postal_Code_with(String)"
 });
 formatter.result({
-  "duration": 177483142,
+  "duration": 131012755,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_click_Checkout_button()"
 });
 formatter.result({
-  "duration": 338744433,
+  "duration": 309925558,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.order_Summary_page_should_be_appear()"
 });
 formatter.result({
-  "duration": 965691276,
+  "duration": 954841265,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.order_Summary_Amount_must_be_same_as_Shopping_Cart_Amount()"
 });
 formatter.result({
-  "duration": 125712348,
+  "duration": 157073472,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.shipping_Details_must_be_same_as_Customer_Details()"
 });
 formatter.result({
-  "duration": 568610648,
+  "duration": 657848194,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_click_Continue_button()"
 });
 formatter.result({
-  "duration": 110135500,
+  "duration": 64572198,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.payment_method_list_page_should_be_appear()"
 });
 formatter.result({
-  "duration": 69454203,
+  "duration": 69542971,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_choose_Credit_Debit_Card_payment_method()"
 });
 formatter.result({
-  "duration": 672007966,
+  "duration": 625297052,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.credit_card_detail_page_should_be_appear()"
 });
 formatter.result({
-  "duration": 105094731,
+  "duration": 108082004,
   "status": "passed"
 });
 formatter.match({
@@ -2124,7 +2124,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Card_Number_with(String)"
 });
 formatter.result({
-  "duration": 227024917,
+  "duration": 201424946,
   "status": "passed"
 });
 formatter.match({
@@ -2137,7 +2137,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Card_Expiry_Date_with(String)"
 });
 formatter.result({
-  "duration": 72697881,
+  "duration": 51355185,
   "status": "passed"
 });
 formatter.match({
@@ -2150,35 +2150,35 @@ formatter.match({
   "location": "PositiveDef.user_fill_Card_CVV_with(String)"
 });
 formatter.result({
-  "duration": 333569218,
+  "duration": 162920394,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_select_one_of_Promos_availables()"
 });
 formatter.result({
-  "duration": 768920170,
+  "duration": 763091791,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.check_Customers_Detail()"
 });
 formatter.result({
-  "duration": 45707989,
+  "duration": 32090059,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_click_Pay_Now_button()"
 });
 formatter.result({
-  "duration": 3396372601,
+  "duration": 3366695727,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.transaction_verification_page_is_appear()"
 });
 formatter.result({
-  "duration": 1081727862,
+  "duration": 1059780332,
   "status": "passed"
 });
 formatter.match({
@@ -2191,33 +2191,33 @@ formatter.match({
   "location": "PositiveDef.user_fill_Password_with(String)"
 });
 formatter.result({
-  "duration": 177436666,
+  "duration": 133680122,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_click_Ok_button()"
 });
 formatter.result({
-  "duration": 682343160,
+  "duration": 854704786,
   "status": "passed"
 });
 formatter.match({
   "location": "NegativeDef.transaction_should_be_failed()"
 });
 formatter.result({
-  "duration": 76417876,
+  "duration": 76439414,
   "status": "passed"
 });
 formatter.after({
-  "duration": 66996,
+  "duration": 71585,
   "status": "passed"
 });
 formatter.uri("Positive.feature");
 formatter.feature({
   "line": 2,
-  "name": "Purchasing Pillow using credit card",
+  "name": "Purchasing Pillow using credit card with SUCCESSFULL payment flow",
   "description": "User want purchasing pillow using credit card with SUCCESSFULL payment flow",
-  "id": "purchasing-pillow-using-credit-card",
+  "id": "purchasing-pillow-using-credit-card-with-successfull-payment-flow",
   "keyword": "Feature",
   "tags": [
     {
@@ -2230,7 +2230,7 @@ formatter.scenarioOutline({
   "line": 9,
   "name": "Successfull payment flow",
   "description": "",
-  "id": "purchasing-pillow-using-credit-card;successfull-payment-flow",
+  "id": "purchasing-pillow-using-credit-card-with-successfull-payment-flow;successfull-payment-flow",
   "type": "scenario_outline",
   "keyword": "Scenario Outline",
   "tags": [
@@ -2384,7 +2384,7 @@ formatter.examples({
   "line": 40,
   "name": "",
   "description": "",
-  "id": "purchasing-pillow-using-credit-card;successfull-payment-flow;",
+  "id": "purchasing-pillow-using-credit-card-with-successfull-payment-flow;successfull-payment-flow;",
   "rows": [
     {
       "cells": [
@@ -2401,7 +2401,7 @@ formatter.examples({
         "password"
       ],
       "line": 41,
-      "id": "purchasing-pillow-using-credit-card;successfull-payment-flow;;1"
+      "id": "purchasing-pillow-using-credit-card-with-successfull-payment-flow;successfull-payment-flow;;1"
     },
     {
       "cells": [
@@ -2418,17 +2418,17 @@ formatter.examples({
         "112233"
       ],
       "line": 42,
-      "id": "purchasing-pillow-using-credit-card;successfull-payment-flow;;2"
+      "id": "purchasing-pillow-using-credit-card-with-successfull-payment-flow;successfull-payment-flow;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 89163,
+  "duration": 83387,
   "status": "passed"
 });
 formatter.before({
-  "duration": 112843,
+  "duration": 113776,
   "status": "passed"
 });
 formatter.background({
@@ -2447,14 +2447,14 @@ formatter.match({
   "location": "PositiveDef.initiate_browser()"
 });
 formatter.result({
-  "duration": 3420577020,
+  "duration": 3545286617,
   "status": "passed"
 });
 formatter.scenario({
   "line": 42,
   "name": "Successfull payment flow",
   "description": "",
-  "id": "purchasing-pillow-using-credit-card;successfull-payment-flow;;2",
+  "id": "purchasing-pillow-using-credit-card-with-successfull-payment-flow;successfull-payment-flow;;2",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -2645,21 +2645,21 @@ formatter.match({
   "location": "PositiveDef.navigate_to_Midtrans_Demo_homepage()"
 });
 formatter.result({
-  "duration": 2274601897,
+  "duration": 2268820272,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_click_Buy_Now_button()"
 });
 formatter.result({
-  "duration": 332141002,
+  "duration": 384548812,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.shopping_Cart_page_should_be_appear()"
 });
 formatter.result({
-  "duration": 16808249,
+  "duration": 11530844,
   "status": "passed"
 });
 formatter.match({
@@ -2672,7 +2672,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Price_Amount_with(String)"
 });
 formatter.result({
-  "duration": 413520915,
+  "duration": 439065687,
   "status": "passed"
 });
 formatter.match({
@@ -2685,7 +2685,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Name_with(String)"
 });
 formatter.result({
-  "duration": 146603086,
+  "duration": 203400740,
   "status": "passed"
 });
 formatter.match({
@@ -2698,7 +2698,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Email_with(String)"
 });
 formatter.result({
-  "duration": 184035042,
+  "duration": 230985364,
   "status": "passed"
 });
 formatter.match({
@@ -2711,7 +2711,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Phone_Number_with(String)"
 });
 formatter.result({
-  "duration": 149562043,
+  "duration": 205038819,
   "status": "passed"
 });
 formatter.match({
@@ -2724,7 +2724,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_City_with(String)"
 });
 formatter.result({
-  "duration": 139581117,
+  "duration": 138534767,
   "status": "passed"
 });
 formatter.match({
@@ -2737,7 +2737,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Address_with(String)"
 });
 formatter.result({
-  "duration": 258690411,
+  "duration": 176565224,
   "status": "passed"
 });
 formatter.match({
@@ -2750,63 +2750,63 @@ formatter.match({
   "location": "PositiveDef.user_fill_Postal_Code_with(String)"
 });
 formatter.result({
-  "duration": 166386154,
+  "duration": 105827870,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_click_Checkout_button()"
 });
 formatter.result({
-  "duration": 302352301,
+  "duration": 297823595,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.order_Summary_page_should_be_appear()"
 });
 formatter.result({
-  "duration": 908563459,
+  "duration": 882006027,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.order_Summary_Amount_must_be_same_as_Shopping_Cart_Amount()"
 });
 formatter.result({
-  "duration": 116081782,
+  "duration": 114699043,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.shipping_Details_must_be_same_as_Customer_Details()"
 });
 formatter.result({
-  "duration": 481488515,
+  "duration": 528819222,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_click_Continue_button()"
 });
 formatter.result({
-  "duration": 106917413,
+  "duration": 58699626,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.payment_method_list_page_should_be_appear()"
 });
 formatter.result({
-  "duration": 64313620,
+  "duration": 72622809,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_choose_Credit_Debit_Card_payment_method()"
 });
 formatter.result({
-  "duration": 618126894,
+  "duration": 621349434,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.credit_card_detail_page_should_be_appear()"
 });
 formatter.result({
-  "duration": 106128245,
+  "duration": 111079648,
   "status": "passed"
 });
 formatter.match({
@@ -2819,7 +2819,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Card_Number_with(String)"
 });
 formatter.result({
-  "duration": 204732007,
+  "duration": 214373650,
   "status": "passed"
 });
 formatter.match({
@@ -2832,7 +2832,7 @@ formatter.match({
   "location": "PositiveDef.user_fill_Card_Expiry_Date_with(String)"
 });
 formatter.result({
-  "duration": 64574181,
+  "duration": 45266387,
   "status": "passed"
 });
 formatter.match({
@@ -2845,35 +2845,35 @@ formatter.match({
   "location": "PositiveDef.user_fill_Card_CVV_with(String)"
 });
 formatter.result({
-  "duration": 119332911,
+  "duration": 163108552,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_select_one_of_Promos_availables()"
 });
 formatter.result({
-  "duration": 870552068,
+  "duration": 802976453,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.check_Customers_Detail()"
 });
 formatter.result({
-  "duration": 39549718,
+  "duration": 37586815,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_click_Pay_Now_button()"
 });
 formatter.result({
-  "duration": 3396363632,
+  "duration": 3392288715,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.transaction_verification_page_is_appear()"
 });
 formatter.result({
-  "duration": 1094075874,
+  "duration": 1371282852,
   "status": "passed"
 });
 formatter.match({
@@ -2886,25 +2886,25 @@ formatter.match({
   "location": "PositiveDef.user_fill_Password_with(String)"
 });
 formatter.result({
-  "duration": 186985830,
+  "duration": 161695004,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_click_Ok_button()"
 });
 formatter.result({
-  "duration": 694624565,
+  "duration": 814608763,
   "status": "passed"
 });
 formatter.match({
   "location": "PositiveDef.user_will_be_Navigate_to_Homepage_again()"
 });
 formatter.result({
-  "duration": 2096764018,
+  "duration": 2085379676,
   "status": "passed"
 });
 formatter.after({
-  "duration": 87898,
+  "duration": 125424,
   "status": "passed"
 });
 });

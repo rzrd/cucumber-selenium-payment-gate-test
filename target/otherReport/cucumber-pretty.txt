@@ -1,6 +1,6 @@
 @negativeTest
-Feature: Purchasing Pillow using credit card
-  User want purchasing pillow using credit card with SUCCESSFULL payment flow
+Feature: Purchasing Pillow using credit card with FAILED payment flow
+  User want purchasing pillow using credit card with FAILED payment flow
 
   @wrongEmail
   Scenario Outline: Wrong Input Email                        # Negative.feature:9
@@ -154,7 +154,7 @@ Feature: Purchasing Pillow using credit card
     Then Transaction should be failed                             # NegativeDef.transaction_should_be_failed()
 
   @declinedCard
-  Scenario Outline: Wrong Input Password                          # Negative.feature:89
+  Scenario Outline: Payment using declined credit card account    # Negative.feature:89
     Given Navigate to Midtrans Demo homepage
     When User click Buy Now button
     And Shopping Cart page is appear
@@ -190,7 +190,7 @@ Feature: Purchasing Pillow using credit card
     Given Initiate browser # PositiveDef.initiate_browser()
 
   @negativeTest @declinedCard
-  Scenario Outline: Wrong Input Password                          # Negative.feature:121
+  Scenario Outline: Payment using declined credit card account    # Negative.feature:121
     Given Navigate to Midtrans Demo homepage                      # PositiveDef.navigate_to_Midtrans_Demo_homepage()
     When User click Buy Now button                                # PositiveDef.user_click_Buy_Now_button()
     And Shopping Cart page is appear                              # PositiveDef.shopping_Cart_page_should_be_appear()
@@ -220,7 +220,7 @@ Feature: Purchasing Pillow using credit card
     And User click Ok button                                      # PositiveDef.user_click_Ok_button()
     Then Transaction should be failed                             # NegativeDef.transaction_should_be_failed()
 @positiveTest
-Feature: Purchasing Pillow using credit card
+Feature: Purchasing Pillow using credit card with SUCCESSFULL payment flow
   User want purchasing pillow using credit card with SUCCESSFULL payment flow
 
   @successfulFlow
