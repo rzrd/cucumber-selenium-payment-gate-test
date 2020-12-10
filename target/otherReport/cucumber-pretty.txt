@@ -2,6 +2,157 @@
 Feature: Purchasing Pillow using credit card
   User want purchasing pillow using credit card with SUCCESSFULL payment flow
 
+  @wrongEmail
+  Scenario Outline: Wrong Input Email                        # Negative.feature:9
+    Given Navigate to Midtrans Demo homepage
+    When User click Buy Now button
+    And Shopping Cart page is appear
+    And User fill Price Amount with "<amount>"
+    And User fill Name with "<name>"
+    But User try to fill Email with invalid format "<email>"
+    And User click Checkout button
+    Then Error Alert should be appear
+
+    Examples: 
+
+  Background:              # Negative.feature:5
+    Given Initiate browser # PositiveDef.initiate_browser()
+
+  @negativeTest @wrongEmail
+  Scenario Outline: Wrong Input Email                               # Negative.feature:21
+    Given Navigate to Midtrans Demo homepage                        # PositiveDef.navigate_to_Midtrans_Demo_homepage()
+    When User click Buy Now button                                  # PositiveDef.user_click_Buy_Now_button()
+    And Shopping Cart page is appear                                # PositiveDef.shopping_Cart_page_should_be_appear()
+    And User fill Price Amount with "10000"                         # PositiveDef.user_fill_Price_Amount_with(String)
+    And User fill Name with "rozi"                                  # PositiveDef.user_fill_Name_with(String)
+    But User try to fill Email with invalid format "wrongemail.com" # NegativeDef.user_try_to_fill_Email_with_invalid_format(String)
+    And User click Checkout button                                  # PositiveDef.user_click_Checkout_button()
+    Then Error Alert should be appear                               # NegativeDef.error_Alert_should_be_appear()
+
+  @wrongCreditCard
+  Scenario Outline: Wrong Input Credit Card Details                       # Negative.feature:24
+    Given Navigate to Midtrans Demo homepage
+    When User click Buy Now button
+    And Shopping Cart page is appear
+    And User fill Price Amount with "<amount>"
+    And User fill Name with "<name>"
+    And User fill Email with "<email>"
+    And User fill Phone Number with "<phone>"
+    And user fill City with "<city>"
+    And User fill Address with "<address>"
+    And User fill Postal Code with "<code>"
+    And User click Checkout button
+    And Order Summary page is appear
+    And Order Summary Amount must be same as Shopping Cart Amount
+    And Shipping Details must be same as Customer Details
+    And User click Continue button
+    And Payment Method List page is appear
+    And User choose Credit/Debit Card payment method
+    And Credit Card Detail page is appear
+    But User try to fill Credit Card number with wrong number "<card>"
+    And User try to fill Credit Card Expiry Date with wrong date "<date>"
+    And User try to fill Credit Card CVV with wrong cvv "<cvv>"
+    Then Invalid Card Number Details Alert should be appear
+    And User can not click Pay Now button
+
+    Examples: 
+
+  Background:              # Negative.feature:5
+    Given Initiate browser # PositiveDef.initiate_browser()
+
+  @negativeTest @wrongCreditCard
+  Scenario Outline: Wrong Input Credit Card Details                              # Negative.feature:51
+    Given Navigate to Midtrans Demo homepage                                     # PositiveDef.navigate_to_Midtrans_Demo_homepage()
+    When User click Buy Now button                                               # PositiveDef.user_click_Buy_Now_button()
+    And Shopping Cart page is appear                                             # PositiveDef.shopping_Cart_page_should_be_appear()
+    And User fill Price Amount with "10000"                                      # PositiveDef.user_fill_Price_Amount_with(String)
+    And User fill Name with "rozi"                                               # PositiveDef.user_fill_Name_with(String)
+    And User fill Email with "rozi@email.com"                                    # PositiveDef.user_fill_Email_with(String)
+    And User fill Phone Number with "08123456"                                   # PositiveDef.user_fill_Phone_Number_with(String)
+    And user fill City with "jakarta"                                            # PositiveDef.user_fill_City_with(String)
+    And User fill Address with "jl. sukses"                                      # PositiveDef.user_fill_Address_with(String)
+    And User fill Postal Code with "12620"                                       # PositiveDef.user_fill_Postal_Code_with(String)
+    And User click Checkout button                                               # PositiveDef.user_click_Checkout_button()
+    And Order Summary page is appear                                             # PositiveDef.order_Summary_page_should_be_appear()
+    And Order Summary Amount must be same as Shopping Cart Amount                # PositiveDef.order_Summary_Amount_must_be_same_as_Shopping_Cart_Amount()
+    And Shipping Details must be same as Customer Details                        # PositiveDef.shipping_Details_must_be_same_as_Customer_Details()
+    And User click Continue button                                               # PositiveDef.user_click_Continue_button()
+    And Payment Method List page is appear                                       # PositiveDef.payment_method_list_page_should_be_appear()
+    And User choose Credit/Debit Card payment method                             # PositiveDef.user_choose_Credit_Debit_Card_payment_method()
+    And Credit Card Detail page is appear                                        # PositiveDef.credit_card_detail_page_should_be_appear()
+    But User try to fill Credit Card number with wrong number "4962736475019283" # NegativeDef.user_try_to_fill_Credit_Card_number_with_wrong_number(String)
+    And User try to fill Credit Card Expiry Date with wrong date "02/20"         # NegativeDef.user_try_to_fill_Credit_Card_Expiry_Date_with_wrong_date(String)
+    And User try to fill Credit Card CVV with wrong cvv "12334"                  # NegativeDef.user_try_to_fill_Credit_Card_CVV_with_wrong_cvv(String)
+    Then Invalid Card Number Details Alert should be appear                      # NegativeDef.invalid_Card_Number_Details_Alert_should_be_appear()
+    And User can not click Pay Now button                                        # NegativeDef.user_can_not_click_Pay_Now_Button()
+
+  @wrongPassword
+  Scenario Outline: Wrong Input Password                           # Negative.feature:54
+    Given Navigate to Midtrans Demo homepage
+    When User click Buy Now button
+    And Shopping Cart page is appear
+    And User fill Price Amount with "<amount>"
+    And User fill Name with "<name>"
+    And User fill Email with "<email>"
+    And User fill Phone Number with "<phone>"
+    And user fill City with "<city>"
+    And User fill Address with "<address>"
+    And User fill Postal Code with "<code>"
+    And User click Checkout button
+    And Order Summary page is appear
+    And Order Summary Amount must be same as Shopping Cart Amount
+    And Shipping Details must be same as Customer Details
+    And User click Continue button
+    And Payment Method List page is appear
+    And User choose Credit/Debit Card payment method
+    And Credit Card Detail page is appear
+    And User fill Card Number with "<card>"
+    And User fill Card Expiry Date with "<date>"
+    And User fill Card CVV with "<cvv>"
+    And User select one of Promos availables
+    And Check Customers Detail
+    And User click Pay Now button
+    And Transaction Verification page is appear
+    But User try to fill Password with wrong password "<password>"
+    And User click Ok button
+    Then Transaction should be failed
+
+    Examples: 
+
+  Background:              # Negative.feature:5
+    Given Initiate browser # PositiveDef.initiate_browser()
+
+  @negativeTest @wrongPassword
+  Scenario Outline: Wrong Input Password                          # Negative.feature:86
+    Given Navigate to Midtrans Demo homepage                      # PositiveDef.navigate_to_Midtrans_Demo_homepage()
+    When User click Buy Now button                                # PositiveDef.user_click_Buy_Now_button()
+    And Shopping Cart page is appear                              # PositiveDef.shopping_Cart_page_should_be_appear()
+    And User fill Price Amount with "10000"                       # PositiveDef.user_fill_Price_Amount_with(String)
+    And User fill Name with "rozi"                                # PositiveDef.user_fill_Name_with(String)
+    And User fill Email with "rozi@email.com"                     # PositiveDef.user_fill_Email_with(String)
+    And User fill Phone Number with "08123456"                    # PositiveDef.user_fill_Phone_Number_with(String)
+    And user fill City with "jakarta"                             # PositiveDef.user_fill_City_with(String)
+    And User fill Address with "jl. sukses"                       # PositiveDef.user_fill_Address_with(String)
+    And User fill Postal Code with "12620"                        # PositiveDef.user_fill_Postal_Code_with(String)
+    And User click Checkout button                                # PositiveDef.user_click_Checkout_button()
+    And Order Summary page is appear                              # PositiveDef.order_Summary_page_should_be_appear()
+    And Order Summary Amount must be same as Shopping Cart Amount # PositiveDef.order_Summary_Amount_must_be_same_as_Shopping_Cart_Amount()
+    And Shipping Details must be same as Customer Details         # PositiveDef.shipping_Details_must_be_same_as_Customer_Details()
+    And User click Continue button                                # PositiveDef.user_click_Continue_button()
+    And Payment Method List page is appear                        # PositiveDef.payment_method_list_page_should_be_appear()
+    And User choose Credit/Debit Card payment method              # PositiveDef.user_choose_Credit_Debit_Card_payment_method()
+    And Credit Card Detail page is appear                         # PositiveDef.credit_card_detail_page_should_be_appear()
+    And User fill Card Number with "4811111111111114"             # PositiveDef.user_fill_Card_Number_with(String)
+    And User fill Card Expiry Date with "12/20"                   # PositiveDef.user_fill_Card_Expiry_Date_with(String)
+    And User fill Card CVV with "123"                             # PositiveDef.user_fill_Card_CVV_with(String)
+    And User select one of Promos availables                      # PositiveDef.user_select_one_of_Promos_availables()
+    And Check Customers Detail                                    # PositiveDef.check_Customers_Detail()
+    And User click Pay Now button                                 # PositiveDef.user_click_Pay_Now_button()
+    And Transaction Verification page is appear                   # PositiveDef.transaction_verification_page_is_appear()
+    But User try to fill Password with wrong password "873782"    # NegativeDef.user_try_to_fill_Password_with_wrong_password(String)
+    And User click Ok button                                      # PositiveDef.user_click_Ok_button()
+    Then Transaction should be failed                             # NegativeDef.transaction_should_be_failed()
+
   @declinedCard
   Scenario Outline: Wrong Input Password                          # Negative.feature:89
     Given Navigate to Midtrans Demo homepage
@@ -68,3 +219,73 @@ Feature: Purchasing Pillow using credit card
     And User fill Password with "112233"                          # PositiveDef.user_fill_Password_with(String)
     And User click Ok button                                      # PositiveDef.user_click_Ok_button()
     Then Transaction should be failed                             # NegativeDef.transaction_should_be_failed()
+@positiveTest
+Feature: Purchasing Pillow using credit card
+  User want purchasing pillow using credit card with SUCCESSFULL payment flow
+
+  @successfulFlow
+  Scenario Outline: Successfull payment flow                                    # Positive.feature:9
+    Given Navigate to Midtrans Demo homepage
+    When User click Buy Now button
+    And Shopping Cart page is appear
+    And User fill Price Amount with "<amount>"
+    And User fill Name with "<name>"
+    And User fill Email with "<email>"
+    And User fill Phone Number with "<phone>"
+    And user fill City with "<city>"
+    And User fill Address with "<address>"
+    And User fill Postal Code with "<code>"
+    And User click Checkout button
+    And Order Summary page is appear
+    And Order Summary Amount must be same as Shopping Cart Amount
+    And Shipping Details must be same as Customer Details
+    And User click Continue button
+    And Payment Method List page is appear
+    And User choose Credit/Debit Card payment method
+    And Credit Card Detail page is appear
+    And User fill Card Number with "<card>"
+    And User fill Card Expiry Date with "<date>"
+    And User fill Card CVV with "<cvv>"
+    And User select one of Promos availables
+    And Check Customers Detail
+    When User click Pay Now button
+    And Transaction Verification page is appear
+    And User fill Password with "<password>"
+    And User click Ok button
+    Then Transaction should be finished User will be Navigate to Homepage again
+
+    Examples: 
+
+  Background:              # Positive.feature:5
+    Given Initiate browser # PositiveDef.initiate_browser()
+
+  @positiveTest @successfulFlow
+  Scenario Outline: Successfull payment flow                                    # Positive.feature:42
+    Given Navigate to Midtrans Demo homepage                                    # PositiveDef.navigate_to_Midtrans_Demo_homepage()
+    When User click Buy Now button                                              # PositiveDef.user_click_Buy_Now_button()
+    And Shopping Cart page is appear                                            # PositiveDef.shopping_Cart_page_should_be_appear()
+    And User fill Price Amount with "30000"                                     # PositiveDef.user_fill_Price_Amount_with(String)
+    And User fill Name with "rozi"                                              # PositiveDef.user_fill_Name_with(String)
+    And User fill Email with "rozi@email.com"                                   # PositiveDef.user_fill_Email_with(String)
+    And User fill Phone Number with "28123456"                                  # PositiveDef.user_fill_Phone_Number_with(String)
+    And user fill City with "jakarta"                                           # PositiveDef.user_fill_City_with(String)
+    And User fill Address with "jl. sukses"                                     # PositiveDef.user_fill_Address_with(String)
+    And User fill Postal Code with "12620"                                      # PositiveDef.user_fill_Postal_Code_with(String)
+    And User click Checkout button                                              # PositiveDef.user_click_Checkout_button()
+    And Order Summary page is appear                                            # PositiveDef.order_Summary_page_should_be_appear()
+    And Order Summary Amount must be same as Shopping Cart Amount               # PositiveDef.order_Summary_Amount_must_be_same_as_Shopping_Cart_Amount()
+    And Shipping Details must be same as Customer Details                       # PositiveDef.shipping_Details_must_be_same_as_Customer_Details()
+    And User click Continue button                                              # PositiveDef.user_click_Continue_button()
+    And Payment Method List page is appear                                      # PositiveDef.payment_method_list_page_should_be_appear()
+    And User choose Credit/Debit Card payment method                            # PositiveDef.user_choose_Credit_Debit_Card_payment_method()
+    And Credit Card Detail page is appear                                       # PositiveDef.credit_card_detail_page_should_be_appear()
+    And User fill Card Number with "4811111111111114"                           # PositiveDef.user_fill_Card_Number_with(String)
+    And User fill Card Expiry Date with "12/20"                                 # PositiveDef.user_fill_Card_Expiry_Date_with(String)
+    And User fill Card CVV with "123"                                           # PositiveDef.user_fill_Card_CVV_with(String)
+    And User select one of Promos availables                                    # PositiveDef.user_select_one_of_Promos_availables()
+    And Check Customers Detail                                                  # PositiveDef.check_Customers_Detail()
+    When User click Pay Now button                                              # PositiveDef.user_click_Pay_Now_button()
+    And Transaction Verification page is appear                                 # PositiveDef.transaction_verification_page_is_appear()
+    And User fill Password with "112233"                                        # PositiveDef.user_fill_Password_with(String)
+    And User click Ok button                                                    # PositiveDef.user_click_Ok_button()
+    Then Transaction should be finished User will be Navigate to Homepage again # PositiveDef.user_will_be_Navigate_to_Homepage_again()

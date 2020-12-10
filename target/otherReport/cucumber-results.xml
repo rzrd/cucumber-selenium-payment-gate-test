@@ -1,6 +1,83 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="18.225908">
-    <testcase classname="Purchasing Pillow using credit card" name="Wrong Input Password" time="18.225908">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="74.95019">
+    <testcase classname="Purchasing Pillow using credit card" name="Wrong Input Email" time="9.739608">
+        <system-out>
+            <![CDATA[Given Initiate browser......................................................passed
+Given Navigate to Midtrans Demo homepage....................................passed
+When User click Buy Now button..............................................passed
+And Shopping Cart page is appear............................................passed
+And User fill Price Amount with "10000".....................................passed
+And User fill Name with "rozi"..............................................passed
+But User try to fill Email with invalid format "wrongemail.com".............passed
+And User click Checkout button..............................................passed
+Then Error Alert should be appear...........................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Purchasing Pillow using credit card" name="Wrong Input Credit Card Details" time="11.998737">
+        <system-out>
+            <![CDATA[Given Initiate browser......................................................passed
+Given Navigate to Midtrans Demo homepage....................................passed
+When User click Buy Now button..............................................passed
+And Shopping Cart page is appear............................................passed
+And User fill Price Amount with "10000".....................................passed
+And User fill Name with "rozi"..............................................passed
+And User fill Email with "rozi@email.com"...................................passed
+And User fill Phone Number with "08123456"..................................passed
+And user fill City with "jakarta"...........................................passed
+And User fill Address with "jl. sukses".....................................passed
+And User fill Postal Code with "12620"......................................passed
+And User click Checkout button..............................................passed
+And Order Summary page is appear............................................passed
+And Order Summary Amount must be same as Shopping Cart Amount...............passed
+And Shipping Details must be same as Customer Details.......................passed
+And User click Continue button..............................................passed
+And Payment Method List page is appear......................................passed
+And User choose Credit/Debit Card payment method............................passed
+And Credit Card Detail page is appear.......................................passed
+But User try to fill Credit Card number with wrong number "4962736475019283".passed
+And User try to fill Credit Card Expiry Date with wrong date "02/20"........passed
+And User try to fill Credit Card CVV with wrong cvv "12334".................passed
+Then Invalid Card Number Details Alert should be appear.....................passed
+And User can not click Pay Now button.......................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Purchasing Pillow using credit card" name="Wrong Input Password" time="16.73428">
+        <system-out>
+            <![CDATA[Given Initiate browser......................................................passed
+Given Navigate to Midtrans Demo homepage....................................passed
+When User click Buy Now button..............................................passed
+And Shopping Cart page is appear............................................passed
+And User fill Price Amount with "10000".....................................passed
+And User fill Name with "rozi"..............................................passed
+And User fill Email with "rozi@email.com"...................................passed
+And User fill Phone Number with "08123456"..................................passed
+And user fill City with "jakarta"...........................................passed
+And User fill Address with "jl. sukses".....................................passed
+And User fill Postal Code with "12620"......................................passed
+And User click Checkout button..............................................passed
+And Order Summary page is appear............................................passed
+And Order Summary Amount must be same as Shopping Cart Amount...............passed
+And Shipping Details must be same as Customer Details.......................passed
+And User click Continue button..............................................passed
+And Payment Method List page is appear......................................passed
+And User choose Credit/Debit Card payment method............................passed
+And Credit Card Detail page is appear.......................................passed
+And User fill Card Number with "4811111111111114"...........................passed
+And User fill Card Expiry Date with "12/20".................................passed
+And User fill Card CVV with "123"...........................................passed
+And User select one of Promos availables....................................passed
+And Check Customers Detail..................................................passed
+And User click Pay Now button...............................................passed
+And Transaction Verification page is appear.................................passed
+But User try to fill Password with wrong password "873782"..................passed
+And User click Ok button....................................................passed
+Then Transaction should be failed...........................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Purchasing Pillow using credit card" name="Wrong Input Password 2" time="17.503241">
         <system-out>
             <![CDATA[Given Initiate browser......................................................passed
 Given Navigate to Midtrans Demo homepage....................................passed
@@ -31,6 +108,40 @@ And Transaction Verification page is appear.................................pass
 And User fill Password with "112233"........................................passed
 And User click Ok button....................................................passed
 Then Transaction should be failed...........................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Purchasing Pillow using credit card" name="Successfull payment flow" time="18.974324">
+        <system-out>
+            <![CDATA[Given Initiate browser......................................................passed
+Given Navigate to Midtrans Demo homepage....................................passed
+When User click Buy Now button..............................................passed
+And Shopping Cart page is appear............................................passed
+And User fill Price Amount with "30000".....................................passed
+And User fill Name with "rozi"..............................................passed
+And User fill Email with "rozi@email.com"...................................passed
+And User fill Phone Number with "28123456"..................................passed
+And user fill City with "jakarta"...........................................passed
+And User fill Address with "jl. sukses".....................................passed
+And User fill Postal Code with "12620"......................................passed
+And User click Checkout button..............................................passed
+And Order Summary page is appear............................................passed
+And Order Summary Amount must be same as Shopping Cart Amount...............passed
+And Shipping Details must be same as Customer Details.......................passed
+And User click Continue button..............................................passed
+And Payment Method List page is appear......................................passed
+And User choose Credit/Debit Card payment method............................passed
+And Credit Card Detail page is appear.......................................passed
+And User fill Card Number with "4811111111111114"...........................passed
+And User fill Card Expiry Date with "12/20".................................passed
+And User fill Card CVV with "123"...........................................passed
+And User select one of Promos availables....................................passed
+And Check Customers Detail..................................................passed
+When User click Pay Now button..............................................passed
+And Transaction Verification page is appear.................................passed
+And User fill Password with "112233"........................................passed
+And User click Ok button....................................................passed
+Then Transaction should be finished User will be Navigate to Homepage again.passed
 ]]>
         </system-out>
     </testcase>

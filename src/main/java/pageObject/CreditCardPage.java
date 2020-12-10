@@ -87,6 +87,7 @@ public class CreditCardPage extends Base {
 
 	public void checkPromoAmount(int sizePromo) throws InterruptedException {
 		for (int i = 0; i < sizePromo; i++) {
+			driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 			By promoCheckBox = By.xpath("(//input[@type='checkbox'])[" + (1 + i) + "]");
 			By promoReduce = By.xpath("(//span[@class='pull-right text-gray'])[" + (1 + i) + "]");
 
