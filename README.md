@@ -3,7 +3,7 @@
 1. Clone the repository.
 2. Open the project with your IDEA (e.g IntelliJ, Eclipse).
 3. make sure your browser (Chrome / Firefox) is updated.
-4. download the latest stable driver from https://chromedriver.chromium.org/downloads fro chrome.
+4. download the latest stable driver from https://chromedriver.chromium.org/downloads for chrome.
 5. or https://github.com/mozilla/geckodriver/releases for firefox driver.
 5. extract driver file and copy the driver to src/driver folder path.
 4. open conf.properties file and set based on your need.
